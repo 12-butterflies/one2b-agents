@@ -105,9 +105,12 @@ These exist in the live prototype and are available for any audience segment. Ma
 - Registered Lloyd's of London broker — our status, always fine to state
 - China recognised data as tangible asset class, 2024
 - Isle of Man legislated it after 3 years working with us
-- Portugal: sovereign pilot live in production
+- Portugal: flagship sovereign, live in production
+- Brazil + Colombia: next this year
 - 200 million people: national data wallet rollout preparing
 - 27 monetisation pathways without selling a single record
 - Self-funded for nearly 8 years — skin in the game
+
+**Do not reference Mozambique** in any external content.
 
 All yield and revenue references asterisked (*). Standard disclaimer applies.

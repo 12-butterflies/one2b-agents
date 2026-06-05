@@ -30,15 +30,13 @@
 - **EUR (€)** — billing, subscription, service fees
 - No GBP under any circumstances
 
-## Sovereign status labels
+## Sovereign status labels — the active arc
 
-The correct sovereign arc in order:
-1. **Portugal — flagship pilot, live in production** (the reference engagement externally)
-2. **Isle of Man — first to legislate** data as asset class (after 3 years working with us)
-3. **Brazil + Colombia — this year**
-4. **Tanzania, Mozambique, Gabon, Argentina — advancing pipeline**
+1. **Portugal** — flagship, live in production
+2. **Brazil + Colombia** — this year
+3. **Isle of Man** — legislated data as asset class (after 3 years working with us)
 
-Never call Mozambique the pilot. Portugal is the flagship. Mozambique is pipeline.
+Do not reference Mozambique. It is not part of the active sovereign narrative.
 
 ## Yield and financial claims
 

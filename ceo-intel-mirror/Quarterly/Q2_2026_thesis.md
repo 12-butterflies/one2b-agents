@@ -15,7 +15,7 @@ Sub-thesis 1: **Upstream positioning beats feature competition.** One 2b sits up
 
 Sub-thesis 2: **Seven named production systems is the differentiator.** The CEO Intelligence swarm already exists. The framing is missing. Q2 is when the external positioning catches up to the operational reality.
 
-Sub-thesis 3: **Sovereign arc is live and moving.** Portugal (flagship, live in production) proves the model. Isle of Man legislated it. Brazil and Colombia are next this year. Every sovereign reference in Q2 content reinforces this sequence.
+Sub-thesis 3: **Three sovereigns, one arc.** Portugal live. Brazil and Colombia next this year. Isle of Man legislated. Every sovereign reference in Q2 content uses this sequence and no others.
 
 ---
 

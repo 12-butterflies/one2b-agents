@@ -50,14 +50,15 @@ When referring to the former COO role: use "the COO function" or "the COO" gener
 - EUR (€) for billing figures
 - No other currencies without explicit Jason approval
 
-## Sovereign status — never get this wrong
+## Sovereign status — the three sovereigns, in order
 
-- **Portugal = FLAGSHIP PILOT** (the external reference engagement — live in production)
-- **Mozambique = PIPELINE** (never "pilot", never "flagship")
-- Colombia and Brazil = next wave this year (not "pilot", not "expansion")
-- Isle of Man = first to legislate (verified proof point, freely usable)
+- **Portugal** — flagship, live in production. The external reference engagement.
+- **Brazil + Colombia** — next, this year.
+- **Isle of Man** — legislated data as asset class after 3 years working with us. Freely usable proof point.
 
-Never call Mozambique the pilot. Never reverse Portugal and Mozambique.
+**Do not reference Mozambique** in any external content. It is not part of the active sovereign arc.
+
+Never call Portugal anything other than the flagship. Never reverse the order.
 
 ## Yield and forward-looking statements
 

@@ -1,11 +1,5 @@
 # Sovereign Engagement — Mozambique
-**Status label:** PIPELINE — advancing
+**Status:** DROPPED FROM ACTIVE PIPELINE — do not reference externally
 **Last updated:** 2026-06-05
 
-Mozambique is part of the advancing sovereign pipeline. Not the pilot. Portugal is the flagship pilot.
-
-**Never say:** Mozambique pilot, Mozambique is our flagship.
-**Correct framing:** "Tanzania, Mozambique, Gabon, and Argentina are advancing."
-
-## Details
-[Populate with engagement timeline and counterparty context when confirmed in writing.]
+Mozambique is not part of the current sovereign narrative. Do not include in any external content, pitch, or investor communication. If asked directly, defer to Jason.

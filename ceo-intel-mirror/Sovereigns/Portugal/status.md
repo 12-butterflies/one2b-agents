@@ -4,10 +4,11 @@
 
 Portugal is the flagship sovereign engagement. Live in production. When One 2b references a sovereign pilot externally, Portugal is the reference. This is the proof-of-concept that demonstrates the Tesseract + IGI model works at sovereign scale.
 
-## Narrative frame
-Portugal live → Isle of Man legislated → Brazil and Colombia next → Tanzania, Mozambique, Gabon, Argentina advancing.
+## Narrative frame — the three sovereigns
 
-The arc externally: Portugal proves the model. Isle of Man proves it can move legislation. Brazil and Colombia prove it scales across geographies.
+**Portugal → Brazil → Colombia.** This is the arc. Three sovereigns, three geographies, one stack.
+
+Portugal proves the model works. Brazil and Colombia prove it scales. Isle of Man proves it can move legislation in an established financial jurisdiction.
 
 ## Isle of Man
 First succession: Isle of Man formally legislated data as a tangible asset class after three years of working with One 2b. This is a verified, freely-usable proof point in all external content. No asterisk required on the legislative fact itself.

@@ -22,7 +22,19 @@
       "Bash(npm list *)",
       "Bash(xargs ls -lah)",
       "mcp__beb837dd-0560-4d13-921f-006cfcddcf32__search_files",
-      "Bash(git commit -m 'TOOL_INVENTORY.md: complete inventory of all tools, MCPs, repos, platforms *)"
+      "Bash(git commit -m 'TOOL_INVENTORY.md: complete inventory of all tools, MCPs, repos, platforms *)",
+      "Skill(deep-research)",
+      "Skill(deep-research:*)",
+      "WebSearch",
+      "WebFetch(domain:www.promptquorum.com)",
+      "WebFetch(domain:www.opensourcealternatives.to)",
+      "WebFetch(domain:localaimaster.com)",
+      "WebFetch(domain:use-apify.com)",
+      "WebFetch(domain:apxml.com)",
+      "WebFetch(domain:www.sitepoint.com)",
+      "WebFetch(domain:www.pixazo.ai)",
+      "WebFetch(domain:medium.com)",
+      "Bash(git commit -m 'LOCAL_STACK.md: complete offline + self-hosted architecture *)"
     ]
   }
 }

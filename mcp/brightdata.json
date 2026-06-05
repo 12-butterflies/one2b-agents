@@ -1,0 +1,21 @@
+{
+  "name": "brightdata",
+  "description": "Bright Data scraper — Instagram, YouTube, static web content for Scout intel sweep",
+  "used_by": ["scout", "curator"],
+  "auth_type": "api_key",
+  "env_var": "BRIGHTDATA_API_KEY",
+  "cli_tool": "bdata",
+  "install": "npm install -g @brightdata/cli",
+  "auth_command": "bdata login",
+  "verify_command": "bdata --version && bdata auth status",
+  "status": "FAILING — bdata CLI authentication expired or invalid. Run auth_command to re-authenticate.",
+  "zones": {
+    "cli_unlocker": "static HTML, fastest and cheapest",
+    "cli_browser": "JavaScript-rendered SPAs (Instagram, Twitter, TikTok)",
+    "pipelines/instagram": "Instagram-specific pipeline with geo fallback",
+    "pipelines/youtube_videos": "YouTube video metadata",
+    "pipelines/youtube_transcripts": "YouTube transcript extraction"
+  },
+  "scraper_script": "~/.gmail-mcp-intel/scrape-helper.js",
+  "notes": "scrape-helper.js is the canonical scraper. Both copies (home path and Documents path) are now in sync. The auth failure is at the bdata API level, not in the script logic."
+}

@@ -15,7 +15,7 @@ Sub-thesis 1: **Upstream positioning beats feature competition.** One 2b sits up
 
 Sub-thesis 2: **Seven named production systems is the differentiator.** The CEO Intelligence swarm already exists. The framing is missing. Q2 is when the external positioning catches up to the operational reality.
 
-Sub-thesis 3: **Sovereign pilots convert to expansion.** Mozambique (PILOT) proves the model. Colombia (EXPANSION) proves the model scales. Every sovereign reference in Q2 content reinforces this arc.
+Sub-thesis 3: **Sovereign arc is live and moving.** Portugal (flagship, live in production) proves the model. Isle of Man legislated it. Brazil and Colombia are next this year. Every sovereign reference in Q2 content reinforces this sequence.
 
 ---
 
@@ -25,7 +25,7 @@ Before any piece of content ships, Fleet Router confirms it ladders to one of:
 - Distribution unlocked by the agent fleet
 - Upstream RWA / data liquidity positioning
 - The 7 named production systems differentiator
-- Sovereign arc (Mozambique → Colombia → pipeline)
+- Sovereign arc (Portugal flagship → Isle of Man legislated → Brazil + Colombia next)
 - IGI as the insurance layer that makes yields* credible
 
 If a piece doesn't ladder to any of these, it is reactive content. Label it as such in the handoff payload (`quarterly_thesis_ladder: "none — reactive"`). Reactive content is fine; unlabelled drift is not.

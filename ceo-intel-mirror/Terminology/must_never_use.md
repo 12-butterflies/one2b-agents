@@ -50,10 +50,14 @@ When referring to the former COO role: use "the COO function" or "the COO" gener
 - EUR (€) for billing figures
 - No other currencies without explicit Jason approval
 
-## Sovereign status — never reverse
+## Sovereign status — never get this wrong
 
-- Mozambique = PILOT (never "expansion")
-- Colombia = EXPANSION (never "pilot")
+- **Portugal = FLAGSHIP PILOT** (the external reference engagement — live in production)
+- **Mozambique = PIPELINE** (never "pilot", never "flagship")
+- Colombia and Brazil = next wave this year (not "pilot", not "expansion")
+- Isle of Man = first to legislate (verified proof point, freely usable)
+
+Never call Mozambique the pilot. Never reverse Portugal and Mozambique.
 
 ## Yield and forward-looking statements
 

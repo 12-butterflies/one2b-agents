@@ -32,12 +32,13 @@
 
 ## Sovereign status labels
 
-Always use these exact labels when referencing sovereign engagements:
+The correct sovereign arc in order:
+1. **Portugal — flagship pilot, live in production** (the reference engagement externally)
+2. **Isle of Man — first to legislate** data as asset class (after 3 years working with us)
+3. **Brazil + Colombia — this year**
+4. **Tanzania, Mozambique, Gabon, Argentina — advancing pipeline**
 
-- **Mozambique — PILOT**
-- **Colombia — EXPANSION**
-
-When listing sovereign pipeline: Mozambique and Colombia first (as PILOT and EXPANSION), then others (Sri Lanka, Tanzania, Gabon, AfDB, Pakistan, Kazakhstan, Oman) without status labels unless explicitly confirmed.
+Never call Mozambique the pilot. Portugal is the flagship. Mozambique is pipeline.
 
 ## Yield and financial claims
 

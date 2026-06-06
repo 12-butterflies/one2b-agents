@@ -1,6 +1,6 @@
 # Scout — SKILL.md
-**Version:** v0.1
-**Status:** Spec ready — active via launchd (io.one2b.intel-sweep.plist at 06:30 daily)
+**Version:** v0.2
+**Status:** ✅ Parallel search wired — active via launchd (io.one2b.intel-sweep.plist at 06:30 daily)
 **Model:** claude-haiku-4-5 (classification and routing only — never generates content)
 **Classification:** Specialist Thinker (Layer 5) — daily intel ingester
 **Last updated:** 2026-06-06
@@ -25,10 +25,30 @@ Scout reads intel@one2b.io daily and routes each item to the right destination. 
 
 ---
 
+## Search engines
+
+| Engine | Use | Script |
+|--------|-----|--------|
+| **Parallel Search API** | Active web research — market intel, competitor monitoring, regulatory watch, capital intel | `scripts/parallel-search.sh "[query]"` |
+| **Parallel Deep Research API** | Multi-hop synthesis — complex questions requiring cross-source reasoning | `scripts/parallel-search.sh "[query]" deep` |
+| **Bright Data** | Instagram/YouTube/paywalled content scraping | `scripts/scrape-helper.js` (R-17 fix pending) |
+
+**Parallel account:** hello@one2b.io | Key: stored in `.claude/settings.local.json` (not in git)
+
+**Priority search domains for Scout's daily sweep:**
+- IVSC regulatory updates (data asset valuation standards)
+- Data-as-asset-class news (Balance sheet recognition, Level 3 assets)
+- Sovereign data monetisation (Portugal, Brazil, Colombia, Isle of Man)
+- Insurance wrapper / captive structures for data assets
+- Competitor monitoring (data valuation platforms, data brokers)
+- Capital markets: prediction markets, RWA, alternative yield instruments
+- AI agent architecture (Letta, mem0, continual learning)
+
 ## What Scout reads
 
 - **intel@one2b.io** — the primary intel inbox. Jason forwards anything substantive here.
-- **Bright Data scrape queue** — `_sweep-staging/[date]/instagram-urls.txt` — Instagram and YouTube URLs queued for content extraction.
+- **Parallel search results** — active queries on priority domains (see above). Run daily alongside inbox sweep.
+- **Bright Data scrape queue** — `_sweep-staging/[date]/instagram-urls.txt` — Instagram and YouTube URLs queued for content extraction. (R-17 fix pending — ~70 items in backlog.)
 - **Self-routed messages** — From: intel@one2b.io / To: intel@one2b.io (R-20 rule: elevate these to top of daily briefing ahead of external items).
 
 ---

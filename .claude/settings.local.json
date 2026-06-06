@@ -46,7 +46,8 @@
       "Bash(git commit -m 'Terminology, voice lockdown, CEO context card, ceo-daily-brief SKILL.md *)",
       "Bash(cat)",
       "Bash(git commit -m 'Architecture complete: 10 agent definitions, DECISIONS.md, PHASE_GATES, Outreach Agent, Sentinel calibration, TECH_HORIZON, monthly template, ceo-daily-brief task *)",
-      "Bash(git commit -m 'Substrate nearly complete: brand system, products, methodology, test set, audience profiles *)"
+      "Bash(git commit -m 'Substrate nearly complete: brand system, products, methodology, test set, audience profiles *)",
+      "Bash(git commit -m 'Lock Jason voice guide v1.0 — canonical *)"
     ]
   }
 }

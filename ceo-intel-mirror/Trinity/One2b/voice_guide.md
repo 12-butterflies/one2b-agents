@@ -1,5 +1,5 @@
 # Voice Guide — One 2b
-**Status:** DRAFT — pending Jason's lock confirmation
+**Status:** OPEN FOR REVIEW — Jason voice guide locked 2026-06-06. Review this next.
 **Last updated:** 2026-06-05
 **Scope:** One 2b GTM content. Governs Studio Social posts tagged One 2b, Studio Words investor letters and whitepapers, Studio Direct outreach from the company (not Jason personally), and any output tagged `trinity_identity: one2b`.
 

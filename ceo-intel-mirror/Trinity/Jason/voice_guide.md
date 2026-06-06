@@ -1,6 +1,7 @@
 # Voice Guide — Jason Peter Stevens
-**Status:** DRAFT v2 — awaiting Jason's lock confirmation
-**Last updated:** 2026-06-05
+**Status:** LOCKED — v1.0
+**Locked:** 2026-06-06 by Jason Peter Stevens
+**Last updated:** 2026-06-06
 **Scope:** Jason's personal voice. Governs Studio Words autobiography content, personal brand social posts, Studio Direct messages sent as Jason personally (not One 2b), and any Jason-identity output tagged `trinity_identity: jason`.
 
 ---
@@ -104,4 +105,4 @@ The test: would you say this to a trusted friend who happens to be an investor? 
 
 ---
 
-*DRAFT v2 — confirm "lock it" to make this canonical. One2b and 12Butterflies voice guides follow after this is locked.*
+*LOCKED v1.0 — 2026-06-06. This file is canonical. Changes require Jason's explicit instruction and bump to v1.1 or v2.0. One 2b voice guide review now open.*

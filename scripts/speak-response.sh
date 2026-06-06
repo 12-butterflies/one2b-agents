@@ -4,18 +4,16 @@
 # Tier 2: Google gTTS fallback
 # Tier 3: macOS say -v Daniel last resort
 #
-# APPROVED SHORTLIST (Jason, 2026-06-06):
-#   en-GB-SoniaNeural          — primary default (GB female, soft)
-#   en-US-EmmaMultilingualNeural — 2nd favourite (US female, warm)
-#   en-US-JennyNeural          — 3rd favourite (US female)
-#   en-US-BrianNeural          — shortlist (US male)
-#   en-GB-ThomasNeural         — shortlist (GB male)
-#   en-GB-RyanNeural           — shortlist (GB male)
-#   en-US-AriaNeural           — shortlist (US female)
-#   en-IE-EmilyNeural          — lower end (Irish female, slow)
+# LOCKED VOICES (Jason, 2026-06-06):
+#   CONTEXT          VOICE                          RATE
+#   default/responses  en-GB-SoniaNeural            +30%
+#   morning brief      en-US-EmmaMultilingualNeural  +25%
+#   alerts/urgent      en-US-BrianNeural             +25%
+#   confirmations      en-US-JennyNeural             +20%
 # REJECTED: en-GB-MaisieNeural (too young), en-AU-NatashaNeural (AU accent)
 
 VOICE="en-GB-SoniaNeural"
+RATE="+30%"
 
 text=$(jq -r '[.message.content[]? | select(.type=="text") | .text] | join(" ")' 2>/dev/null | \
   sed 's/[#*`_~\|]//g' | \
@@ -32,10 +30,10 @@ text=$(jq -r '[.message.content[]? | select(.type=="text") | .text] | join(" ")'
 import asyncio, edge_tts, sys, warnings
 warnings.filterwarnings('ignore')
 async def main():
-    c = edge_tts.Communicate(sys.argv[1], sys.argv[2])
+    c = edge_tts.Communicate(sys.argv[1], sys.argv[2], rate=sys.argv[4])
     await c.save(sys.argv[3])
 asyncio.run(main())
-" "$text" "$VOICE" "$tmpfile" 2>/dev/null; then
+" "$text" "$VOICE" "$tmpfile" "$RATE" 2>/dev/null; then
     afplay "$tmpfile" 2>/dev/null
     rm -f "$tmpfile"
     exit 0

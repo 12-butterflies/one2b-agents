@@ -35,7 +35,8 @@
       "WebFetch(domain:www.pixazo.ai)",
       "WebFetch(domain:medium.com)",
       "Bash(git commit -m 'LOCAL_STACK.md: complete offline + self-hosted architecture *)",
-      "Bash(git commit -m 'SKILL.md files: Studio Direct, Studio Words, Studio Design. Commands: /brief, /lock. Fleet Learning template. *)"
+      "Bash(git commit -m 'SKILL.md files: Studio Direct, Studio Words, Studio Design. Commands: /brief, /lock. Fleet Learning template. *)",
+      "Bash(git commit -m 'Morning system: daily brief, context cards, sessions guide, 07:30 automation *)"
     ]
   }
 }

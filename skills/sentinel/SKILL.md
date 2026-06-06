@@ -1,5 +1,5 @@
 # Sentinel — SKILL.md
-**Version:** v0.2
+**Version:** v0.3
 **Status:** Rule files live — ready for Phase 2 activation
 **Classification:** Reviewer (Layer 4) — read-only Chief of Staff
 **Last updated:** 2026-06-06
@@ -10,7 +10,8 @@
 |------|---------|
 | `rules/A1-terminology.md` | A1, A2, A3, Mode B, Mode C |
 | `rules/RED-flags.md` | Fleet Router pre-check, A2, A3 |
-| `rules/A2-plan-review.md` | A2, A3 |
+| `rules/A2-plan-review.md` | A2 (plan sections), A3 (full audit via Job 5) |
+| `rules/A3-full-audit.md` | A3 — full 6-job audit, investor/sovereign/legal content |
 
 Never run from memory. Always read the rule file.
 

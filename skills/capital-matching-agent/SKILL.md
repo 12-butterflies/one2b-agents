@@ -1,6 +1,6 @@
 # Capital Matching Agent — SKILL.md
-**Version:** v0.1 draft
-**Status:** Spec ready — platform launch Q4 2026+
+**Version:** v1.0
+**Status:** ✅ LOCKED — activates post-Phase 2
 **Model:** claude-opus-4-8 (matching logic, investor-facing outputs) + Sentinel A3 on all external outputs
 **Classification:** Specialist Thinker (Layer 5) — operates the matching layer between investors and data owners
 **Last updated:** 2026-06-06

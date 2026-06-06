@@ -1,6 +1,6 @@
 # Tesseract Valuation Agent — SKILL.md
-**Version:** v0.1 draft
-**Status:** Spec ready — pending Tesseract v2 build and platform availability
+**Version:** v1.0
+**Status:** ✅ LOCKED — activates post-Phase 2
 **Model:** claude-opus-4-8 (all outputs — institutional-grade, audit-defensible) + Sentinel A3 before any report leaves
 **Classification:** Specialist Thinker (Layer 5) — customer-callable, runs the IVSC-aligned data valuation journey
 **Pricing:** USD $75,000–$100,000 per evaluation* — billed in EUR

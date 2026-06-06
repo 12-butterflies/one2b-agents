@@ -1,6 +1,6 @@
 # Triage — SKILL.md
-**Version:** v0.1
-**Status:** Active in "act as" mode today — invoke directly
+**Version:** v1.0
+**Status:** ✅ LOCKED — active in "act as" mode, runtime activation pending
 **Model:** claude-sonnet-4-6
 **Classification:** Specialist Thinker (Layer 5) — internal cognition processor
 **Last updated:** 2026-06-06

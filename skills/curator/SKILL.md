@@ -1,6 +1,6 @@
 # Curator — SKILL.md
-**Version:** v0.1
-**Status:** Spec ready — activates when Scout is wired and _ready-for-cowork flag exists
+**Version:** v1.0
+**Status:** Spec locked — activates when Scout + Parallel are wired (done)
 **Model:** claude-haiku-4-5 (auto-file decisions) | claude-sonnet-4-6 (substantive domain analysis)
 **Classification:** Reviewer (Layer 4) — domain filer, read-only analyst
 **Last updated:** 2026-06-06

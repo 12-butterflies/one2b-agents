@@ -1,6 +1,6 @@
 # Document Agent — SKILL.md
-**Version:** v0.1 draft
-**Status:** Phase 7 — activates last. Pending DocuSeal deploy + DocSend trial.
+**Version:** v1.0
+**Status:** Phase 7 — LOCKED. Pending DocuSeal deploy + DocSend trial
 **Model:** claude-opus-4-8 (all drafts — legal language, zero hallucination tolerance) + Sentinel A3 before any document leaves
 **Surface owned:** Templated commercial and legal drafting — NDAs, CPAs, partnership agreements
 **Primary verb:** Draft

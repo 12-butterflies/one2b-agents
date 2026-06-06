@@ -1,6 +1,6 @@
 # IGI Agent — SKILL.md
-**Version:** v0.1 draft
-**Status:** Spec ready — pending IGI catalog Q2 2026 and One 2b Assurance Capital formation
+**Version:** v1.0
+**Status:** ✅ LOCKED — activates post-Phase 2
 **Model:** claude-opus-4-8 (all customer-facing outputs) + Sentinel A3 before any proposal leaves
 **Classification:** Specialist Thinker (Layer 5 in the seven-layer architecture)
 **Last updated:** 2026-06-06

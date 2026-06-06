@@ -1,6 +1,6 @@
 # Outreach Agent — SKILL.md
-**Version:** v0.1 draft
-**Status:** Spec ready — build after Studio Direct is activated (Phase 3+)
+**Version:** v1.0
+**Status:** ✅ LOCKED — activates with Studio Direct
 **Model:** claude-opus-4-8 (all outbound) + Sentinel A3 before any message leaves
 **Classification:** Studio sub-agent — the distribution engine
 **Validation:** Three independent confirmations that distribution is the bottleneck (Tharin May 2, Houck May 3, Justyn drip series implicit). Highest commercial leverage of any Studio build.

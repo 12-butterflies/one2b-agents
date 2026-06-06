@@ -1,6 +1,6 @@
 # Capital Readiness Curator — SKILL.md
-**Version:** v0.1
-**Status:** Active in "act as" mode — investor pipeline curation
+**Version:** v1.0
+**Status:** ✅ LOCKED — active in CEO Intelligence swarm
 **Model:** claude-sonnet-4-6 (signal scoring) | claude-opus-4-8 (investor-facing summaries)
 **Classification:** Specialist Thinker (Layer 5) — investor pipeline intelligence
 **Last updated:** 2026-06-06

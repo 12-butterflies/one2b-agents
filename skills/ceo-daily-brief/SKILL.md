@@ -1,6 +1,6 @@
 # ceo-daily-brief — SKILL.md
-**Version:** v0.1
-**Status:** Active — runs daily at 07:05 Lisbon
+**Version:** v1.0
+**Status:** ✅ LOCKED — active daily at 07:05 Lisbon
 **Model:** claude-sonnet-4-6 (orchestration and synthesis) | Haiku for section generation | Opus for Recommended For Today when high-stakes decisions surface
 **Classification:** Orchestrator — pulls from every swarm agent and surfaces to Jason
 **Last updated:** 2026-06-06

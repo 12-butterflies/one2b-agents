@@ -1,6 +1,6 @@
 # Studio Motion — SKILL.md
-**Version:** v0.1 draft
-**Status:** Phase 6 — activates after Studio Design
+**Version:** v1.0
+**Status:** ✅ LOCKED — activates after Studio Design gate
 **Model:** claude-sonnet-4-6 (storyboard, brief, direction) | claude-opus-4-8 (sovereign-facing or investor-facing video concepts)
 **Surface owned:** Video and motion graphics — long-form, short-form, animation, thumbnails
 **Primary verb:** Produce

@@ -1,0 +1,109 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "one2b-agent-handoff-v1",
+  "title": "One 2b Agent Handoff Payload",
+  "description": "Canonical contract for all cross-agent invocations. Every calling agent must emit this. Every receiving agent validates it before proceeding.",
+  "type": "object",
+  "required": [
+    "trinity_identity",
+    "request_origin",
+    "request_intent",
+    "quarterly_thesis_ladder",
+    "red_flag_check_status",
+    "route_to",
+    "route_pattern"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "trinity_identity": {
+      "type": "string",
+      "enum": ["one2b", "12butterflies", "jason"],
+      "description": "Identity this content belongs to. Must be explicit — never inferred."
+    },
+    "request_origin": {
+      "type": "string",
+      "enum": ["human", "studio-social", "studio-direct", "studio-words", "studio-design", "studio-motion", "document", "fleet-router", "sentinel", "scout", "curator", "triage", "ceo-daily-brief", "capital-readiness-curator", "igi-insurance-agent", "tesseract-valuation-agent", "capital-matching-agent", "outreach-agent"],
+      "description": "Who originated or is passing this request."
+    },
+    "request_intent": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 200,
+      "description": "Plain-English one-line description of what is being requested."
+    },
+    "context_links": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": [],
+      "description": "Paths to CEO Intel files relevant to this request. Empty array if none."
+    },
+    "quarterly_thesis_ladder": {
+      "type": "string",
+      "description": "Which Q2 2026 pillar this ladders to, or 'none — reactive' if it does not.",
+      "examples": [
+        "distribution — agent fleet",
+        "RWA / data liquidity positioning",
+        "7 named production systems differentiator",
+        "sovereign arc — Portugal flagship",
+        "IGI as the insurance layer",
+        "none — reactive"
+      ]
+    },
+    "red_flag_check_status": {
+      "type": "string",
+      "enum": ["passed", "pending", "deferred", "flagged"],
+      "description": "Result of Fleet Router RED-flag pre-check. Receiving agent must halt if 'flagged'."
+    },
+    "red_flag_notes": {
+      "type": "string",
+      "default": "",
+      "description": "Required when red_flag_check_status is 'flagged'. Describes what triggered the flag."
+    },
+    "route_to": {
+      "type": "string",
+      "enum": ["studio-social", "studio-direct", "studio-words", "studio-design", "studio-motion", "document", "sentinel", "scout", "curator", "triage", "ceo-daily-brief", "capital-readiness-curator", "igi-insurance-agent", "tesseract-valuation-agent", "capital-matching-agent", "outreach-agent"],
+      "description": "Agent this payload is addressed to."
+    },
+    "route_pattern": {
+      "type": "string",
+      "enum": ["single", "sequential", "parallel"],
+      "description": "single = one agent handles end-to-end. sequential = output of first feeds next. parallel = requires Jason confirmation before fan-out."
+    },
+    "downstream_agents": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": [],
+      "description": "For sequential/parallel patterns: ordered list of agents to invoke after route_to completes."
+    },
+    "deadline": {
+      "type": "string",
+      "description": "ISO 8601 timestamp or 'none'.",
+      "examples": ["2026-06-09T07:00:00Z", "none"]
+    },
+    "surface_specs": {
+      "type": "object",
+      "description": "Required when route_to is studio-design or studio-motion. Platform and format specs.",
+      "properties": {
+        "platform": { "type": "string" },
+        "dimensions": { "type": "string" },
+        "format": { "type": "string" },
+        "text_on_image": { "type": "boolean" }
+      }
+    },
+    "caller_state_snapshot": {
+      "description": "Optional. Relevant state from the calling agent (e.g. draft text being handed to Sentinel).",
+      "oneOf": [
+        { "type": "string" },
+        { "type": "object" },
+        { "type": "null" }
+      ],
+      "default": null
+    }
+  },
+  "if": {
+    "properties": { "red_flag_check_status": { "const": "flagged" } }
+  },
+  "then": {
+    "required": ["red_flag_notes"]
+  }
+}

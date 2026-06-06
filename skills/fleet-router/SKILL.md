@@ -1,8 +1,17 @@
 # Fleet Router — SKILL.md
-**Version:** v0.1 draft
-**Status:** Awaiting Architecture v1.0 lock
+**Version:** v0.2
+**Status:** Blockers resolved — pending 5-test pass before Phase 2 go-live
 **Model:** claude-haiku-4-5 (classification only — escalate to Sonnet if ambiguity > 2 fields)
-**Last updated:** 2026-06-05
+**Last updated:** 2026-06-06
+
+## Canonical references
+
+| File | Purpose |
+|------|---------|
+| `schema/handoff-schema.json` | Handoff payload contract — validate every outbound payload against this |
+| `skills/sentinel/rules/RED-flags.md` | RED-flag pre-check ruleset |
+| `skills/sentinel/rules/A1-terminology.md` | Banned term list |
+| `skills/fleet-router/route-tests.md` | 5 classification tests — all must pass before Phase 2 |
 
 ---
 

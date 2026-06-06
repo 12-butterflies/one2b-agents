@@ -1,8 +1,18 @@
 # Sentinel — SKILL.md
-**Version:** v0.1 draft
-**Status:** Active in "act as" mode today — runtime pending
+**Version:** v0.2
+**Status:** Rule files live — ready for Phase 2 activation
 **Classification:** Reviewer (Layer 4) — read-only Chief of Staff
 **Last updated:** 2026-06-06
+
+## Rule files (read fresh on every invocation)
+
+| File | Used in |
+|------|---------|
+| `rules/A1-terminology.md` | A1, A2, A3, Mode B, Mode C |
+| `rules/RED-flags.md` | Fleet Router pre-check, A2, A3 |
+| `rules/A2-plan-review.md` | A2, A3 |
+
+Never run from memory. Always read the rule file.
 
 ---
 

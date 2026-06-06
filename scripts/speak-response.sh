@@ -4,7 +4,16 @@
 # Tier 2: Google gTTS fallback
 # Tier 3: macOS say -v Daniel last resort
 #
-# Change VOICE to swap: en-GB-SoniaNeural, en-US-AvaMultilingualNeural, en-US-AndrewNeural, en-GB-RyanNeural
+# APPROVED SHORTLIST (Jason, 2026-06-06):
+#   en-GB-SoniaNeural          — primary default (GB female, soft)
+#   en-US-EmmaMultilingualNeural — 2nd favourite (US female, warm)
+#   en-US-JennyNeural          — 3rd favourite (US female)
+#   en-US-BrianNeural          — shortlist (US male)
+#   en-GB-ThomasNeural         — shortlist (GB male)
+#   en-GB-RyanNeural           — shortlist (GB male)
+#   en-US-AriaNeural           — shortlist (US female)
+#   en-IE-EmilyNeural          — lower end (Irish female, slow)
+# REJECTED: en-GB-MaisieNeural (too young), en-AU-NatashaNeural (AU accent)
 
 VOICE="en-GB-SoniaNeural"
 

@@ -1,6 +1,6 @@
 # Fleet Router — SKILL.md
 **Version:** v0.2
-**Status:** Blockers resolved — pending 5-test pass before Phase 2 go-live
+**Status:** ✅ CLEARED — 5/5 route tests passed 2026-06-06. Activates with Phase 2.
 **Model:** claude-haiku-4-5 (classification only — escalate to Sonnet if ambiguity > 2 fields)
 **Last updated:** 2026-06-06
 

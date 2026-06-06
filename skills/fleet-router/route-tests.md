@@ -121,8 +121,10 @@ Record results here when run:
 
 | Test | Date | Result | Notes |
 |------|------|--------|-------|
-| 1 | — | — | — |
-| 2 | — | — | — |
-| 3 | — | — | — |
-| 4 | — | — | — |
-| 5 | — | — | — |
+| 1 | 2026-06-06 | ✅ PASS | Single/one2b/sovereign arc/studio-social — all fields correct |
+| 2 | 2026-06-06 | ✅ PASS | Sequential identified, studio-words first, studio-social downstream |
+| 3 | 2026-06-06 | ✅ PASS | Auto-halt before routing, both banned terms named (RG Bond + AIG) |
+| 4 | 2026-06-06 | ✅ PASS | Ambiguous identity — question asked, no routing until resolved |
+| 5 | 2026-06-06 | ✅ PASS | Parallel identified, all 3 agents named, confirmation requested |
+
+**5/5 PASS — Fleet Router cleared for Phase 2 activation.**

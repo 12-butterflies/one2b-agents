@@ -9,7 +9,8 @@
 
 | Context | Required term |
 |---|---|
-| Insurance instruments | IGI or Insurance Guarantee Instruments |
+| Insurance instruments (external-facing) | **data-linked insurance products** — plain English, no regulatory baggage, never misrepresents |
+| Insurance instruments (internal/architectural shorthand) | IGI — acceptable in SKILL.md files, handoff payloads, agent communication only |
 | Data valuation platform | Tesseract (capital T, correct spelling) |
 | Primary insurance platform | One 2b Risk Solutions |
 | Company name | One 2b (space between One and 2b, no hyphen) |

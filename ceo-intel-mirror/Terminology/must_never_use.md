@@ -9,8 +9,9 @@
 
 | Banned | Use instead |
 |---|---|
-| RGB | IGI / Insurance Guarantee Instruments |
-| Repayment Guarantee Bond | IGI / Insurance Guarantee Instruments |
+| RGB | data-linked insurance products (external) / IGI (internal) |
+| Repayment Guarantee Bond | data-linked insurance products (external) / IGI (internal) |
+| Insurance Guarantee Instruments | data-linked insurance products — use the plain English term externally |
 | Data Valuation Partners | (omit entirely) |
 | DVP | (omit entirely) |
 | ICME | (omit entirely) |

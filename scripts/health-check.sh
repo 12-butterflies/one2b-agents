@@ -253,6 +253,86 @@ fi
 
 log ""
 
+# ─── 10. OLD COWORK FLEET (Documents/Claude) ─────────────────────────────
+log "## Old Cowork Fleet"
+
+COWORK_BASE=~/Documents/Claude
+COWORK_SCHED="$COWORK_BASE/Scheduled"
+COWORK_INTEL="$COWORK_BASE/Projects/CEO Intelligence"
+
+# Check critical old-fleet scheduled tasks exist
+OLD_CRITICAL="ceo-daily-brief-7am-lisbon scout-daily-intel-ingestion-6am-lisbon fleet-health-audit-weekly conversation-curator-6am-lisbon"
+for task in $OLD_CRITICAL; do
+  if [ -d "$COWORK_SCHED/$task" ]; then
+    pass "Old fleet task: $task — present"
+  else
+    fail "Old fleet task: $task — MISSING"
+  fi
+done
+
+# Check fleet health audit last run
+LAST_FLEET_HEALTH=$(ls "$COWORK_INTEL/Briefings/_fleet_health/"*.md 2>/dev/null | sort | tail -1)
+if [ -n "$LAST_FLEET_HEALTH" ]; then
+  LAST_DATE=$(basename "$LAST_FLEET_HEALTH" | cut -c1-10)
+  DAYS_AGO=$(python3 -c "from datetime import date; d=date.fromisoformat('$LAST_DATE'); print((date.today()-d).days)" 2>/dev/null)
+  if [ -n "$DAYS_AGO" ] && [ "$DAYS_AGO" -le 8 ]; then
+    pass "Fleet health audit — last run $DAYS_AGO day(s) ago ($LAST_DATE)"
+  else
+    warn "Fleet health audit — last run $DAYS_AGO day(s) ago — overdue (weekly cadence)"
+  fi
+else
+  warn "Fleet health audit — no output files found"
+fi
+
+# Check brief-watchman last log entry
+WATCHMAN_LOG="$COWORK_INTEL/Briefings/_missed_runs/_watchman_log.md"
+if [ -f "$WATCHMAN_LOG" ]; then
+  LAST_WATCHMAN=$(tail -1 "$WATCHMAN_LOG" 2>/dev/null | cut -c1-10)
+  pass "Brief watchman log — last entry $LAST_WATCHMAN"
+else
+  warn "Brief watchman log — not found (may not have run yet today)"
+fi
+
+# Check launchd plists are loaded
+for plist in io.one2b.intel-sweep io.one2b.brief-watchman; do
+  if launchctl list "$plist" >/dev/null 2>&1; then
+    pass "launchd: $plist — loaded"
+  else
+    warn "launchd: $plist — NOT loaded (run: launchctl load ~/Library/LaunchAgents/$plist.plist)"
+  fi
+done
+
+# Check intel sweep last run
+SWEEP_LOG="/tmp/intel-sweep-stdout.log"
+if [ -f "$SWEEP_LOG" ]; then
+  LAST_SWEEP=$(stat -f "%Sm" -t "%Y-%m-%d %H:%M" "$SWEEP_LOG" 2>/dev/null)
+  pass "Intel sweep log — last modified $LAST_SWEEP"
+else
+  warn "Intel sweep log — /tmp/intel-sweep-stdout.log not found"
+fi
+
+log ""
+
+# ─── 11. DUPLICATE TASK AUDIT ─────────────────────────────────────────────
+log "## Duplicate Task Check"
+
+# Check for tasks that exist in BOTH fleets (risk of double-firing)
+DUPLICATES=0
+for new_task in $(ls ~/.claude/scheduled-tasks/); do
+  for old_task in $(ls "$COWORK_SCHED/" 2>/dev/null); do
+    # Simple name similarity check
+    if echo "$old_task" | grep -qi "$(echo "$new_task" | cut -d'-' -f1-2)"; then
+      warn "Possible duplicate: ~/.claude/scheduled-tasks/$new_task ↔ $old_task"
+      DUPLICATES=$((DUPLICATES+1))
+    fi
+  done
+done
+
+if [ $DUPLICATES -eq 0 ]; then
+  pass "No obvious task duplicates between fleets"
+fi
+
+log ""
 # ─── SUMMARY ──────────────────────────────────────────────────────────────
 log "---"
 log "## Summary"

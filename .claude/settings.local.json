@@ -53,7 +53,8 @@
       "Bash(git config *)",
       "Bash(ssh -T git@github.com)",
       "Bash(git -c 'credential.helper=store --file /tmp/ghcred' -c credential.https://github.com.username=12-butterflies push origin main)",
-      "Bash(git credential-osxkeychain *)"
+      "Bash(git credential-osxkeychain *)",
+      "mcp__ae3f6d15-2d57-4481-944c-8d476781c75f__search_threads"
     ]
   }
 }

@@ -47,7 +47,13 @@
       "Bash(cat)",
       "Bash(git commit -m 'Architecture complete: 10 agent definitions, DECISIONS.md, PHASE_GATES, Outreach Agent, Sentinel calibration, TECH_HORIZON, monthly template, ceo-daily-brief task *)",
       "Bash(git commit -m 'Substrate nearly complete: brand system, products, methodology, test set, audience profiles *)",
-      "Bash(git commit -m 'Lock Jason voice guide v1.0 — canonical *)"
+      "Bash(git commit -m 'Lock Jason voice guide v1.0 — canonical *)",
+      "Bash(git remote *)",
+      "Bash(git push *)",
+      "Bash(git config *)",
+      "Bash(ssh -T git@github.com)",
+      "Bash(git -c 'credential.helper=store --file /tmp/ghcred' -c credential.https://github.com.username=12-butterflies push origin main)",
+      "Bash(git credential-osxkeychain *)"
     ]
   }
 }

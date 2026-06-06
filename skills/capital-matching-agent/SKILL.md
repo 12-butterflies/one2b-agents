@@ -114,7 +114,7 @@ Every investor-facing document and outreach that references the matching platfor
 Tesseract Valuation Agent
     → produces validated asset (input to Capital Matching)
 
-IGI Insurance Agent
+IGI Agent
     → wraps the asset (prerequisite for matching)
 
 Capital Matching Agent

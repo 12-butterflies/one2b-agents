@@ -77,7 +77,7 @@ When Claude produces a draft:
 
 - CEO Intelligence substrate (voice guides, financial projections, strategic documents) — Jason only
 - Jason OS (personal health) — Jason only
-- Capital Matching and IGI Insurance agent outputs — restricted to Jason + broker review
+- Capital Matching and IGI agent outputs — restricted to Jason + broker review
 - Sovereign communications — Jason only, always
 
 If you need something from these areas, surface to Jason directly.

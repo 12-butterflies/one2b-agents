@@ -16,6 +16,7 @@
 | ICME | (omit entirely) |
 | Collateralization platform | (omit entirely) |
 | Tessaract | Tesseract (correct spelling) |
+| IGI Insurance | IGI or Insurance Guarantee Instruments (IGI already means Insurance Guarantee Instruments — "IGI Insurance" is redundant and wrong) |
 
 ## Named insurance counterparties
 

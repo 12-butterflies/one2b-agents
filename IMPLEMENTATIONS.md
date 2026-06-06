@@ -140,7 +140,7 @@
 ### Document Agent (Legal) SKILL.md
 - **Status:** `[→]` — building now
 
-### IGI Insurance Agent SKILL.md
+### IGI Agent SKILL.md
 - **Status:** `[→]` — building now
 
 ### Tesseract Valuation Agent SKILL.md

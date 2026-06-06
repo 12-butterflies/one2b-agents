@@ -1,4 +1,4 @@
-# IGI Insurance Agent — SKILL.md
+# IGI Agent — SKILL.md
 **Version:** v0.1 draft
 **Status:** Spec ready — pending IGI catalog Q2 2026 and One 2b Assurance Capital formation
 **Model:** claude-opus-4-8 (all customer-facing outputs) + Sentinel A3 before any proposal leaves
@@ -9,7 +9,7 @@
 
 ## Purpose
 
-The IGI Insurance Agent manages the Insurance Guarantee Instrument (IGI) catalog flow. It handles premium calculation, generates IGI proposals for counterparties, and routes to the broker handoff with Sean Yeo's team. It does not bind coverage (that requires the human broker layer).
+The IGI Agent manages the Insurance Guarantee Instrument (IGI) catalog flow. It handles premium calculation, generates IGI proposals for counterparties, and routes to the broker handoff with Sean Yeo's team. It does not bind coverage (that requires the human broker layer).
 
 **This agent is external-facing. Every output goes through Sentinel A3.**
 

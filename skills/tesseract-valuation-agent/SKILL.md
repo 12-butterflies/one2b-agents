@@ -10,7 +10,7 @@
 
 ## Purpose
 
-The Tesseract Valuation Agent runs the data valuation customer journey end-to-end. It produces an IVSC-aligned (International Valuation Standards Council) independent valuation of a data asset that can sit on a balance sheet, be lent against, be insured (via the IGI Insurance Agent), and be invested in.
+The Tesseract Valuation Agent runs the data valuation customer journey end-to-end. It produces an IVSC-aligned (International Valuation Standards Council) independent valuation of a data asset that can sit on a balance sheet, be lent against, be insured (via the IGI Agent), and be invested in.
 
 This is One 2b's primary revenue product. Every output is external-facing, institutional-grade, and audit-defensible. There is no room for hallucination.
 
@@ -69,7 +69,7 @@ All three approaches are applied and reconciled. The final valuation is a synthe
 - Sentinel A3 on full report
 - Jason approval
 - Report delivered to counterparty
-- Structured handoff payload to IGI Insurance Agent (valuation summary, asset details, recommended coverage structure)
+- Structured handoff payload to IGI Agent (valuation summary, asset details, recommended coverage structure)
 
 ---
 
@@ -94,7 +94,7 @@ All three approaches are applied and reconciled. The final valuation is a synthe
 
 ---
 
-## Handoff: Tesseract → IGI Insurance Agent
+## Handoff: Tesseract → IGI Agent
 
 After final report is approved:
 ```json

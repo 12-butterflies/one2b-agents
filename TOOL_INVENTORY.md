@@ -120,7 +120,7 @@ Items from the accumulated queue. Classified by placement.
 |---|---|---|---|
 | **Awesome Claude Skills** (GitHub) | Nick Sadler/ThynkIt, Apr 21 | B/C | Scan catalogue — vendor any that overlap Sentinel sub-checkers or Curator rulesets |
 | **Anthropic Skills Repo** (official — includes Skill Creator meta-skill) | Same | B/C | Run Skill Creator on next agent spec — accelerates SKILL.md authoring |
-| **Claude Cookbooks** (Anthropic official) | Same | E | Reference before building any specialist agent (Tesseract Valuation, IGI Insurance, Capital Matching) |
+| **Claude Cookbooks** (Anthropic official) | Same | E | Reference before building any specialist agent (Tesseract Valuation, IGI, Capital Matching) |
 | **Cookiy AI user-research-skill** (cookiy-ai/user-research-skill) | CEO Cockpit May 3 | C | Lift methodology, skip hosted service (breaks multi-model fallback rule). Download ZIP via browser |
 | **claude-video-vision** (jordanrendric) | May 4 drop | B | Direct candidate for Studio Motion visual-understanding lane |
 | **gstack** (garrytan) | May 4 drop | E | Scaffolding reference only |

@@ -19,15 +19,26 @@
 
 ---
 
-## 🔴 TOOLS — Subscription status never confirmed, never evaluated
+## 🟢 TOOLS — Corrected status after 2026-06-06 sweep
 
-From the May 5 CEO Intel Command Center Brief. Jason was asked to confirm subscriptions — never happened.
+| Tool | URL | Status | Notes |
+|------|-----|--------|-------|
+| **Perplexity Pro** | [perplexity.ai](https://perplexity.ai) | ✅ DONE — 6 Spaces wired | CAPITAL, LONGEVITY, SOVEREIGN, IGI, TRINITY, JASON OS. v1.1 profile. Weekly audit cadence. ⚠️ SOVEREIGN Space has wrong terminology (Mozambique=pilot, needs Portugal=flagship) |
+| **Parallel** | [parallel.ai](https://parallel.ai) | ✅ WIRED TODAY | hello@one2b.io account. Key in settings.local.json. Scout v0.2 uses it. |
+| **Adobe Firefly/Express** | [firefly.adobe.com](https://firefly.adobe.com) | ✅ Active — CC subscription | |
+| **ChatGPT + DALL-E** | [chatgpt.com](https://chatgpt.com) | ✅ Active — Adobe Express GPT plugin | Design pipeline wired May 5 |
+| **MidJourney** | [midjourney.com](https://midjourney.com) | 🔍 Researched in Perplexity brief | Subscription status unconfirmed |
+| **SeedDance Pro** | [seedance.video](https://seedance.video) | 🔍 Researched in Perplexity brief | Subscription status unconfirmed |
 
-| Tool | URL | Use | Status |
-|------|-----|-----|--------|
-| Perplexity Pro | [perplexity.ai](https://perplexity.ai) | Multi-model research, replaces basic web search | Unconfirmed |
-| MidJourney | [midjourney.com](https://midjourney.com) | Photorealistic image gen for Studio Design | Unconfirmed |
-| Recraft | [recraft.ai](https://recraft.ai) | Vector/brand-consistent gen | Unconfirmed |
+## 🟡 TOOLS — Never evaluated, verdicts from Parallel research 2026-06-06
+
+| Tool | URL | Verdict | Action |
+|------|-----|---------|--------|
+| **Recraft V4** | [recraft.ai](https://recraft.ai) | ✅ Sign up — best brand-consistent vector gen | Need Pro plan (~$12/mo) for commercial use. Free tier = Recraft owns images |
+| **Ideogram 2.0** | [ideogram.ai](https://ideogram.ai) | ✅ Sign up — best text-in-image, free tier | Essential for social graphics with text overlay |
+| **FAL.ai** | [fal.ai](https://fal.ai) | ✅ Use instead of Replicate — FLUX at $50/1000 vs $55 | Same models, cheaper. API-first. |
+| **Krea.ai** | [krea.ai](https://krea.ai) | ✅ Sign up free — real-time iteration | Use for rapid design exploration before committing |
+| **Replicate** | [replicate.com](https://replicate.com) | ⬇️ Downgraded — FAL.ai is cheaper | Skip unless a model is Replicate-only |
 | Ideogram | [ideogram.ai](https://ideogram.ai) | Text-in-image generation | Unconfirmed |
 | SeedDance Pro | [seedance.video](https://seedance.video) | ByteDance video gen for Studio Motion | Unconfirmed |
 | Leonardo.ai | [leonardo.ai](https://leonardo.ai) | Flux-based brand-consistent gen | Unconfirmed |

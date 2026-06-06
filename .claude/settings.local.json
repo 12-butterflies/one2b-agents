@@ -39,7 +39,8 @@
       "Bash(git commit -m 'Morning system: daily brief, context cards, sessions guide, 07:30 automation *)",
       "mcp__scheduled-tasks__list_scheduled_tasks",
       "Bash(git commit -m 'Voice setup, team access, centralised file system, mobile handoff *)",
-      "Bash(git commit -m 'Email quality: triage card, morning brief email pull, outbound voice rules *)"
+      "Bash(git commit -m 'Email quality: triage card, morning brief email pull, outbound voice rules *)",
+      "Bash(git commit -m 'Email automation: morning brief to inbox, Monday/Friday team updates *)"
     ]
   }
 }

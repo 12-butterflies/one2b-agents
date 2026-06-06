@@ -1,10 +1,10 @@
 # Studio Design — SKILL.md
-**Version:** v0.1 draft
-**Status:** Phase 5 — activates after Studio Words
+**Version:** v1.0
+**Status:** ✅ LOCKED — activates after Studio Words gate
 **Model:** claude-sonnet-4-6 (visual direction, prompt generation) | claude-opus-4-8 (investor deck, sovereign-facing assets)
 **Surface owned:** Static visuals — decks, websites, single images, brand systems, stills
 **Primary verb:** Design
-**Last updated:** 2026-06-05
+**Last updated:** 2026-06-06
 
 ---
 
@@ -25,10 +25,11 @@ Studio Design owns all static visual production. It does not produce video (Stud
 **What it designs:** LinkedIn post visuals, deck slides, website sections, single images, brand system assets, thumbnails, infographics, stills.
 
 **Generation tools (in priority order):**
-1. **ComfyUI + FLUX.1** (local, offline-capable) — primary image engine. MCP-callable via `comfyui-mcp-server`
-2. **Adobe Creative Cloud** — templates, Express, batch editing, social resize
-3. **Higgsfield Canvas** — cinematic scene composition (once MCP installed)
-4. **DALL-E via GPT-4o** — when local generation isn't available and Higgsfield isn't the right tool
+1. **Recraft V3** — brand-consistent vector/illustration + photographic gen. Script: `scripts/recraft-generate.sh`. Key: RECRAFT_API_KEY ✅ live
+2. **FAL.ai FLUX Pro** — highest-quality photographic gen. Script: `scripts/fal-generate.sh`. Key: FAL_API_KEY ✅ stored, needs credits
+3. **Ideogram V2** — best text-in-image (carousels, slides). Script: `scripts/ideogram-generate.sh`. Key: IDEOGRAM_API_KEY ✅ stored, needs credits
+4. **Adobe Creative Cloud** — templates, Express, batch editing, social resize. ✅ Active
+5. **Krea.ai** — real-time browser iteration (no API — manual use at [krea.ai](https://krea.ai))
 
 ---
 
@@ -53,11 +54,23 @@ Studio Design owns all static visual production. It does not produce video (Stud
 
 ## Brand system rules (until brand_system.md files are populated)
 
-**One 2b defaults:**
-- Palette: derive from master deck (dark navy + warm gold + white — confirm with Jason)
-- Typography: clean sans-serif, no decorative fonts
-- Text on image: white or gold only, never RGB colour names
-- No stock photo aesthetic — real photography or FLUX.1 generated
+**One 2b defaults — LOCKED palette (from Ortrax PDV report, confirmed May 5):**
+- Base: `#FFFFFF` white
+- Hero gradient: `#EAE4F4` lavender → `#D2DCEC` periwinkle → `#F1DDD0` peach (upper-right placement)
+- Display ink: `#1B2540` deep navy
+- Body/slate: `#4A5266`
+- Typography: Inter weight 300 display, letter-spacing -1.5em | Inter weight 400 eyebrow, +2em tracking, dot-separator pattern
+- Voice: soft authority, considered, premium — NOT dark institutional, NOT glassy SaaS, NOT crypto-purple
+- Logo: rainbow-striped "One2b" wordmark — "b" has horizontal stripes (pink, yellow, lime, blue, violet). Mandatory in every brand asset.
+- ⚠️ NOTE: The 30+ design candidates in Drive (Africa pixel, Globe direction) were rendered in dark sage palette — WRONG. Treat them as compositional references only. Restage in lavender/periwinkle/peach before use.
+
+**Jason personal defaults:**
+- Ocean, mountains, physical discipline energy
+- Conservative-warm aesthetic (European, not tropical)
+- No stock photo "CEO at desk" visual language
+- Handstands / Krav Maga / surfing / climbing imagery when relevant
+
+**12 Butterflies:** Pending brand asset drop. Use One 2b defaults until resolved.
 
 **Jason personal defaults:**
 - Ocean, mountains, physical discipline energy
@@ -83,15 +96,23 @@ Studio Design owns all static visual production. It does not produce video (Stud
 
 ---
 
-## ComfyUI MCP integration
+## Generation script usage
 
-Once `comfyui-mcp-server` is installed:
-- Studio Design calls ComfyUI as an MCP tool with the generation prompt and parameters
-- ComfyUI returns the image file path
-- Studio Design returns the path to the calling agent
-- No manual steps required
+All three scripts are in `scripts/` and read keys from `.claude/settings.local.json`.
 
-Install: `pip install comfyui-mcp-server` → add to Claude Code MCP settings
+```bash
+# Recraft — brand-consistent, vector, illustrations (LIVE)
+scripts/recraft-generate.sh "prompt" [style] [size]
+# styles: realistic_image | digital_illustration | vector_illustration | icon
+
+# FAL.ai FLUX Pro — photographic quality (needs credits)
+scripts/fal-generate.sh "prompt" [model] [aspect_ratio]
+
+# Ideogram — text-in-image, carousels (needs credits)
+scripts/ideogram-generate.sh "prompt" [aspect_ratio] [model]
+```
+
+Default prompt for One 2b always includes: white background, lavender to periwinkle gradient, deep navy #1B2540 typography, Inter light weight, no glassmorphism, no dark backgrounds, premium institutional.
 
 ---
 

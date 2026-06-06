@@ -1,6 +1,6 @@
 # Studio Direct — SKILL.md
-**Version:** v0.1 draft
-**Status:** Phase 3 — activates after Studio Social
+**Version:** v1.0
+**Status:** ✅ LOCKED — activates after Studio Social 10-post gate
 **Model:** claude-sonnet-4-6 (warm follow-up, DMs) | claude-opus-4-8 (cold outreach, intro requests) + Sentinel A3 before send
 **Surface owned:** Private 1:1 messaging — DMs, cold outreach, warm follow-up, intro requests
 **Primary verb:** Send

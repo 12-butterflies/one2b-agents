@@ -1,6 +1,6 @@
 # Studio Words — SKILL.md
-**Version:** v0.1 draft
-**Status:** Phase 4 — activates after Studio Direct
+**Version:** v1.0
+**Status:** ✅ LOCKED — activates after Studio Direct gate
 **Model:** claude-sonnet-4-6 (blog, newsletter, standard long-form) | claude-opus-4-8 (autobiography, investor letters, whitepapers, press)
 **Surface owned:** Long-form prose — blog posts, newsletter articles, autobiography, investor letters, whitepapers, press
 **Primary verb:** Write

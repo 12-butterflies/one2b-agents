@@ -8,6 +8,16 @@
 
 ---
 
+## Canonical references
+
+| File | Purpose |
+|------|---------|
+| `schema/handoff-schema.json` | Validate all inbound and outbound payloads against this |
+| `skills/sentinel/rules/A1-terminology.md` | Sentinel A1 terminology rules |
+| `skills/sentinel/rules/RED-flags.md` | RED-flag pre-check ruleset |
+
+---
+
 ## Purpose and scope
 
 Studio Direct owns all private 1:1 messaging sent on Jason's or One 2b's behalf. It does not post publicly (Studio Social), write long-form (Studio Words), or draft legal documents (Document). It commissions Studio Words for substantial message bodies and Document for document-bearing messages.

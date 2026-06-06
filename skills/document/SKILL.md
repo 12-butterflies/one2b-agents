@@ -8,6 +8,16 @@
 
 ---
 
+## Canonical references
+
+| File | Purpose |
+|------|---------|
+| `schema/handoff-schema.json` | Validate all inbound and outbound payloads against this |
+| `skills/sentinel/rules/A1-terminology.md` | Sentinel A1 terminology rules |
+| `skills/sentinel/rules/RED-flags.md` | RED-flag pre-check ruleset |
+
+---
+
 ## Purpose and scope
 
 Document Agent owns all commercial and legal document generation. It does not own creative content (Studio fleet), investor letters (Studio Words), or general DMs (Studio Direct). It is called by Studio Direct when a message requires a document to be sent alongside it.

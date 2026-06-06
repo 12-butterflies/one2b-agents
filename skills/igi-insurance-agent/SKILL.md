@@ -7,6 +7,16 @@
 
 ---
 
+## Canonical references
+
+| File | Purpose |
+|------|---------|
+| `schema/handoff-schema.json` | Validate all inbound and outbound payloads against this |
+| `skills/sentinel/rules/A1-terminology.md` | Sentinel A1 terminology rules |
+| `skills/sentinel/rules/RED-flags.md` | RED-flag pre-check ruleset |
+
+---
+
 ## Purpose
 
 The IGI Agent manages the Insurance Guarantee Instrument (IGI) catalog flow. It handles premium calculation, generates IGI proposals for counterparties, and routes to the broker handoff with Sean Yeo's team. It does not bind coverage (that requires the human broker layer).

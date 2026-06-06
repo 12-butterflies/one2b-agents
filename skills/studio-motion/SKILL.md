@@ -8,6 +8,16 @@
 
 ---
 
+## Canonical references
+
+| File | Purpose |
+|------|---------|
+| `schema/handoff-schema.json` | Validate all inbound and outbound payloads against this |
+| `skills/sentinel/rules/A1-terminology.md` | Sentinel A1 terminology rules |
+| `skills/sentinel/rules/RED-flags.md` | RED-flag pre-check ruleset |
+
+---
+
 ## Purpose and scope
 
 Studio Motion owns all video and motion graphic production. It does not produce static images (Studio Design), write scripts as final copy (Studio Words), or post to social platforms (Studio Social). It commissions Studio Design for thumbnails and end-cards, and Studio Words for long-form script drafts.

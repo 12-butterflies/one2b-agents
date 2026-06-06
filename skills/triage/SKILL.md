@@ -7,6 +7,16 @@
 
 ---
 
+## Canonical references
+
+| File | Purpose |
+|------|---------|
+| `schema/handoff-schema.json` | Validate all inbound and outbound payloads against this |
+| `skills/sentinel/rules/A1-terminology.md` | Sentinel A1 terminology rules |
+| `skills/sentinel/rules/RED-flags.md` | RED-flag pre-check ruleset |
+
+---
+
 ## Purpose
 
 Triage takes Jason's brain dumps and returns a structured Top 10 + filed remainder. One input, one clean output. Nothing else.

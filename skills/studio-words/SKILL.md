@@ -8,6 +8,16 @@
 
 ---
 
+## Canonical references
+
+| File | Purpose |
+|------|---------|
+| `schema/handoff-schema.json` | Validate all inbound and outbound payloads against this |
+| `skills/sentinel/rules/A1-terminology.md` | Sentinel A1 terminology rules |
+| `skills/sentinel/rules/RED-flags.md` | RED-flag pre-check ruleset |
+
+---
+
 ## Purpose and scope
 
 Studio Words owns all long-form prose. It does not post (Studio Social), send DMs (Studio Direct), design visuals (Studio Design), or draft legal documents (Document). It is called by Studio Social when a post needs backing long-form content, and by Studio Direct when a DM needs substantial prose work.

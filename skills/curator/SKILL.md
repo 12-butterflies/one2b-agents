@@ -7,6 +7,16 @@
 
 ---
 
+## Canonical references
+
+| File | Purpose |
+|------|---------|
+| `schema/handoff-schema.json` | Validate all inbound and outbound payloads against this |
+| `skills/sentinel/rules/A1-terminology.md` | Sentinel A1 terminology rules |
+| `skills/sentinel/rules/RED-flags.md` | RED-flag pre-check ruleset |
+
+---
+
 ## Purpose
 
 Curator processes what Scout has routed. For each intel item, it does one of three things: file it silently to the right domain, queue it as a methodology candidate, or flag it for Jason. It never surfaces "I remember when you said X." It surfaces insights and recommendations.

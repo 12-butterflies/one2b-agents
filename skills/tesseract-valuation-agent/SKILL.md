@@ -8,6 +8,16 @@
 
 ---
 
+## Canonical references
+
+| File | Purpose |
+|------|---------|
+| `schema/handoff-schema.json` | Validate all inbound and outbound payloads against this |
+| `skills/sentinel/rules/A1-terminology.md` | Sentinel A1 terminology rules |
+| `skills/sentinel/rules/RED-flags.md` | RED-flag pre-check ruleset |
+
+---
+
 ## Purpose
 
 The Tesseract Valuation Agent runs the data valuation customer journey end-to-end. It produces an IVSC-aligned (International Valuation Standards Council) independent valuation of a data asset that can sit on a balance sheet, be lent against, be insured (via the IGI Agent), and be invested in.

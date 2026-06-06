@@ -8,6 +8,16 @@
 
 ---
 
+## Canonical references
+
+| File | Purpose |
+|------|---------|
+| `schema/handoff-schema.json` | Validate all inbound and outbound payloads against this |
+| `skills/sentinel/rules/A1-terminology.md` | Sentinel A1 terminology rules |
+| `skills/sentinel/rules/RED-flags.md` | RED-flag pre-check ruleset |
+
+---
+
 ## Purpose and scope
 
 Studio Design owns all static visual production. It does not produce video (Studio Motion), write copy (Studio Words), or post to social platforms (Studio Social). It receives commissions from Studio Social, Studio Words, and Studio Motion and returns deliverables.

@@ -36,7 +36,9 @@
       "WebFetch(domain:medium.com)",
       "Bash(git commit -m 'LOCAL_STACK.md: complete offline + self-hosted architecture *)",
       "Bash(git commit -m 'SKILL.md files: Studio Direct, Studio Words, Studio Design. Commands: /brief, /lock. Fleet Learning template. *)",
-      "Bash(git commit -m 'Morning system: daily brief, context cards, sessions guide, 07:30 automation *)"
+      "Bash(git commit -m 'Morning system: daily brief, context cards, sessions guide, 07:30 automation *)",
+      "mcp__scheduled-tasks__list_scheduled_tasks",
+      "Bash(git commit -m 'Voice setup, team access, centralised file system, mobile handoff *)"
     ]
   }
 }

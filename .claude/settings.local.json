@@ -40,7 +40,8 @@
       "mcp__scheduled-tasks__list_scheduled_tasks",
       "Bash(git commit -m 'Voice setup, team access, centralised file system, mobile handoff *)",
       "Bash(git commit -m 'Email quality: triage card, morning brief email pull, outbound voice rules *)",
-      "Bash(git commit -m 'Email automation: morning brief to inbox, Monday/Friday team updates *)"
+      "Bash(git commit -m 'Email automation: morning brief to inbox, Monday/Friday team updates *)",
+      "Bash(git commit -m 'CEO Intelligence swarm: Scout, Curator, Triage, Capital Readiness Curator SKILL.md *)"
     ]
   }
 }

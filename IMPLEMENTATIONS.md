@@ -64,6 +64,13 @@
 - **Time:** 30 min after deploy
 - **Status:** `[ ]`
 
+### Email HTML Design — Branded Templates
+- **What:** Design HTML email templates for: (1) morning brief, (2) Monday team update, (3) Friday team update. One 2b branding — navy/gold palette, clean layout, logo at top, scannable structure. Should look as good as a SaaS product email, not a plain text note.
+- **Uses:** Anthropic frontend-design SKILL.md + Studio Design. Render via Gmail htmlBody field (already supported in MCP).
+- **Requires:** One 2b brand kit populated (logo, hex codes, typography) — gates on brand_system.md
+- **Time:** 2–3 hours design + 30 min implementation
+- **Status:** `[ ]` — deferred until brand kit populated and architecture phase complete
+
 ### Loom Workspace Setup
 - **What:** Create `One 2b Build` Loom workspace with three folders:
   - `CEO Build — Architecture` (architectural decisions, agent build walkthroughs)

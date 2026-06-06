@@ -43,7 +43,9 @@
       "Bash(git commit -m 'Email automation: morning brief to inbox, Monday/Friday team updates *)",
       "Bash(git commit -m 'CEO Intelligence swarm: Scout, Curator, Triage, Capital Readiness Curator SKILL.md *)",
       "Bash(git commit -m 'Terminology: IGI Insurance banned. Proactive routing system. Scout/Curator/Triage/Capital Readiness SKILL.md *)",
-      "Bash(git commit -m 'Terminology, voice lockdown, CEO context card, ceo-daily-brief SKILL.md *)"
+      "Bash(git commit -m 'Terminology, voice lockdown, CEO context card, ceo-daily-brief SKILL.md *)",
+      "Bash(cat)",
+      "Bash(git commit -m 'Architecture complete: 10 agent definitions, DECISIONS.md, PHASE_GATES, Outreach Agent, Sentinel calibration, TECH_HORIZON, monthly template, ceo-daily-brief task *)"
     ]
   }
 }

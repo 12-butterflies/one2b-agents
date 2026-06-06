@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "/Users/jasonpeterstevens/one2b-agents/scripts/say-response.sh"
+            "command": "/Users/jasonpeterstevens/one2b-agents/scripts/speak-response.sh"
           }
         ]
       }

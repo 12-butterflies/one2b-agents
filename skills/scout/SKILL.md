@@ -126,3 +126,21 @@ Pipeline fix (2026-06-05): correct CLI syntax is `bdata pipelines instagram_reel
 - Files to CEO Intel substrate files (those are Curator's job)
 - Modifies METHODOLOGY.md or DECISIONS.md
 - Runs Sentinel (Sentinel runs on Curator's output, not Scout's)
+
+---
+
+## ScrapeGraph AI (additional Scout tool)
+
+[ScrapeGraphAI](https://github.com/ScrapeGraphAI/Scrapegraph-ai) — open source LLM-powered web scraping. No proxies required. Install: `pip install scrapegraphai`
+
+Use as fallback when Parallel Search doesn't return enough depth on a specific URL. Particularly useful for scraping full regulatory documents, IVSC publications, and company filings.
+
+```python
+from scrapegraphai.graphs import SmartScraperGraph
+graph = SmartScraperGraph(
+    prompt="Extract all data valuation and insurance references",
+    source="https://ivsc.org/consultations/ivs-exposure-draft-for-consultation-2026/",
+    config={"llm": {"model": "claude-haiku-4-5"}}
+)
+result = graph.run()
+```

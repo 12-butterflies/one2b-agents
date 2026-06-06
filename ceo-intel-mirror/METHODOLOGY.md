@@ -84,3 +84,19 @@ Sentinel stays in the Context layer through Day 90. No module-level updates. Met
 
 **M-022: Five-pass verification gate (peptides)**
 Before any peptide dose answer: (1) date check, (2) read operational card, (3) confirm state matches protocol, (4) verify IU + mcg math, (5) check for off-protocol fabrication. No fabricated IU values, scheduling constraints, or etymologies. Locked May 25, 2026.
+
+---
+
+## AI-First Hiring Framework (Allie K. Miller, 2026)
+
+**Source:** LinkedIn post + Coalition Inc. Activate 2026 keynote
+**Filed:** 2026-06-06
+
+Three-pillar framework for building proactive AI-first teams:
+1. **People** — hire for curiosity and adaptability, not just technical skill; screen for who reaches for AI tools without being asked
+2. **Process** — redesign workflows around AI capabilities, not around humans who use AI occasionally
+3. **Technology** — AI as organisational infrastructure, not productivity hack
+
+**One 2b hiring screen:** Before any hire post-raise, ask: "Show me the last three things you built or solved using AI tools." The answer reveals both capability and mindset. AI-first is table stakes for any role touching product, operations, or client delivery.
+
+**Source:** [Allie Miller at Coalition Activate 2026](https://www.coalitioninc.com/blog/broker-education/allie-k-miller-activate-2026) | [LinkedIn](https://www.linkedin.com/posts/alliekmiller_i-stole-this-framework-and-it-has-genuinely-activity-7450607447506911232-GWhM)

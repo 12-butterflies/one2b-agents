@@ -38,3 +38,21 @@
 - Tesseract: data valuation at $75K–$100K* per evaluation, billed in EUR
 
 All figures asterisked in every output.
+
+---
+
+## Capital Pitch Comparables (filed 2026-06-06)
+
+Use these in investor conversations alongside One 2b projections:
+
+| Company | Metric | Relevance |
+|---------|--------|-----------|
+| ServiceNow | $80B market cap re-rating from AI attach | AI-native SaaS attach drives outsized value |
+| Cursor | $2B ARR in 24 months (faster than Wiz, Deel, Ramp) | AI-native growth trajectory |
+| J.P. Morgan FO Report 2026 | 45-55% alternatives allocation, 10-15% private credit | FO appetite for our yield bracket |
+| Tokenized vehicles | 6-9%* yield | One 2b targets 5-7%* via IGI layer — within bracket |
+| RWA market | $27-30B total value, 66% growth in 2026 | Macro tailwind for data-as-asset narrative |
+
+*All yield figures are indicative and require asterisk disclaimer.
+
+**Positioning note:** Do not lead with tokenization. Lead with the insurance wrapper as the moat. The tokenization narrative is now crowded (Morgan Stanley, BlackRock, DTCC, NYSE-Securitize all moving). Our defensible position is the IGI layer, not the tokenization rail.

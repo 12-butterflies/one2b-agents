@@ -1,10 +1,18 @@
 # Studio Social — SKILL.md
-**Version:** v0.1 draft
-**Status:** Phase 2 activation pending — Architecture v1.0 lock required first
+**Version:** v1.0
+**Status:** ✅ LOCKED — Fleet Router cleared, ready for 10-post onboarding gate
 **Model:** claude-sonnet-4-6 (standard posts) | claude-opus-4-8 (investor/sovereign-facing posts + Sentinel A3)
 **Surface owned:** Public broadcast on social platforms (1:many)
 **Primary verb:** Post
-**Last updated:** 2026-06-05
+**Last updated:** 2026-06-06
+
+## Canonical references
+
+| File | Purpose |
+|------|---------|
+| `schema/handoff-schema.json` | Validate all inbound and outbound payloads against this |
+| `skills/sentinel/rules/A1-terminology.md` | Banned/required terms — Sentinel A1 reads this |
+| `skills/sentinel/rules/RED-flags.md` | Pre-flight check ruleset |
 
 ---
 
@@ -47,7 +55,7 @@ If the brand system file doesn't exist yet, Studio Social flags it and uses the 
 
 ## 4. Post lifecycle
 
-**Step 1 — Brief received.** Fleet Router handoff payload arrives with `route_to: studio-social`. Studio Social reads the payload and loads its context manifest.
+**Step 1 — Brief received.** Fleet Router handoff payload arrives with `route_to: studio-social`. Validate all required fields against `schema/handoff-schema.json` before proceeding. If any required field is missing, surface the gap to Jason — do not proceed with incomplete payload.
 
 **Step 2 — Voice and audience selection.** Based on `trinity_identity` and `request_intent`, select the appropriate voice variant from the audience profile (Plain Explainer, FOMO, Visionary, Founder, Walkthrough, Future Vision).
 
@@ -55,13 +63,13 @@ If the brand system file doesn't exist yet, Studio Social flags it and uses the 
 
 **Step 4 — Visual asset check.** Does this post need a visual? If yes, emit a handoff payload to Studio Design with `surface_specs` (platform, dimensions, text-on-image rules). Wait for deliverable or stub response.
 
-**Step 5 — Sentinel A1 scrub.** Pass the draft through Sentinel A1 (banned term check, currency rules, sovereign labels, yield asterisks). Fresh invocation — Sentinel does not run in the same context as the draft.
+**Step 5 — Sentinel A1 scrub.** Pass the draft to Sentinel in a fresh context window — Sentinel never runs inside the same context as the draft. Sentinel reads `skills/sentinel/rules/A1-terminology.md` and `skills/sentinel/rules/RED-flags.md` on invocation. If Sentinel returns FLAG: resolve the violation and re-run Step 3 before proceeding. If Sentinel returns AUTO-HALT: surface to Jason, do not proceed.
 
 **Step 6 — Jason approval gate (onboarding period).** During the 10-post onboarding gate, every post surfaces to Jason before publishing. After the gate, posts meeting all criteria can ship under standing authority. Investor-facing and sovereign-facing posts always require Jason approval regardless of onboarding status.
 
 **Step 7 — Publish.** Via Postiz or the appropriate platform tool.
 
-**Step 8 — Log to Fleet Learning.** After 7 days, Studio Social writes its performance note to `/ceo-intel-mirror/Fleet_Learning/weekly/[YYYY-WNN]_studio_social.md`. Three sections: top performers (with hypothesis why), underperformers (with hypothesis why), one thing other fleet agents should know.
+**Step 8 — Log to Fleet Learning.** After 7 days, Studio Social writes its performance note to `/ceo-intel-mirror/Fleet Learning/weekly/[YYYY-WNN]_studio-social.md`. Three sections only: top performers (hypothesis why), underperformers (hypothesis why), one thing other fleet agents should know. 300 words max.
 
 ---
 
@@ -75,15 +83,19 @@ When a post needs a visual asset:
   "request_origin": "studio-social",
   "request_intent": "Visual asset for [post type] on [platform]",
   "context_links": ["/Trinity/[identity]/voice_guide.md", "/Trinity/[identity]/brand_system.md"],
+  "quarterly_thesis_ladder": "<from Fleet Router>",
+  "red_flag_check_status": "passed",
+  "route_to": "studio-design",
+  "route_pattern": "single",
   "surface_specs": {
     "platform": "linkedin | instagram | x",
     "dimensions": "1200x628 | 1080x1080 | ...",
     "text_on_image": "<text if any>",
-    "style_reference": "<brief>"
+    "text_on_image_bool": true,
+    "format": "jpg | png"
   },
-  "quarterly_thesis_ladder": "<from Fleet Router>",
-  "red_flag_check_status": "passed",
-  "deadline": "<ISO or 'none'>"
+  "deadline": "<ISO or 'none'>",
+  "caller_state_snapshot": "<post draft text>"
 }
 ```
 
@@ -95,12 +107,16 @@ When a high-signal comment or engagement needs 1:1 follow-up:
   "request_origin": "studio-social",
   "request_intent": "High-signal engagement on [post] needs 1:1 follow-up",
   "context_links": ["<post link>", "<engager profile if available>"],
-  "original_post": "<post text>",
-  "engagement": "<comment or DM text>",
-  "engager_context": "<profile context if known>",
   "quarterly_thesis_ladder": "<from Fleet Router>",
   "red_flag_check_status": "passed",
-  "deadline": "none"
+  "route_to": "studio-direct",
+  "route_pattern": "single",
+  "deadline": "none",
+  "caller_state_snapshot": {
+    "original_post": "<post text>",
+    "engagement": "<comment or DM text>",
+    "engager_context": "<profile context if known>"
+  }
 }
 ```
 
@@ -112,12 +128,16 @@ When a post needs long-form backing content:
   "request_origin": "studio-social",
   "request_intent": "Long-form piece to back [post topic]",
   "context_links": ["/Trinity/[identity]/voice_guide.md", "/Quarterly/Q2_2026_thesis.md"],
-  "target_length": "<word count>",
-  "thesis_to_ladder_to": "<pillar>",
-  "tone_calibration": "<from voice guide section b>",
   "quarterly_thesis_ladder": "<pillar>",
   "red_flag_check_status": "passed",
-  "deadline": "<ISO or 'none'>"
+  "route_to": "studio-words",
+  "route_pattern": "single",
+  "deadline": "<ISO or 'none'>",
+  "caller_state_snapshot": {
+    "target_length": "<word count>",
+    "tone_calibration": "<from voice guide>",
+    "post_this_backs": "<post text>"
+  }
 }
 ```
 

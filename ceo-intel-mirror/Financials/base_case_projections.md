@@ -56,3 +56,37 @@ Use these in investor conversations alongside One 2b projections:
 *All yield figures are indicative and require asterisk disclaimer.
 
 **Positioning note:** Do not lead with tokenization. Lead with the insurance wrapper as the moat. The tokenization narrative is now crowded (Morgan Stanley, BlackRock, DTCC, NYSE-Securitize all moving). Our defensible position is the IGI layer, not the tokenization rail.
+
+---
+
+## Capital Intel — Filed 2026-06-06 (from April sweeps, never actioned)
+
+### CoreWeave GPU-backed loans as thesis validator
+CoreWeave secured $8.5B+ in GPU-asset-backed loans (April 2026). Gallagher writing bespoke insurance with agreed valuation methods for AI data centres.
+
+**Pitch use:** "Gallagher already writes insurance for novel assets when valuation is agreed upfront — for GPUs. We do the same for data. The infrastructure exists. We just apply it to the right asset class."
+
+**Client category to pursue:** AI data centre operators sitting on GPU + dataset assets. They have both the novel asset and the institutional need for balance sheet recognition.
+
+### Houck's 1,800+ Pitch Deck Database
+Michael Houck (Founding Journey newsletter — [thefoundingjourney.substack.com](https://thefoundingjourney.substack.com)) offers a database of 1,800+ pitch decks including Tesla, Shopify, YouTube.
+
+**Access:** Refer one friend to Houck's newsletter → receive database link.
+**Action:** Forward with a referral from intel@one2b.io or ask a team member to subscribe.
+**Use:** Capital pitch research — structural comparisons for F&F deck v2.
+
+### Nick Sadler 5-Prompt Newsletter/Investor Comms Stack
+From thynkit.io newsletter. Five-prompt stack designed for newsletter growth — adapts directly to investor comms cadence:
+1. Angle definition — what makes One 2b updates worth reading
+2. Welcome/onboarding sequence for new investors
+3. 90-day content calendar — 12 weeks of structured updates
+4. Update writer — subject lines and hooks for weekly investor touch
+5. Growth/referral roadmap — from F&F list to institutional LP pipeline
+
+**Access:** Reply "email" to nick@thynkit.io to receive all 5 prompts.
+**Adapt for:** Studio Words investor update cadence, Studio Direct investor touch-point sequences.
+
+### African sovereign data embassy pipeline
+African Union pushing "sovereign data embassies" concept (April 2026) for continental integration.
+Potential acceleration of AfDB, Tanzania, Gabon, Pakistan, Kazakhstan, Oman pipeline entries.
+**Source:** [UNECA](https://www.uneca.org/stories/african-leaders-champion-sovereign-data-embassies-to-strengthen-economic-security-and)

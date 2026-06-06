@@ -96,3 +96,41 @@ Anthropic donated MCP to Linux Foundation (Dec 2025). Agent Skills open standard
 **Implication:** One 2b's existing Skills + MCP architecture is now industry-standard infrastructure, not custom. Use this in the "7 named production systems" differentiator framing.
 
 **Source:** [Anthropic Agent Skills](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills) | Week 19 sweep
+
+---
+
+## 🟡 EU Data Act — September 12, 2026
+
+Article 3(1) connected products obligation effective September 12, 2026.
+Cloud switching and interoperability obligations effective same date.
+Penalties: up to 4-5% global annual turnover.
+
+Relevant to any EU-resident sovereign data flows (Portugal pilot).
+
+**Source:** [EU Data Act timeline](https://www.fiskil.com/eu-data-act/timeline) | April 20 scratch notes
+
+---
+
+## 🟢 Thesis Validation — CoreWeave + Gallagher (April 2026)
+
+CoreWeave secured $8.5B+ in GPU-backed asset loans — treating high-performance chips as collateral. Gallagher writing bespoke insurance policies for AI data centres with predetermined valuation methods.
+
+**Why this matters:** This is the exact One 2b pattern applied to a different asset class (GPUs vs data). Insurers are already comfortable writing policies on novel assets when the valuation method is agreed upfront. Use this as a proof-of-concept comparator when explaining IGI to new counterparties.
+
+**"No one doing this for data yet"** — competitive positioning intact as of April 2026.
+
+**Source:** [CNBC April 2026](https://www.cnbc.com/2026/04/06/ai-data-centers-financing-insurance-deals-gpu-debt.html) | April 20 scratch notes
+
+---
+
+## 🟢 Agent Memory Architecture — Letta vs mem0 (evaluate for Sentinel/Curator)
+
+Two leading agent memory architectures:
+- **mem0** — pluggable memory layer, simple `add()`/`search()` API. Best for: external memory store for any agent. Context layer.
+- **Letta (formerly MemGPT)** — full agent harness with persistent state, memory management built-in. Context-to-Modules layer.
+
+**Relevance:** When graduating Sentinel/Curator from Context-only to Module-layer at Day 91, mem0 is the lowest-friction add. Letta requires more architectural work but gives full persistent state.
+
+**Decision deferred:** Context-only through 90-day calibration period. Revisit at Day 91.
+
+**Source:** [mem0 vs Letta 2026](https://vectorize.io/articles/mem0-vs-letta) | First Sweep Apr 30

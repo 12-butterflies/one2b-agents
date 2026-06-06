@@ -50,3 +50,29 @@ Month 3 summary: [pending]
 | Jason corrections per week | Declining trend | — |
 
 When catch rate ≥95% and false positive rate ≤10% for two consecutive weeks: Sentinel earns auto-merge authority for the rule classes it has mastered. Jason confirms each class explicitly.
+
+---
+
+## Architectural decision — Context-only through Day 91 (filed 2026-06-06)
+
+Source: a16z continual learning paper (Aubakirova + Bornstein, Apr 22 2026) + SDFT (Shenfeld et al. 2026)
+
+### The spectrum
+- **Context layer** — RAG, prompt orchestration, agent harness. Where we are today.
+- **Modules layer** — attachable knowledge modules, compressed KV caches, adapter layers, external memory stores (Letta, mem0).
+- **Weights layer** — updating model parameters post-deployment (sparse memory layers, RL feedback, test-time training).
+
+### Decision locked
+Sentinel stays Context-only through the full 90-day calibration period.
+
+**Why:** The calibration dataset must be mature before any module-layer update. Graduating to modules before the dataset is clean risks baking in bad signal. 
+
+**Review trigger:** Day 91. Dataset criteria: 50+ Sentinel verdicts with Jason corrections logged. Only then does mem0 or Letta become a viable upgrade path.
+
+### SDFT calibration pattern
+Sentinel calibrates on its own expert-conditioned outputs, not on external test sets. The loop:
+1. Sentinel audits → Jason corrects → correction = next training signal
+2. No external benchmarks needed — the running log IS the calibration
+3. This sidesteps catastrophic forgetting (SDFT pattern from Shenfeld 2026)
+
+**Source:** a16z April 2026 + First Sweep Apr 30

@@ -333,6 +333,37 @@ if [ $DUPLICATES -eq 0 ]; then
 fi
 
 log ""
+
+# ─── 12. CONNECT.ONE2B.IO FORM HEALTH ────────────────────────────────────────
+log "## connect.one2b.io Form"
+
+# Check page loads
+CONNECT_STATUS=$(curl -s -o /dev/null -w "%{http_code}" "https://connect.one2b.io/" 2>/dev/null)
+if [ "$CONNECT_STATUS" = "200" ]; then
+  pass "connect.one2b.io — page loads (HTTP 200)"
+else
+  fail "connect.one2b.io — page down (HTTP $CONNECT_STATUS)"
+fi
+
+# Check file upload field is gone
+ATTACH=$(curl -s "https://connect.one2b.io/" 2>/dev/null | grep -c "uploadedFiles\|Attach files")
+if [ "$ATTACH" -eq 0 ]; then
+  pass "connect.one2b.io — no file upload field (clean)"
+else
+  fail "connect.one2b.io — file upload field present (regression)"
+fi
+
+# Live form submission test
+SUBMIT_RESULT=$(curl -s -X POST "https://workerjs.falling-mode-2088.workers.dev/" \
+  -H "Content-Type: application/json" \
+  -d "{\"fullName\":\"Health Check\",\"email\":\"health@one2b.io\",\"roles\":[\"community_member\"],\"submittedAt\":\"$(date -u +%Y-%m-%dT%H:%M:%SZ)\"}" 2>/dev/null)
+if echo "$SUBMIT_RESULT" | grep -q '"success":true'; then
+  pass "connect.one2b.io — form submits to Monday ✅"
+else
+  fail "connect.one2b.io — form submission FAILED: $SUBMIT_RESULT"
+fi
+
+log ""
 # ─── SUMMARY ──────────────────────────────────────────────────────────────
 log "---"
 log "## Summary"

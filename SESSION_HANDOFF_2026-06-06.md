@@ -175,3 +175,117 @@ Located at `~/one2b-agents/ceo-intel-mirror/`
 ---
 
 *End of handoff. Read CLAUDE.md and the repo before doing anything else.*
+
+---
+
+## UNREVIEWED TOOLS, REPOS & PLATFORMS
+**This section is the deep reconnaissance queue. Every item here needs a verdict before adoption or rejection.**
+
+---
+
+### REPOS — Old Cowork REPOS_QUEUE (RepoReader never ran — all unreviewed)
+
+| Repo | Verdict so far | Action needed |
+|------|---------------|---------------|
+| [github.com/coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | IMPROVE (43 skills, MIT) | Cherry-pick 5–6 into Studio Social/Outreach library |
+| [github.com/cookiy-ai/user-research-skill](https://github.com/cookiy-ai/user-research-skill) | IMPROVE | Lift planner + synthesis method, skip Cookiy backend tether |
+| [github.com/anthropics/claude-code/blob/main/plugins/frontend-design/skills/frontend-design/SKILL.md](https://github.com/anthropics/claude-code/tree/main/plugins/frontend-design) | READ NOW | Direct fit for Studio Design website/UI lane |
+| [github.com/beshuaxian/higgsfield-seedance2-jineng](https://github.com/beshuaxian/higgsfield-seedance2-jineng) | READ NOW | Production stack template for Studio Motion (Higgsfield + Seedance 2) |
+| [github.com/Soojin-Lee0819/resource](https://github.com/Soojin-Lee0819/resource) | 5-min read | CLAUDE.md template — lift any patterns we don't have |
+| [github.com/Anil-matcha/Open-Generative-AI](https://github.com/Anil-matcha/Open-Generative-AI) | Reference | Curated AI tools — quarterly sweep |
+| Anthropic Claude Managed Agents data agent cookbook | READ | First-party reference for Tesseract data-pipeline agents. Search Anthropic docs |
+| Open-source 8-subagent code cleanup Claude plugin | FIND URL | Instagram comment thread — specific URL not extracted. Find via Bright Data when live |
+| [github.com/elder-plinius/G0DM0D3](https://github.com/elder-plinius/G0DM0D3) | AWARENESS ONLY | Security/jailbreak research — relevant to Sentinel Job 6 red-team patterns |
+| [github.com/ScrapeGraphAI/Scrapegraph-ai](https://github.com/ScrapeGraphAI/Scrapegraph-ai) | ADOPT when needed | Already referenced in Scout SKILL.md — `pip install scrapegraphai` when needed |
+| Anthropic's LLM Architecture Gallery (sebastianraschka.com) | Reference | Vocabulary reference for advisor-facing materials |
+
+---
+
+### NICK SADLER VAULT — 93 entries, partially reviewed
+Source: [Airtable vault scraped 2026-05-22](https://drive.google.com/file/d/1yGYi_Z5ya_WarCFjc1nn93C82ae8sdO-/view) (Drive)
+
+Items evaluated today: awesome-claude-skills, Anthropic Skills repo, Skill Creator ✅
+
+**Still unreviewed from the vault:**
+
+| Entry | Name | Action |
+|-------|------|--------|
+| #60 | Everything Claude Code | [github.com/affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code) — read |
+| #62 | Ultimate Claude Code Skills Guide | Google Doc — read and extract patterns |
+| #72 | Claude Cowork Discovery Prompt | Evaluate for fleet onboarding |
+| #73 | Claude Code Book Keeper Creator | Evaluate for financial tracking |
+| #79 | Set up Claude Design | [Drive doc](https://docs.google.com/document/d/13-I8NO-N5KAwoX8qrRzHHOkq1imuUJOg3gmxBqaTFww/edit) — Studio Design wiring |
+| #80 | Claude Code Setup Guide | Reference |
+| #82 | Boris Cherny Claude.MD Workflow | [Dropbox](https://www.dropbox.com/scl/fi/0ld0ck5oufiiqtxa92mj0/Workflow-Orchestration.md) — read for CLAUDE.md patterns |
+| #87 | Claude Creative Studio Skills Guide | [Drive doc](https://docs.google.com/document/d/1rRYff5GXWo5i7gv_my18lXXUa3EmJP-vkmEJlQM48ps/edit) — Studio agent wiring |
+| #88 | LMM Claude Council | [github.com/aiwithremy/claude-skills-llm-council](https://github.com/aiwithremy/claude-skills-llm-council) — fleet architecture |
+| #23 | Ultimate AI Apps and Platform List | [Dropbox PDF](https://www.dropbox.com/scl/fi/9ja7z7w8di66kurenspv7/AI-Apps-and-Platforms-Descriptions-and-Official-Websites.pdf) — sweep for missing tools |
+| #56 | OpenClaw Setup | [Drive doc](https://docs.google.com/document/d/1h4sMe2iaXQJ1zTXqbjl-AsJAX4l-Si6lBYlj7USnTZQ/edit) — evaluate |
+
+---
+
+### TOOLS — Confirmed access, not yet wired
+
+| Tool | Access | What's needed |
+|------|--------|---------------|
+| **Higgsfield MCP** | Not yet installed | [higgsfield.ai/mcp](https://higgsfield.ai/mcp) — ~5 min OAuth + install. Studio Motion's primary video gen tool. |
+| **Arcads** | Not yet | API key at [arcads.ai](https://arcads.ai) — AI ad creative, pairs with Higgsfield |
+| **Superwhisper** | Not yet | [superwhisper.app](https://superwhisper.app) — desktop STT, replaces Wispr Flow. Complements TTS stack. |
+| **MidJourney** | Subscription unconfirmed | Photorealistic gen for Studio Design — confirm if subscribed |
+| **SeedDance Pro** | Subscription unconfirmed | ByteDance video gen — confirm if subscribed |
+| **ElevenLabs** | Authenticated in Cowork only | API key needed for local/GitHub fleet use. Not yet extracted from Cowork. |
+
+---
+
+### TOOLS — Never evaluated, quick verdicts via Parallel search available
+
+| Tool | Why it matters | Verdict |
+|------|---------------|---------|
+| [Pophatch](https://pophatch.com) ($19/mo) | "Second brain that compounds" — competitive intel + potential client tool | Evaluate: signup or research |
+| [Letta](https://letta.com) | Agent harness with persistent state | Deferred — adopt at Day 91 of Sentinel calibration |
+| [mem0.ai](https://mem0.ai) | Pluggable memory API | Deferred — adopt at Day 91, preferred over Letta |
+| [Krea.ai](https://krea.ai) | Real-time image gen, free | Signed up today, browser-only, no API |
+| [needstoexist.com](https://needstoexist.com/partner/foundingjourney) | 500+ AI startup ideas | 20-min scan, drop unless 3+ match our verticals |
+
+---
+
+### CAPITAL INTEL — VC Corner links (researched, not all evaluated)
+From [thevccorner.com](https://www.thevccorner.com) — Jason forwarded June 1 with "research all links and adopt":
+
+| Item | Status |
+|------|--------|
+| 144 Family Offices cutting pre-seed checks | Filed to CAPITAL_INTEL.md |
+| US VC Database (pre-seed/seed) | Filed |
+| Ultimate Guide to Finding Investors | Filed |
+| Free AI GTM Kit (Sequoia/a16z playbooks) | Not fully read — evaluate for Studio Social GTM |
+| McKinsey Pyramid Principle wired into Claude | Not evaluated — evaluate for Fleet Router prompt engineering |
+| Board Management Guide | Filed to STRATEGIES.md |
+
+---
+
+### ~70 INSTAGRAM INTEL ITEMS — blocked until Wednesday
+The April 30 sweep flagged ~70 Instagram items that need Bright Data scraping. Themes:
+- CDO prompts, senior engineer prompts, AI sales funnel patterns
+- Video creation tools, brand design guides
+- Self-healing agent patterns, token + agent architecture
+- 12 Butterflies ecosystem AI items, AI data source companies
+- NVIDIA Inception free path
+
+**Unblocks Wednesday** when Bright Data token is renewed. RepoReader + Scout will process on next sweep.
+
+---
+
+### AWESOME-CLAUDE-SKILLS — not fully scanned
+[github.com/ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) — 1000+ skills.
+
+Installed today: LinkedIn automation, Instagram automation, Lead Research, Recursive Research.
+
+Not yet reviewed:
+- anydesign (Studio Design)
+- lean-ctx (context compression — useful for long sessions)
+- tapestry (document knowledge network)
+- mercury-mcp (coordinated agent messaging)
+- great_cto (7 SDLC subagents — fleet architecture reference)
+- Twitter Algorithm Optimizer (Studio Social)
+- Competitive Ads Extractor (Sentinel competitive watch)
+

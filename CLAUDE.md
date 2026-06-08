@@ -154,6 +154,8 @@ These are the must-never-use and must-use rules already locked. Sentinel A1 scru
 
 **Currency:** USD ($) or EUR (€) only. Never GBP. USD for projections, EUR for billing.
 
+**Punctuation:** Never use hyphens. Always use a comma wherever humanly possible. This applies to all written output across every agent, every surface, every format. No exceptions.
+
 ---
 
 ## 7. Shared learning surface — how the fleet compounds

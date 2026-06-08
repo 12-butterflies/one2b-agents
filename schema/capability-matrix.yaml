@@ -1,0 +1,714 @@
+# One 2b Agent Capability Matrix
+# Version: v1.0 — 2026-06-08
+# Source: Read from all 31 SKILL.md files in skills/
+# Usage: When a new tool arrives via intel, diff against this matrix to find adjacent agents.
+
+agents:
+
+  # ── STUDIO FLEET (Layer A) ──────────────────────────────────────────────
+
+  studio-social:
+    skill: skills/studio-social/SKILL.md
+    status: phase-2-pending-onboarding-gate
+    classification: creator (public broadcast)
+    primary_verb: post
+    models:
+      standard: claude-sonnet-4-6
+      investor_sovereign: claude-opus-4-8
+    sentinel: A1 (standard) | A3 (investor/sovereign)
+    tools:
+      - postiz               # publish to social platforms
+      - gmail-mcp            # hello@one2b.io
+    mcps: []
+    scripts: []
+    handoffs_out:
+      - studio-design        # visual assets for posts
+      - studio-direct        # high-signal DM follow-ups
+      - studio-words         # long-form content requests
+    trinity_scope: [one2b, 12butterflies, jason]
+
+  studio-direct:
+    skill: skills/studio-direct/SKILL.md
+    status: phase-3
+    classification: creator (1:1 messaging)
+    primary_verb: send
+    models:
+      warm_followup_dm: claude-sonnet-4-6
+      cold_outreach_intro_investor: claude-opus-4-8
+    sentinel: A1 (warm) | A3 (cold/investor — Jason approval required)
+    tools:
+      - gmail-mcp            # hello@one2b.io (company) | jps@one2b.io (personal)
+      - docsend              # read-only sharing with analytics
+      - docuseal             # signing
+    mcps:
+      - gmail-hello-one2b
+      - gmail-jps-one2b
+    scripts: []
+    handoffs_out:
+      - studio-words         # long-form content needed
+      - document             # NDA / CPA needed
+    trinity_scope: [one2b, 12butterflies, jason]
+
+  studio-words:
+    skill: skills/studio-words/SKILL.md
+    status: phase-4
+    classification: creator (long-form prose)
+    primary_verb: write
+    models:
+      blog_newsletter_linkedin: claude-sonnet-4-6
+      autobiography_investor_whitepaper_press_speech: claude-opus-4-8
+    sentinel: A3 (press/investor/external)
+    tools: []
+    mcps: []
+    scripts: []
+    handoffs_out:
+      - studio-design        # visual assets for long-form
+    trinity_scope: [one2b, 12butterflies, jason]
+
+  studio-design:
+    skill: skills/studio-design/SKILL.md
+    status: phase-5
+    classification: creator (static visuals)
+    primary_verb: design
+    models:
+      standard: claude-sonnet-4-6
+      investor_sovereign: claude-opus-4-8
+    sentinel: A3 (investor/sovereign assets)
+    tools:
+      - recraft-v3           # brand-consistent vector/illustration/photo gen
+      - fal-flux-pro         # highest-quality photographic gen (needs credits)
+      - ideogram-v2          # text-in-image — carousels, slides (needs credits)
+      - adobe-cc             # templates
+      - higgsfield           # cinematic (pending MCP wiring)
+      - comfyui-mcp          # primary ComfyUI integration
+    mcps: []
+    scripts:
+      - scripts/recraft-generate.sh
+      - scripts/fal-generate.sh
+      - scripts/ideogram-generate.sh
+    handoffs_out: []
+    trinity_scope: [one2b, 12butterflies, jason]
+    notes: "30+ existing Drive design candidates are in wrong palette (dark sage). Treat as compositional refs only. Restage in lavender/periwinkle/peach."
+
+  studio-motion:
+    skill: skills/studio-motion/SKILL.md
+    status: phase-6
+    classification: creator (video and motion)
+    primary_verb: produce
+    models:
+      standard: claude-sonnet-4-6
+      sovereign_investor: claude-opus-4-8
+    sentinel: A3 (external video)
+    tools:
+      - higgsfield-canvas    # cinematic scene composition — pending OAuth
+      - elevenlabs-flows     # voice synthesis, audio (authenticated)
+      - adobe-quick-cut      # sizzle/social cuts
+      - ltx-video            # local B-roll gen
+    mcps: []
+    scripts: []
+    handoffs_out:
+      - studio-design        # thumbnail / end-card
+    trinity_scope: [one2b, 12butterflies, jason]
+
+  document:
+    skill: skills/document/SKILL.md
+    status: phase-7-pending-docuseal-deploy
+    classification: creator (commercial/legal drafting)
+    primary_verb: draft
+    models:
+      all: claude-opus-4-8   # zero hallucination tolerance
+    sentinel: A3 (before any document leaves)
+    tools:
+      - docuseal             # e-signing at sign.one2b.io (pending deploy)
+      - docsend              # read-only sharing with engagement analytics
+      - gmail-mcp            # transmission
+      - google-drive-mcp     # filing signed PDFs
+    mcps:
+      - gmail-hello-one2b
+      - beb837dd-google-drive
+    scripts: []
+    handoffs_out:
+      - studio-direct        # transmission of completed docs
+    trinity_scope: [one2b]
+    templates_pending: [NDA, CPA, partnership-agreement, advisor-agreement, sovereign-engagement-letter]
+
+  # ── CEO INTELLIGENCE SWARM (Layer B) ───────────────────────────────────
+
+  fleet-router:
+    skill: skills/fleet-router/SKILL.md
+    status: active-v1.0
+    classification: router
+    primary_verb: route
+    models:
+      standard: claude-haiku-4-5
+      ambiguous: claude-sonnet-4-6  # escalate if ambiguity > 2 fields
+    sentinel: reads RED-flags.md as pre-check step
+    tools: []
+    mcps: []
+    scripts: []
+    handoffs_out: [all-agents]
+    trinity_scope: [one2b, 12butterflies, jason]
+
+  sentinel:
+    skill: skills/sentinel/SKILL.md
+    status: active-v0.3
+    classification: reviewer (read-only)
+    primary_verb: audit
+    models:
+      A1: claude-haiku-4-5
+      A2: claude-sonnet-4-6
+      A3: claude-opus-4-8
+      mode-b-daily: claude-sonnet-4-6
+      mode-c-continuous: claude-haiku-4-5
+    tools: []
+    mcps: []
+    scripts: []
+    rule_files:
+      - skills/sentinel/rules/A1-terminology.md
+      - skills/sentinel/rules/RED-flags.md
+      - skills/sentinel/rules/A2-plan-review.md
+      - skills/sentinel/rules/A3-full-audit.md
+    handoffs_out: []  # read-only — never routes or acts
+    trinity_scope: [one2b, 12butterflies, jason]
+
+  scout:
+    skill: skills/scout/SKILL.md
+    status: active
+    classification: sweeper / intake
+    primary_verb: sweep
+    models:
+      all: claude-haiku-4-5  # classification and routing only — never generates content
+    tools:
+      - parallel-search      # active web research (hello@one2b.io account)
+      - parallel-deep        # multi-hop synthesis
+      - bright-data          # Instagram/YouTube/paywalled scraping (R-17 fix pending)
+      - gmail-mcp            # intel@one2b.io inbox sweep
+    mcps:
+      - gmail-jps-one2b      # intel@one2b.io
+    scripts:
+      - scripts/parallel-search.sh
+      - scripts/scrape-helper.js  # R-17 fix pending
+    handoffs_out:
+      - curator
+      - ceo-daily-brief
+    launchd: io.one2b.intel-sweep.plist  # 06:30 daily Lisbon
+    trinity_scope: [one2b]
+
+  curator:
+    skill: skills/curator/SKILL.md
+    status: active
+    classification: filer / analyst
+    primary_verb: file
+    models:
+      auto_file: claude-haiku-4-5
+      substantive_analysis: claude-sonnet-4-6
+    sentinel: none (internal only)
+    tools:
+      - google-drive-mcp     # write to CEO Intel queue files
+    mcps:
+      - beb837dd-google-drive
+    scripts: []
+    handoffs_out:
+      - triage
+      - ceo-daily-brief
+    swarm_pattern: true  # parallel domain-specific instances for 20+ item batches
+    routing_rules:
+      - R-19  # creator-cluster auto-file (manychat.com/r, stan.store)
+      - R-20  # self-routed intel elevation (intel@one2b.io → intel@one2b.io)
+    trinity_scope: [one2b]
+
+  triage:
+    skill: skills/triage/SKILL.md
+    status: active
+    classification: surfacer
+    primary_verb: surface
+    models:
+      all: claude-sonnet-4-6
+    tools:
+      - apple-notes-mcp      # brain dump source
+      - monday-mcp           # items and weekly view
+    mcps:
+      - Read_and_Write_Apple_Notes
+      - 29fc21d5-monday
+    scripts: []
+    handoffs_out:
+      - ceo-daily-brief
+    trinity_scope: [one2b]
+
+  ceo-daily-brief:
+    skill: skills/ceo-daily-brief/SKILL.md
+    status: active
+    classification: synthesizer / briefer
+    primary_verb: brief
+    models:
+      orchestration: claude-sonnet-4-6
+      section_generation: claude-haiku-4-5
+      high_stakes_decisions: claude-opus-4-8
+    tools:
+      - gmail-mcp            # intel@one2b.io (R-20 self-routed items)
+      - bright-data          # sweep status check
+      - google-drive-mcp     # reads CEO Intel substrate
+    mcps:
+      - gmail-jps-one2b
+      - beb837dd-google-drive
+    scripts:
+      - scripts/parallel-search.sh
+    scheduled: "07:05 Lisbon daily"
+    trinity_scope: [one2b]
+
+  capital-readiness-curator:
+    skill: skills/capital-readiness-curator/SKILL.md
+    status: active
+    classification: curator (investor pipeline)
+    primary_verb: curate
+    models:
+      signal_scoring: claude-sonnet-4-6
+      investor_summaries: claude-opus-4-8
+    sentinel: A3 (all investor-facing summaries)
+    tools:
+      - gmail-mcp            # investor email threads
+      - fireflies-mcp        # meeting transcripts with investors/partners
+      - docsend              # deck engagement analytics (when wired)
+    mcps:
+      - gmail-hello-one2b
+      - be5d318a-fireflies
+    scripts: []
+    handoffs_out:
+      - studio-direct        # investor outreach drafts
+    trinity_scope: [one2b]
+
+  igi-insurance-agent:
+    skill: skills/igi-insurance-agent/SKILL.md
+    status: active
+    classification: product agent (IGI proposals)
+    primary_verb: propose
+    models:
+      all: claude-opus-4-8   # all customer-facing outputs
+    sentinel: A3 (every proposal before it leaves)
+    tools:
+      - google-drive-mcp     # read CEO Intel context
+    mcps:
+      - beb837dd-google-drive
+    scripts: []
+    handoffs_out: []
+    trinity_scope: [one2b]
+
+  tesseract-valuation-agent:
+    skill: skills/tesseract-valuation-agent/SKILL.md
+    status: active
+    classification: product agent (data valuation)
+    primary_verb: value
+    models:
+      all: claude-opus-4-8   # all outputs — institutional-grade, audit-defensible
+    sentinel: A3 (before any report leaves)
+    tools:
+      - google-drive-mcp     # context and filing
+    mcps:
+      - beb837dd-google-drive
+    scripts: []
+    handoffs_out: []
+    trinity_scope: [one2b]
+
+  deal-screener:
+    skill: skills/deal-screener/SKILL.md
+    status: active
+    classification: qualifier (insurance + trade finance)
+    primary_verb: screen
+    models:
+      initial_screen: claude-sonnet-4-6
+      full_feasibility: claude-opus-4-8
+    sentinel: A3 (full feasibility reports)
+    tools: []
+    mcps: []
+    scripts: []
+    handoffs_out:
+      - igi-insurance-agent
+      - tesseract-valuation-agent
+      - capital-matching-agent
+    trinity_scope: [one2b]
+
+  capital-matching-agent:
+    skill: skills/capital-matching-agent/SKILL.md
+    status: active
+    classification: matcher (asset ↔ investor)
+    primary_verb: match
+    models:
+      all: claude-opus-4-8
+    sentinel: A3 (all external outputs)
+    tools:
+      - docsend              # investor deck sharing
+      - google-drive-mcp
+    mcps:
+      - beb837dd-google-drive
+    scripts: []
+    handoffs_out:
+      - studio-direct        # investor outreach
+      - document             # NDA preparation
+      - tesseract-valuation-agent  # Tesseract report
+    trinity_scope: [one2b]
+
+  outreach-agent:
+    skill: skills/outreach-agent/SKILL.md
+    status: active
+    classification: sequencer (multi-touch outreach)
+    primary_verb: sequence
+    models:
+      all: claude-opus-4-8
+    sentinel: A3 (before any message leaves)
+    tools:
+      - gmail-mcp
+      - docsend              # deck sharing with engagement tracking
+    mcps:
+      - gmail-hello-one2b
+    scripts: []
+    handoffs_out:
+      - capital-readiness-curator  # DocSend tracking data
+    trinity_scope: [one2b]
+
+  document-agent:
+    skill: skills/document/SKILL.md
+    status: active
+    classification: drafter (commercial/legal — same as document)
+    models:
+      all: claude-opus-4-8
+    sentinel: A3
+    tools: [docuseal, docsend, gmail-mcp, google-drive-mcp]
+    mcps: [gmail-hello-one2b, beb837dd-google-drive]
+    scripts: []
+    trinity_scope: [one2b]
+
+  # ── RESEARCH + ENRICHMENT ───────────────────────────────────────────────
+
+  intel-to-spec-adapter:
+    skill: skills/intel-to-spec-adapter/SKILL.md
+    status: active-upgrading  # being rewritten as Layer 3 of alignment system
+    classification: pipeline (intel → skill proposals)
+    primary_verb: propose
+    models:
+      analysis: claude-sonnet-4-6
+    sentinel: A2 (every batch of proposals before they land in _drafts/)
+    tools:
+      - parallel-search      # multi-engine research
+      - bright-data          # structured platform pulls
+    mcps: []
+    scripts:
+      - scripts/parallel-search.sh
+    schedule: "Wed 21:00 + Sun 21:00 Lisbon"
+    source_queues:
+      - ceo-intel-mirror/Architecture/INBOX/AGENTS_QUEUE.md
+      - ceo-intel-mirror/Architecture/INBOX/REPOS_QUEUE.md
+      - ceo-intel-mirror/Architecture/INBOX/MCPS_QUEUE.md
+      - ceo-intel-mirror/Architecture/INBOX/INFRASTRUCTURE_QUEUE.md
+    output: PENDING_SKILL_UPDATES.md
+    trinity_scope: [one2b]
+
+  repo-reader:
+    skill: skills/repo-reader/SKILL.md
+    status: active
+    classification: researcher (GitHub repos)
+    primary_verb: read
+    models:
+      analysis: claude-sonnet-4-6
+    tools:
+      - git / gh             # clone / fetch repos
+    mcps: []
+    scripts: []
+    schedule: "Wed 21:30 + Sun 21:30 Lisbon"
+    handoffs_out:
+      - ceo-daily-brief      # proposals surface in Thursday/Monday brief
+    trinity_scope: [one2b]
+
+  recursive-research:
+    skill: skills/recursive-research/SKILL.md
+    status: active
+    classification: researcher (multi-hop web)
+    primary_verb: research
+    models:
+      standard: claude-sonnet-4-6
+    tools:
+      - parallel-search      # standard breadth
+      - parallel-deep        # multi-hop synthesis
+    mcps: []
+    scripts:
+      - scripts/parallel-search.sh
+    handoffs_out: []
+    trinity_scope: [one2b, jason]
+
+  lead-research:
+    skill: skills/lead-research/SKILL.md
+    status: active
+    classification: researcher (lead/counterparty profiles)
+    primary_verb: enrich
+    models:
+      all: claude-sonnet-4-6
+    tools:
+      - parallel-search
+      - composio             # profile enrichment
+    mcps: []
+    scripts:
+      - scripts/parallel-search.sh
+    handoffs_out:
+      - bio-linkedin-enrichment
+    trinity_scope: [one2b]
+
+  bio-linkedin-enrichment:
+    skill: skills/bio-linkedin-enrichment/SKILL.md
+    status: active
+    classification: enricher (counterparty bio data)
+    primary_verb: enrich
+    models:
+      all: claude-sonnet-4-6
+    tools:
+      - apollo               # apollo:enrich-lead (primary)
+      - zoominfo             # zoominfo:enrich-contact, zoominfo:enrich-company
+      - common-room          # common-room:contact-research
+      - nimble               # nimble:meeting-prep, nimble:company-deep-dive
+      - bright-data          # LinkedIn surface via Scraping Browser
+    mcps: []
+    scripts: []
+    schedule: "Mon 11:30 Lisbon (staleness audit)"
+    handoffs_out:
+      - document             # supplies counterparty bio data for templates
+    trinity_scope: [one2b]
+
+  # ── PERSONAL / HEALTH ──────────────────────────────────────────────────
+
+  jason-health-curator:
+    skill: skills/jason-health-curator/SKILL.md
+    status: active
+    classification: curator (health methodology)
+    primary_verb: curate
+    models:
+      all: claude-sonnet-4-6
+    tools:
+      - google-drive-mcp     # Canonical Peptide Protocol Reference, Pepguard catalog
+    mcps:
+      - beb837dd-google-drive
+    scripts: []
+    schedule: "Mon 11:00 Lisbon (methodology audit)"
+    trinity_scope: [jason]
+
+  longevity-research-curator:
+    skill: skills/longevity-research-curator/SKILL.md
+    status: active
+    classification: curator (longevity research)
+    primary_verb: curate
+    models:
+      all: claude-sonnet-4-6
+    tools:
+      - parallel-search
+      - monday-mcp           # News & Intel Watchlist board
+    mcps:
+      - 29fc21d5-monday
+    scripts:
+      - scripts/parallel-search.sh
+    handoffs_out:
+      - ceo-daily-brief
+    trinity_scope: [jason]
+
+  conversation-curator:
+    skill: skills/conversation-curator/SKILL.md
+    status: active
+    classification: curator (meeting transcripts)
+    primary_verb: curate
+    models:
+      all: claude-sonnet-4-6
+    tools:
+      - fireflies-mcp        # Zoom meeting transcripts
+      - zoom-mcp             # meeting assets
+      - gmail-mcp            # Apple Mail ingestion path (intel@one2b.io)
+    mcps:
+      - be5d318a-fireflies
+      - gmail-jps-one2b
+    scripts: []
+    schedule: "06:00 Lisbon daily"
+    trinity_scope: [one2b, jason]
+
+  narrative-agent:
+    skill: skills/narrative-agent/SKILL.md
+    status: active
+    classification: creator (narrative / messaging)
+    primary_verb: draft
+    models:
+      refresh_repurpose: claude-sonnet-4-6
+      net_new: claude-opus-4-8
+    sentinel: A2 (plans) | A3 (external)
+    tools:
+      - google-drive-mcp
+    mcps:
+      - beb837dd-google-drive
+    scripts: []
+    handoffs_out:
+      - studio-words
+      - studio-social
+    trinity_scope: [one2b, 12butterflies, jason]
+
+  legal-agent:
+    skill: skills/legal-agent/SKILL.md
+    status: active
+    classification: reviewer (legal / compliance)
+    primary_verb: review
+    models:
+      all: claude-opus-4-8
+    sentinel: A3 (all legal-facing material)
+    tools:
+      - gmail-mcp            # hello@one2b.io for Mili round trips
+    mcps:
+      - gmail-hello-one2b
+    scripts: []
+    schedule: "Mon 10:00 Lisbon (methodology audit)"
+    handoffs_out:
+      - document             # approved legal text → Document Agent
+    trinity_scope: [one2b]
+
+  # ── AUTOMATION / PLATFORM ──────────────────────────────────────────────
+
+  instagram-automation:
+    skill: skills/instagram-automation/SKILL.md
+    status: active
+    classification: platform automation (Instagram)
+    primary_verb: post
+    models:
+      all: claude-sonnet-4-6
+    tools:
+      - composio-instagram   # posts, stories, comments, media upload, insights
+    mcps: []
+    scripts: []
+    install: "pip install composio-core && composio add instagram"
+    trinity_scope: [one2b, 12butterflies, jason]
+
+  linkedin-automation:
+    skill: skills/linkedin-automation/SKILL.md
+    status: active
+    classification: platform automation (LinkedIn)
+    primary_verb: post
+    models:
+      all: claude-sonnet-4-6
+    tools:
+      - composio-linkedin    # posts, profiles, companies, images, comments
+    mcps: []
+    scripts: []
+    install: "pip install composio-core && composio add linkedin"
+    trinity_scope: [one2b, jason]
+
+  # ── UTILITY ─────────────────────────────────────────────────────────────
+
+  skill-creator:
+    skill: skills/skill-creator/SKILL.md
+    status: active
+    classification: utility (SKILL.md authoring)
+    primary_verb: create
+    models:
+      all: claude-sonnet-4-6
+    tools: []
+    mcps: []
+    scripts: []
+    trinity_scope: [one2b]
+
+  graphify:
+    skill: skills/graphify/SKILL.md
+    status: active
+    classification: utility (knowledge graph)
+    primary_verb: graph
+    models:
+      semantic_extraction: claude-sonnet-4-6
+      gemini_fallback: gemini-3-flash-preview  # if GEMINI_API_KEY set
+    tools:
+      - graphify-cli         # installed at ~/.claude/skills/graphify/
+    mcps: []
+    scripts: []
+    trinity_scope: [one2b, 12butterflies, jason]
+
+# ── MCP REGISTRY ────────────────────────────────────────────────────────────
+# Maps MCP short-names used above to actual MCP server IDs
+
+mcp_registry:
+  gmail-hello-one2b:  mcp__gmail-hello-one2b
+  gmail-jps-one2b:    mcp__gmail-jps-one2b
+  beb837dd-google-drive: mcp__beb837dd
+  be5d318a-fireflies: mcp__be5d318a
+  29fc21d5-monday:    mcp__29fc21d5
+  Read_and_Write_Apple_Notes: mcp__Read_and_Write_Apple_Notes
+
+# ── TOOL REGISTRY ────────────────────────────────────────────────────────────
+# Key: short name used in agents above | Value: status + notes
+
+tool_registry:
+  parallel-search:
+    status: live
+    account: hello@one2b.io
+    key_location: .claude/settings.local.json
+    script: scripts/parallel-search.sh
+
+  recraft-v3:
+    status: live
+    key_env: RECRAFT_API_KEY
+    script: scripts/recraft-generate.sh
+
+  fal-flux-pro:
+    status: stored-needs-credits
+    key_env: FAL_API_KEY
+    script: scripts/fal-generate.sh
+
+  ideogram-v2:
+    status: stored-needs-credits
+    key_env: IDEOGRAM_API_KEY
+    script: scripts/ideogram-generate.sh
+
+  bright-data:
+    status: active-r17-fix-pending
+    renewal: "Wednesday (12b@12butterflies.life)"
+    script: scripts/scrape-helper.js
+
+  higgsfield:
+    status: pending-oauth
+    url: https://higgsfield.ai/mcp
+    install_time: "~15 min"
+
+  elevenlabs-flows:
+    status: authenticated-carry-across
+    source: CEO Intelligence Cowork project
+
+  docuseal:
+    status: pending-deploy
+    target: sign.one2b.io
+
+  docsend:
+    status: active
+
+  composio-instagram:
+    status: active
+    install: "pip install composio-core && composio add instagram"
+
+  composio-linkedin:
+    status: active
+    install: "pip install composio-core && composio add linkedin"
+
+  apollo:
+    status: active
+    tool_id: apollo:enrich-lead
+
+  postiz:
+    status: active
+
+  save-router:
+    skill: skills/save-router/SKILL.md
+    status: active-v1.0
+    classification: router + writer (background, fires after every substantive exchange)
+    primary_verb: save
+    models:
+      classification: claude-haiku-4-5
+      new_domain_detection: claude-sonnet-4-6
+    tools:
+      - google-drive-mcp
+    mcps:
+      - beb837dd-google-drive
+    scripts: []
+    auto_expands: Research subdomains
+    never_does:
+      - delete content
+      - overwrite entity files
+      - save to Data Room Staging unless Jason explicitly shares a doc/link for that purpose
+      - create new top-level folders
+      - ask for approval before saving
+    trinity_scope: [one2b, 12butterflies, jason]

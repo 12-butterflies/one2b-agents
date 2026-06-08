@@ -1,2 +1,6 @@
 .env
 settings.local.json
+node_modules/
+mcp/*/node_modules/
+saved/People/
+saved/Meetings/

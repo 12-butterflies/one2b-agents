@@ -40,6 +40,7 @@ Document Agent owns all commercial and legal document generation. It does not ow
 
 ## Document lifecycle
 
+### Mode A — Net new draft (standard)
 1. **Brief received** — from Fleet Router or Studio Direct handoff
 2. **Template selected** — NDA / CPA / partnership / engagement letter
 3. **Counterparty fields populated** — name, entity, jurisdiction, date, key terms
@@ -47,7 +48,26 @@ Document Agent owns all commercial and legal document generation. It does not ow
 5. **Sentinel A3** — full six-job audit. Fresh invocation. Any hallucinated clause, invented term, or unverifiable claim halts and escalates
 6. **Jason approval** — all documents require Jason approval before leaving the system. No standing authority for Document Agent. Ever.
 7. **Transmission** — via DocuSeal (signing) or DocSend (read-only sharing with analytics)
-8. **File** — signed PDF stored in Drive at `CEO Intelligence/Documents/[type]/[date]_[counterparty]_[type].pdf`
+8. **File** — signed PDF stored locally at `saved/Documents/` and pushed to Drive [Documents folder](https://drive.google.com/drive/folders/1zjf_FmeKA05ZIFYizIPCxSFT8oVY-CGl)
+
+### Mode B — Reformat from Data Room Staging
+Triggered when Jason says: "Reformat [document name] into One 2b format."
+
+1. **Retrieve** — read the document from [Data Room Staging](https://drive.google.com/drive/folders/1XyqUtvAHZ66ZT31KsCvRMJ-oGh8FWiC7)
+2. **Identify document type** — brief / proposal / report / research / analysis / letter
+3. **Apply One 2b brand template:**
+   - Header: One 2b logo + document title + date
+   - Colour palette: lavender / periwinkle / peach (never dark sage)
+   - Typography: standard One 2b body font
+   - Footer: "One 2b | registered Lloyd's of London broker | one2b.io" + page number
+   - Section structure: standard for that document type
+4. **Sentinel A1** — terminology scrub on all text carried over from the source document
+5. **Output** — reformatted document dropped back to Data Room Staging with suffix `_ONE2B_FORMAT`
+6. **Jason reviews** — approves final version, then decides: file to One 2b Intel or send to counterparty
+7. **File** — on Jason approval, filed locally + pushed to Drive [Documents folder](https://drive.google.com/drive/folders/1zjf_FmeKA05ZIFYizIPCxSFT8oVY-CGl)
+
+Brand kit location: `ceo-intel-mirror/Architecture/StudioAgent/BRAND_KIT_one2b/`
+Note: brand kit is partially populated. If assets are missing, use palette rules from `schema/prompt-standards/terminology.md` and flag gaps to Jason.
 
 ---
 

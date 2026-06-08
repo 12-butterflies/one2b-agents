@@ -1,5 +1,16 @@
 {
   "hooks": {
+    "UserPromptSubmit": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/jasonpeterstevens/one2b-agents/scripts/session-context.sh"
+          }
+        ]
+      }
+    ],
     "Stop": [
       {
         "matcher": "",
@@ -11,6 +22,9 @@
         ]
       }
     ]
+  },
+  "permissions": {
+    "defaultMode": "acceptEdits"
   },
   "model": "claude-sonnet-4-6",
   "notes": "Model defaults per Architecture v1.0: Haiku for classification, Sonnet for generation, Opus for external-facing and legal. Override per-agent in SKILL.md."

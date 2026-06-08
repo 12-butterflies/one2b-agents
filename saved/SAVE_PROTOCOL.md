@@ -81,3 +81,40 @@ For each document in staging, one of three actions:
 | Jason shares a doc/link for data room | Data Room Staging |
 
 All saves: local first, then Drive. Both, always.
+
+---
+
+## GitHub — the third copy (mandatory, every session)
+
+Every session that creates or updates any file must end with a GitHub commit and push.
+This is not optional. GitHub is the third copy and the version history.
+
+**The three-copy rule:**
+1. Local: `~/one2b-agents/saved/[domain]/` — written first
+2. Drive: pushed via Drive MCP immediately after local write — syncs to local Drive automatically
+3. GitHub: committed and pushed at session end — permanent versioned backup
+
+**End-of-session commit sequence (Claude Code runs this):**
+```bash
+cd ~/one2b-agents
+git add -A -- saved/ ACTIVE.md schema/ skills/ mcp/ scripts/ CLAUDE.md COWORK_PROJECT_INSTRUCTIONS.md
+git commit -m "Session [date] — [one-line summary of what changed]
+
+Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>"
+git push origin main
+```
+
+SSH is permanently configured. Push never requires a password or token.
+
+**What gets committed every session:**
+- Any updated People file
+- Any updated ACTIVE.md (to-do list)
+- Any updated Projects, Companies, Capital, Strategy, Sovereigns file
+- Any new or updated SKILL.md
+- Any schema or script changes
+- COWORK_PROJECT_INSTRUCTIONS.md if updated
+
+**What is never committed:**
+- `.claude/settings.local.json` (API keys — gitignored)
+- `node_modules/` (gitignored)
+- Personal health data (stays in JASON OS project only)

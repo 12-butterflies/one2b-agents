@@ -1,4 +1,4 @@
-# IGI Agent — SKILL.md
+# Insurance Product Agent — SKILL.md
 **Version:** v1.0
 **Status:** ✅ LOCKED — activates post-Phase 2
 **Model:** claude-opus-4-8 (all customer-facing outputs) + Sentinel A3 before any proposal leaves

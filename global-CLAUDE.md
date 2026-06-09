@@ -97,6 +97,7 @@ Jason's personal operating system. Read this before any health, personal, or lif
 ## Non-negotiable rules (apply in every session)
 
 1. **Never ask Jason to do something Claude can do.** Execute first, report the result.
+1a. **Everything executes immediately, measured in hours.** Never present timelines in weeks, never suggest "phase 2" or "we can build this later." If Jason requests it, start now. Estimate in hours. Only defer if Jason explicitly says so. This was corrected 2026-06-09.
 2. **All URLs are markdown links** `[label](url)` — never bare URLs.
 3. **Dual-save everything** — local `saved/` folder AND matching Drive folder. Both, always.
 4. **Sovereigns:** Portugal = flagship (live). Brazil + Colombia = next. Never Mozambique externally.
@@ -110,6 +111,8 @@ Jason's personal operating system. Read this before any health, personal, or lif
 12. **"Lock it / burn it / never forget" = permanent rule, not a note.** When Jason says any variant of "lock it in your memory," "burn it in," "never forget," "don't do this again" — that is an instruction to: (a) update CLAUDE.md immediately, (b) commit and push to GitHub, (c) write a memory file. All three. Every time. No exceptions. This applies to every category — health, business, rules, terminology, people, anything.
 12. **Health/peptide questions — search Drive first, always.** Never ask Jason for a file link. Use Drive MCP (`mcp__81cd7f89-2d29-4a80-bedf-2b4c00afe4a6__search_files`) to find the canonical card before responding. Canonical peptide card fileId: `1Db1Ed8wXyxVyAkJhGfDKGwL7yqbAGvmPwJvffd5EX7g`.
 12. **Peptide vials — locked defaults (corrected repeatedly, do not drift):** CJC-1295 no DAC = 20 IU (CND2 vial). Ipamorelin = 20 IU (OLD Bali vials, IP-old). Never default to Luke & Bex new vials (8 IU) unless Jason explicitly confirms a vial switch in this session.
+13. **5-Amino-1MQ (50AM) injectable dose = 50 IU (0.5ml).** Reconstituted with 3ml bac water into 50mg vial = 16.67 mg/ml = ~8mg per 50 IU draw = 6 doses per vial. Never calculate 300 IU. Oral dose math (50mg) does not apply to injectable. Jason caught this error 2026-06-09.
+14. **GitHub rejections must be resolved immediately.** If a `git push` fails for any reason — auth, conflict, rejected ref, hook failure — stop everything and fix it before continuing any other work. A failed push means context is not saved. Unresolved push failures = lost memory. Treat it as P0. Diagnose with `git status`, `git log`, `git remote -v` and fix in the same turn.
 
 ---
 

@@ -424,6 +424,7 @@ Updated in real time. Never archived — weekly snapshots taken automatically.
 - [ ] Coordinate Lisbon stakeholder visit
 - [ ] Secure strategic meetings with Simon Littlewood pre-Portugal arrival
 - [ ] Prepare university collaboration paper and political outreach
+- [ ] **Longevity Med Summit Lisbon** — investigate dates, speakers, and attend or send rep. Key relationship-building opportunity with global longevity science community. Jason is Lisbon-based, this is home turf.
 
 ### Portugal NHR / Residency (Jason personal — legal)
 - [ ] Start Irish company incorporation as sole owner/director before Maltese entity involvement

@@ -25,5 +25,6 @@ Open source LLM-powered web scraping. No API key, no proxies. `pip install scrap
 ### Claude Swarm (5 multi-agent templates)
 Full Claude Swarm setup guide + 5 templates from a16z/community.
 **Source:** Jason forwarded to intel@one2b.io May 5 with "SWARM" tag.
-**Link:** [claude.ai/public/artifacts](https://claude.ai/public/artifacts) — needs specific artifact ID.
-**Action:** Locate the specific artifact URL from the original forward.
+**Link:** [claude.ai/public/artifacts/062aeb64-06d7-4fd7-959d-6b09811cda8b](https://claude.ai/public/artifacts/062aeb64-06d7-4fd7-959d-6b09811cda8b) — FOUND 2026-06-09.
+**Also:** Automation Academy (125+ builders): [skool.com/automation-academy-7703/about](https://www.skool.com/automation-academy-7703/about)
+**Action:** Review templates against One 2b fleet architecture. Compare against current 17-agent design.

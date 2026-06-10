@@ -1,5 +1,5 @@
 # Active To-Dos — Jason
-**Last updated:** 2026-06-08
+**Last updated:** 2026-06-10
 **Source:** Fireflies transcript scrape — 132 meetings (One 2b workspace)
 **Priority contacts:** Aswad Martin, Carl Weir, Tom McCollum, Eric Olo
 

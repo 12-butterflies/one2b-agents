@@ -474,7 +474,7 @@ Updated in real time. Never archived — weekly snapshots taken automatically.
 - [ ] Prepare Oracle meeting pitch incorporating platform fee and revenue sharing model (no exclusivity)
 - [ ] Coordinate James Farrell introduction to Stefan Rust for Truflation integration
 - [ ] Confirm platform Filecoin integration for secure data storage (flagged Jan 2026)
-- [ ] R-17 sweep failure: confirm patch to scrape-helper.js sync'd to launchd home path
+- [x] R-17 sweep failure: RESOLVED — scrape-helper.js files are identical; launchd plist points to ~/.gmail-mcp-intel/ correctly (verified 2026-06-10)
 - [ ] Get website finalised and circulate for final internal review
 - [ ] Source eSIM or virtual phone numbers for WhatsApp bot deployment
 - [ ] Set up Teams accounts and AI tool access for Milli and relevant team members

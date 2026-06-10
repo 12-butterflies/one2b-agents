@@ -116,16 +116,19 @@ agents:
     classification: creator (commercial/legal drafting)
     primary_verb: draft
     models:
-      all: claude-opus-4-8   # zero hallucination tolerance
+      standard: claude-opus-4-8         # zero hallucination tolerance
+      novel_instruments: claude-fable-5  # instruments that don't exist yet — deep reasoning
     sentinel: A3 (before any document leaves)
     tools:
       - docuseal             # e-signing at sign.one2b.io (pending deploy)
       - docsend              # read-only sharing with engagement analytics
       - gmail-mcp            # transmission
       - google-drive-mcp     # filing signed PDFs
+      - google-workspace-mcp # create/populate Docs from templates
     mcps:
       - gmail-hello-one2b
       - beb837dd-google-drive
+      - google-workspace
     scripts: []
     handoffs_out:
       - studio-direct        # transmission of completed docs
@@ -157,7 +160,8 @@ agents:
     models:
       A1: claude-haiku-4-5
       A2: claude-sonnet-4-6
-      A3: claude-opus-4-8
+      A3: claude-fable-5      # sovereign/investor/legal outputs — max reasoning
+      A3_standard: claude-opus-4-8  # A3 fallback when Fable 5 not required
       mode-b-daily: claude-sonnet-4-6
       mode-c-continuous: claude-haiku-4-5
     tools: []
@@ -259,28 +263,31 @@ agents:
   capital-readiness-curator:
     skill: skills/capital-readiness-curator/SKILL.md
     status: active
-    classification: curator (investor pipeline)
+    classification: curator (investor pipeline + data room updates)
     primary_verb: curate
     models:
       signal_scoring: claude-sonnet-4-6
       investor_summaries: claude-opus-4-8
+      data_room_updates: claude-opus-4-8  # surgical diff — Fable 5 not required
     sentinel: A3 (all investor-facing summaries)
     tools:
       - gmail-mcp            # investor email threads
       - fireflies-mcp        # meeting transcripts with investors/partners
       - docsend              # deck engagement analytics (when wired)
+      - google-workspace-mcp # data room Sheets + Docs surgical updates
     mcps:
       - gmail-hello-one2b
       - be5d318a-fireflies
+      - google-workspace
     scripts: []
     handoffs_out:
       - studio-direct        # investor outreach drafts
     trinity_scope: [one2b]
 
-  igi-insurance-agent:
-    skill: skills/igi-insurance-agent/SKILL.md
+  insurance-product-agent:
+    skill: skills/insurance-product-agent/SKILL.md
     status: active
-    classification: product agent (IGI proposals)
+    classification: product agent (data-linked insurance products)
     primary_verb: propose
     models:
       all: claude-opus-4-8   # all customer-facing outputs
@@ -299,7 +306,8 @@ agents:
     classification: product agent (data valuation)
     primary_verb: value
     models:
-      all: claude-opus-4-8   # all outputs — institutional-grade, audit-defensible
+      primary: claude-fable-5     # novel instrument valuation — deep reasoning required
+      standard: claude-opus-4-8   # standard data valuation reports
     sentinel: A3 (before any report leaves)
     tools:
       - google-drive-mcp     # context and filing
@@ -322,7 +330,7 @@ agents:
     mcps: []
     scripts: []
     handoffs_out:
-      - igi-insurance-agent
+      - insurance-product-agent
       - tesseract-valuation-agent
       - capital-matching-agent
     trinity_scope: [one2b]
@@ -363,18 +371,6 @@ agents:
     scripts: []
     handoffs_out:
       - capital-readiness-curator  # DocSend tracking data
-    trinity_scope: [one2b]
-
-  document-agent:
-    skill: skills/document/SKILL.md
-    status: active
-    classification: drafter (commercial/legal — same as document)
-    models:
-      all: claude-opus-4-8
-    sentinel: A3
-    tools: [docuseal, docsend, gmail-mcp, google-drive-mcp]
-    mcps: [gmail-hello-one2b, beb837dd-google-drive]
-    scripts: []
     trinity_scope: [one2b]
 
   # ── RESEARCH + ENRICHMENT ───────────────────────────────────────────────
@@ -629,6 +625,7 @@ mcp_registry:
   be5d318a-fireflies: mcp__be5d318a
   29fc21d5-monday:    mcp__29fc21d5
   Read_and_Write_Apple_Notes: mcp__Read_and_Write_Apple_Notes
+  google-workspace:   mcp/google-workspace/index.js  # Sheets + Docs — pending OAuth credentials
 
 # ── TOOL REGISTRY ────────────────────────────────────────────────────────────
 # Key: short name used in agents above | Value: status + notes

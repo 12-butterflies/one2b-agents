@@ -70,7 +70,7 @@ Required substrate manifest (gating precondition before any agent goes live):
 - `/Financials/base_case_projections.md` (locked $12M / $53M / $156M base case)
 - `/Partners/[partner]/context.md`
 - `/People/[person]/profile.md`
-- `/Sovereigns/[country]/status.md` (Mozambique pilot, Colombia expansion)
+- `/Sovereigns/[country]/status.md` (Portugal flagship, Brazil + Colombia next)
 - `/Quarterly/Q[N]_thesis.md`
 - `/RED_flags/standing_list.md`
 
@@ -148,13 +148,13 @@ These are the must-never-use and must-use rules already locked. Sentinel A1 scru
 
 **Never use:** RGB, "Repayment Guarantee Bond", "Data Valuation Partners", DVP, ICME, "Collateralization platform", "Hendrick", "Simona Anamaria Marinescu", "Susan Bergin", "Joshua Armah", "Jamie Dixon", "Kyle Turner", "Carl Turner", "Stephan Rust", "Susan Pinedo", named insurance houses (no AIG, Liberty Mutual, Lloyd's syndicates, Allianz, Munich Re, etc.), "partnered with" any specific insurer, British Pounds (£), "Tessaract" (misspelling).
 
-**Always use:** IGI / Insurance Guarantee Instruments, Tesseract, One 2b, One 2b Risk Solutions, "registered Lloyd's of London broker" (our status, fine to state), "major global insurance conglomerates" (when referring to others), Stefan Rust, Aaron Astley, asterisks (*) on all yield/return statements.
+**Always use:** "data-linked insurance products" (external), Tesseract, One 2b, One 2b Risk Solutions, "registered Lloyd's of London broker" (our status, fine to state), "major global insurance conglomerates" (when referring to others), Stefan Rust, Aaron Astley, asterisks (*) on all yield/return statements.
 
-**Sovereigns:** Mozambique = PILOT, Colombia = EXPANSION. Never reverse.
+**Sovereigns:** Portugal = flagship (live). Brazil + Colombia = next. Mozambique: dropped from active pipeline, never reference externally.
 
 **Currency:** USD ($) or EUR (€) only. Never GBP. USD for projections, EUR for billing.
 
-**Punctuation:** Never use hyphens. Always use a comma wherever humanly possible. This applies to all written output across every agent, every surface, every format. No exceptions.
+**Punctuation:** Never use hyphens in prose. Always use a comma wherever humanly possible. Exception: compound technical identifiers (BPC-157, TB-500, CJC-1295, etc.), URLs, file paths, code identifiers, and ISO dates retain their hyphens.
 
 ---
 

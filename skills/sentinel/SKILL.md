@@ -60,9 +60,10 @@ Three tiers by action criticality:
 - Output: Structured verdict across all five jobs. Each job: Pass / Flag. Flags include: finding, source rule, recommended fix.
 - Invocation: `Sentinel A2: [paste plan or document]`
 
-**A3 — Pre-ship external review (Opus 4.8)**
+**A3 — Pre-ship external review (Fable 5 for sovereign/investor/legal; Opus 4.8 for all other external)**
 - Runs: All six jobs
-- When: Every external-facing output before it reaches a human outside the build team — investor letters, IGI proposals, Tesseract reports, sovereign communications, Studio Social posts to investors, legal documents, press
+- When: Every external-facing output before it reaches a human outside the build team — investor letters, data-linked insurance product proposals, Tesseract reports, sovereign communications, Studio Social posts to investors, legal documents, press
+- Model selection: Fable 5 = sovereign communications, investor documents, novel instrument descriptions, legal text. Opus 4.8 = all other external outputs.
 - Output: Full verdict. All six jobs. Confidence level per finding. Recommended action (approve / revise / escalate to Jason).
 - Invocation: `Sentinel A3: [paste output] — Run all six jobs. Return verdict in standard format.`
 

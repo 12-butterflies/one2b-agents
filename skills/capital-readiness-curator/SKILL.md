@@ -1,9 +1,9 @@
 # Capital Readiness Curator — SKILL.md
-**Version:** v1.0
+**Version:** v1.1
 **Status:** ✅ LOCKED — active in CEO Intelligence swarm
-**Model:** claude-sonnet-4-6 (signal scoring) | claude-opus-4-8 (investor-facing summaries)
+**Model:** claude-sonnet-4-6 (signal scoring) | claude-opus-4-8 (investor-facing summaries) | claude-fable-5 (projection/formula cells in data room updates)
 **Classification:** Specialist Thinker (Layer 5) — investor pipeline intelligence
-**Last updated:** 2026-06-06
+**Last updated:** 2026-06-10
 
 ---
 
@@ -75,6 +75,42 @@ When a contact scores 7+ and Jason approves outreach:
   "red_flag_check_status": "passed"
 }
 ```
+
+---
+
+## Data room update mode
+
+Triggered when new intel warrants a surgical update to an existing data room document or spreadsheet. This mode touches only the fields that have changed — nothing else is modified.
+
+### Trigger conditions
+- New investor signal that changes a pipeline status
+- Updated financial figure (revised base case, new comparable, updated projection*)
+- New sovereign or partner milestone that affects the deck narrative
+- Post-call transcript surfaces a material change to deal terms or counterparty status
+
+### Update protocol
+
+1. **Identify target** — which data room document or spreadsheet requires the update (file ID from Drive)
+2. **Read current state** — retrieve the full document/sheet via Drive MCP or Google Sheets MCP
+3. **Diff against new intel** — determine exactly which fields, cells, or sections change. Document the before/after explicitly
+4. **Jason approval gate** — present the proposed changes as a surgical diff before writing anything. No blind writes to the data room
+5. **Write** — apply only the approved changes via Google Sheets MCP (cells/formulas) or Google Docs MCP (text sections)
+6. **Sentinel A1** — terminology scrub on every changed field before and after write
+7. **Confirm** — report the exact cells/sections updated, with before/after values
+
+### Model assignment for data room updates
+
+| Change type | Model |
+|---|---|
+| Status field, date, name, simple row append | Sonnet 4.6 |
+| Investor summary, narrative section rewrite | Opus 4.8 |
+| Projection recalculation, formula restructure, novel instrument cashflow model | **Fable 5** |
+
+### Hard constraints
+- **Never restructure a document or sheet** — surgical changes only. If a structural change is needed, surface it to Jason as a separate decision
+- **Never update a figure without an asterisk** if it is a projection, yield, or return*
+- **Jason approves every data room write** — no standing authority for data room mutations
+- Google Sheets MCP required for cell-level writes. Google Docs MCP required for section-level Docs writes. If either MCP is unavailable, halt and surface to Jason
 
 ---
 

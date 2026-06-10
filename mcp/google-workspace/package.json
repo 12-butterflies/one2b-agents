@@ -1,0 +1,16 @@
+{
+  "name": "google-workspace",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Google Sheets + Docs MCP — cell-level Sheets writes and section-level Docs writes for One 2b data room",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "One 2b",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "googleapis": "^144.0.0"
+  }
+}

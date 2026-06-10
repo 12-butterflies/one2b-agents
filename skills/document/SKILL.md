@@ -1,10 +1,10 @@
 # Document Agent — SKILL.md
-**Version:** v1.0
+**Version:** v1.1
 **Status:** Phase 7 — LOCKED. Pending DocuSeal deploy + DocSend trial
-**Model:** claude-opus-4-8 (all drafts — legal language, zero hallucination tolerance) + Sentinel A3 before any document leaves
-**Surface owned:** Templated commercial and legal drafting — NDAs, CPAs, partnership agreements
+**Model:** claude-opus-4-8 (all standard drafts) | claude-fable-5 (novel financial instruments — IGI term sheets, RWA structures, data-linked product documentation) + Sentinel A3 before any document leaves
+**Surface owned:** Templated commercial and legal drafting — NDAs, CPAs, partnership agreements, white-label documents, financial instrument documentation
 **Primary verb:** Draft
-**Last updated:** 2026-06-06
+**Last updated:** 2026-06-10
 
 ---
 
@@ -22,7 +22,11 @@
 
 Document Agent owns all commercial and legal document generation. It does not own creative content (Studio fleet), investor letters (Studio Words), or general DMs (Studio Direct). It is called by Studio Direct when a message requires a document to be sent alongside it.
 
-**What it drafts:** Non-disclosure agreements (NDAs), Commercial Partnership Agreements (CPAs), partnership letters, engagement letters, term sheets (summary level only — no binding term sheets without legal review).
+**What it drafts:** Non-disclosure agreements (NDAs), Commercial Partnership Agreements (CPAs), partnership letters, engagement letters, term sheets (summary level only — no binding term sheets without legal review), white-label partnership agreements (counterparty-branded, stripped of One 2b identity where required), financial instrument documentation (IGI product papers, RWA structures, data-linked insurance product specs).
+
+**Post-call trigger:** When a Fireflies transcript surfaces a document requirement (e.g. "send them a white-label partnership agreement", "get an NDA out before Thursday"), Fireflies MCP or Intel-to-Spec Adapter hands off to Document Agent automatically. Document Agent reads the transcript context, selects the correct template, populates counterparty fields, and queues for Jason approval — without Jason needing to brief it manually.
+
+**Google Docs integration:** Document Agent can read and write Google Docs in the data room via Google Docs MCP. Mode B (reformat) reads the source Doc, applies One 2b brand template, and writes the reformatted version back to staging. All Doc writes require Jason approval before the original is overwritten.
 
 **What it does not draft:** Binding legal advice, court documents, regulatory filings, or any document requiring a qualified solicitor's sign-off. Flags those and escalates.
 

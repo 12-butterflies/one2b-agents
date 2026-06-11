@@ -105,6 +105,7 @@ Jason's personal operating system. Read this before any health, personal, or lif
 6. **Currency:** USD ($) or EUR (€) only. Never GBP.
 7. **Asterisk all projections** — yield, return, financial outcome → must carry *.
 8. **Baby steps:** one action per numbered step. Print copy-paste ready text inline.
+8a. **Response style — brief bullets only.** When listing peptides, SKU code goes in brackets if shown at all — never the full chemical name in brackets. Example: AOD-9604 (5AD) — not AOD-9604 (repeat afternoon). Locked 2026-06-11.
 8a. **Response style — brief bullets only.** Facts and next steps. No long-winded explanations, no narration. Jason reads the result, not the reasoning. Always include a clickable markdown link to any document, site, or Drive file mentioned. Never ask Jason to drag-and-drop, upload, or manually move files — do it via MCP. Maximum Claude effort, minimum Jason effort. Locked 2026-06-09.
 9. **No preamble.** Lead with the answer.
 10. **Sentinel before any external output** — A1 minimum, A3 for investor/sovereign/legal.

@@ -1,5 +1,7 @@
 ---
 name: linkedin-automation
+version: "1.0"
+status: active
 description: Automate LinkedIn posts, profiles, company updates, image uploads, and comments. Use when Studio Social needs to publish directly to LinkedIn, schedule posts, or manage engagement. Trigger on any request to post, publish, or schedule LinkedIn content.
 ---
 

@@ -1,112 +1,118 @@
 # Longevity Research Curator — SKILL.md
-**Version:** 1.0 | **Created:** 2026-06-09 | **Owner:** Jason Peter Stevens
-**Runs:** Sunday 21:00 Lisbon (alongside Intel-to-Spec Adapter)
-**Output:** /saved/Research/Longevity/weekly/[YYYY]-W[NN]_longevity_digest.md + Drive dual-save
+**Version:** 1.1 | **Updated:** 2026-06-11 | **Owner:** Jason Peter Stevens
+**Runs:** Sunday 18:00 Lisbon time (17:00 UTC in June)
+**Output:** /saved/Research/Longevity/YYYY-WNN_longevity_sweep.md + Drive dual-save
 
 ---
 
 ## PURPOSE
 
-Weekly autonomous crawl of longevity science, peptide research, brain health, and organ repair. Surfaces what is new, filters by relevance to Jason's active protocol and goals, and delivers a structured digest every Monday morning.
+Weekly autonomous sweep of longevity, peptide, and biohacking research. Surfaces protocol-relevant updates to Jason. Files to saved/Research/Longevity/. Never fabricates — only reports verified sources.
 
 ---
 
-## WATCHLIST
+## RESEARCHERS AND SOURCES TO MONITOR
 
-### Researchers
-- David Sinclair (Harvard) — sirtuins, NAD+, epigenetic reprogramming
-- Pinchas Cohen (USC) — MOTS-c originator, mitokines
-- Vladimir Khavinson (St Petersburg) — bioregulator peptides, Epitalon, Thymalin
-- Peter Attia — clinical longevity practice, VO2 max, muscle, insulin
-- Rhonda Patrick (FoundMyFitness) — sauna, cold, sulforaphane, omega-3
-- Andrew Huberman (Stanford) — neuroscience, dopamine, testosterone, sleep
+### Named researchers
+- Peter Attia — podcast, newsletter, peterattiamd.com
+- David Sinclair — Harvard, lifespan.io, publications
+- Rhonda Patrick — foundmyfitness.com, podcast
+- Bryan Johnson — blueprint.bryanjohnson.com
+- Andrew Steele — sciencefocus, publications
+- Valter Longo — USC Longevity Institute, publications
+- Andrew Huberman — hubermanlab.com, podcast
+- Vladimir Khavinson — Khavinson Institute, Thymalin, Epitalon, peptide bioregulator research
+- ASRI — Aging Science Research Institute
 - Vera Gorbunova + Andrei Seluanov (Rochester) — DNA repair, hyaluronic acid
 - Vadim Gladyshev (Harvard) — biological aging clocks, redox biology
-- Evelyne Bischof — clinical geroscience, biological age
-- Andrea Maier (NUS) — frailty, muscle aging, clinical translation
-- Leonard Guarente (MIT) — sirtuins, NAD+, Elysium Health
+- Pinchas Cohen (USC) — MOTS-c originator, mitokines
 
-### PubMed search terms (weekly)
-longevity, peptide therapy, GH secretagogue, MOTS-c, SS-31 elamipretide, BPC-157, CJC-1295, ipamorelin, semax, GHK-Cu, epitalon, thymalin, IGF-1 LR3, 5-Amino-1MQ, AOD-9604, NAD+ aging, senolytics, epigenetic reprogramming, mitochondrial aging, neurogenesis, BDNF, body recomposition aging, kisspeptin
+### PubMed search terms (weekly, last 7 days)
+- "peptide longevity"
+- "GH secretagogue aging"
+- "SS-31 elamipretide"
+- "MOTS-c exercise"
+- "Thymosin alpha-1"
+- "FOXO4-DRI senolytic"
+- "Tesamorelin visceral fat"
+- BPC-157, CJC-1295, ipamorelin, semax, GHK-Cu, epitalon, thymalin, 5-Amino-1MQ, AOD-9604, NAD+ aging, kisspeptin
 
-### News sources
-- longevity.technology
-- lifespan.io
-- fightaging.org
-- hubermanlab.com
-- foundmyfitness.com
-- peterattiamd.com
-- rethinkpeptides.com
-- dopamine.club
+### Community sources
+- Reddit: r/PeptideGuide, r/longevity, r/Nootropics — new posts flagged
+- longevity.technology, lifespan.io, fightaging.org
+- hubermanlab.com, foundmyfitness.com, peterattiamd.com
+- rethinkpeptides.com, thepeptidecatalog.com, proxivalabs.com
 
-### Events
-- Longevity Med Summit Lisbon — longevitymedsummit.com
-- Longevity Summit Dublin — longevitysummitdublin.com
-- ARDD Copenhagen
-- XPRIZE Healthspan
+### Vendor monitoring
+- Pepguard catalog — any new SKUs or price changes
 
 ---
 
-## EXECUTION STEPS
+## SWEEP OUTPUT FORMAT
 
-1. Run web search sweep across all watchlist sources
-2. PubMed query — all search terms, last 7 days
-3. Extract: title, author, journal, one-line summary, relevance score 1-5 to Jason's stack
-4. Deduplicate against prior week
-5. Rank top 3 by relevance + evidence quality + actionability
-6. Protocol implications check — does anything warrant stack review?
-7. Write digest in standard format
-8. Dual-save local + Drive
-9. GitHub commit
+One entry per finding:
+
+| Field | Content |
+|---|---|
+| Date | YYYY-MM-DD |
+| Source | [Name](URL) as markdown link |
+| Finding | One sentence, verified |
+| Protocol relevance | Which peptide or decision it affects |
+| Action required | YES or NO |
+
+If Action required = YES: append item to /Users/jasonpeterstevens/one2b-agents/saved/Todos/ACTIVE.md
 
 ---
 
-## OUTPUT FORMAT
+## OUTPUT FILE
 
-# Longevity Weekly Digest — Week [NN], [Date]
-Curator run: [timestamp] | Sources checked: [N] | New findings: [N]
+Path: `/Users/jasonpeterstevens/one2b-agents/saved/Research/Longevity/YYYY-WNN_longevity_sweep.md`
+One file per week, ISO week number in filename.
 
-## TOP 3 THIS WEEK
-1. [Finding] — [Why it matters for Jason's protocol]
-2. [Finding] — [Why it matters]
-3. [Finding] — [Why it matters]
+---
 
-## NEW PUBLICATIONS
-Title | Author | Journal | Summary | Relevance (1-5)
+## FILING RULES
 
-## AUTHORITY UPDATES
-Sinclair / Attia / Huberman / Khavinson / Cohen — what's new from each
-
-## PEPTIDE-SPECIFIC UPDATES
-Any new data: CJC-1295, Ipamorelin, AOD-9604, MOTS-c, SS-31, BPC-157, Semax, GHK-Cu, Epitalon, Thymalin, IGF-1 LR3, 5-Amino-1MQ, NAD+
-
-## EMERGING SIGNALS
-Directionally interesting. Preprints flagged UNREVIEWED.
-
-## EVENTS RADAR
-Upcoming conferences and speaker announcements.
-
-## PROTOCOL IMPLICATIONS
-HIGH = discuss with prescriber before next dose
-MEDIUM = monitor over 4 weeks
-LOW = background awareness only
+1. Save locally at the path above.
+2. Upload to Drive Intel folder (folderId: 17oDmGickBJvKcgLdv85XlCzu28k2nyYs) under Research/Longevity/.
+3. If any finding carries Action required: YES — append to /Users/jasonpeterstevens/one2b-agents/saved/Todos/ACTIVE.md.
+4. Commit to GitHub at end of every sweep (org: 12-butterflies, repo: one2b-agents, branch: main).
 
 ---
 
 ## HARD RULES
 
-1. Never fabricate citations.
+1. Never fabricate citations. Only report verified sources.
 2. Preprints always flagged UNREVIEWED.
-3. Protocol Implications rated HIGH only for human trial evidence.
+3. Action required = YES only when finding directly changes dose, timing, or safety of Jason's current stack.
 4. Dual-save always. Never skip Drive upload.
 5. GitHub commit every run.
+6. Four-pass verification for any peptide dose claim: (1) Pull from canonical Drive reference. (2) Cross-check validated formula. (3) Check _state.md. (4) Confirm vial SKU. If any pass fails, say so.
 
 ---
 
-## CADENCE
+## EXECUTION STEPS
 
-Primary run: Sunday 21:00 Lisbon
-Manual trigger: "run longevity digest" or "what's new in longevity this week"
-File naming: YYYY-W[NN]_longevity_digest.md
-Local path: /saved/Research/Longevity/weekly/
-Drive: One 2b Intel folder > Research
+1. Web search sweep across all watchlist sources.
+2. PubMed query — all search terms, last 7 days.
+3. Extract: source, finding, protocol relevance, action flag.
+4. Deduplicate against prior week's file.
+5. Write sweep file in standard format.
+6. Check for Action required = YES entries — append to ACTIVE.md if any.
+7. Dual-save local + Drive.
+8. GitHub commit.
+
+---
+
+## MANUAL TRIGGER
+
+"run longevity sweep" or "what's new in longevity this week"
+
+---
+
+## WEEKLY DIGEST (supplementary)
+
+A longer-form digest (authority updates, emerging signals, events radar) is also written to:
+`/saved/Research/Longevity/weekly/YYYY-W[NN]_longevity_digest.md`
+
+This is in addition to the primary sweep file, not instead of it.

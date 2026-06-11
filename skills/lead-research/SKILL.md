@@ -1,5 +1,7 @@
 ---
 name: lead-research
+version: "1.0"
+status: active
 description: Identifies and qualifies high-quality leads with outreach strategies. Use when Capital Matching Agent or Scout needs to research an investor, partner, or sovereign counterparty — or when Studio Direct is preparing cold outreach and needs context on a recipient.
 ---
 

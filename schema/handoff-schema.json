@@ -22,7 +22,7 @@
     },
     "request_origin": {
       "type": "string",
-      "enum": ["human", "studio-social", "studio-direct", "studio-words", "studio-design", "studio-motion", "document", "fleet-router", "sentinel", "scout", "curator", "triage", "ceo-daily-brief", "capital-readiness-curator", "insurance-product-agent", "tesseract-valuation-agent", "capital-matching-agent", "outreach-agent"],
+      "enum": ["human", "studio-social", "studio-direct", "studio-words", "studio-design", "studio-motion", "document", "fleet-router", "sentinel", "scout", "curator", "triage", "ceo-daily-brief", "capital-readiness-curator", "insurance-product-agent", "tesseract-valuation-agent", "capital-matching-agent", "outreach-agent", "bio-linkedin-enrichment", "conversation-curator", "deal-screener", "graphify", "instagram-automation", "intel-to-spec-adapter", "jason-health-curator", "lead-research", "legal-agent", "linkedin-automation", "longevity-research-curator", "narrative-agent", "recursive-research", "repo-reader", "skill-creator"],
       "description": "Who originated or is passing this request."
     },
     "request_intent": {
@@ -61,7 +61,7 @@
     },
     "route_to": {
       "type": "string",
-      "enum": ["studio-social", "studio-direct", "studio-words", "studio-design", "studio-motion", "document", "sentinel", "scout", "curator", "triage", "ceo-daily-brief", "capital-readiness-curator", "insurance-product-agent", "tesseract-valuation-agent", "capital-matching-agent", "outreach-agent"],
+      "enum": ["studio-social", "studio-direct", "studio-words", "studio-design", "studio-motion", "document", "fleet-router", "sentinel", "scout", "curator", "triage", "ceo-daily-brief", "capital-readiness-curator", "insurance-product-agent", "tesseract-valuation-agent", "capital-matching-agent", "outreach-agent", "bio-linkedin-enrichment", "conversation-curator", "deal-screener", "graphify", "instagram-automation", "intel-to-spec-adapter", "jason-health-curator", "lead-research", "legal-agent", "linkedin-automation", "longevity-research-curator", "narrative-agent", "recursive-research", "repo-reader", "skill-creator"],
       "description": "Agent this payload is addressed to."
     },
     "route_pattern": {

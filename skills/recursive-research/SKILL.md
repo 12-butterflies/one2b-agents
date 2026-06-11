@@ -1,5 +1,7 @@
 ---
 name: recursive-research
+version: "1.0"
+status: active
 description: PhD-level autonomous research across domains with source tiering and checkpointing. Use when Scout or Capital Readiness Curator needs deep multi-hop research — competitor analysis, regulatory deep-dive, investor thesis mapping, technology landscape. Trigger on requests for thorough, cited, multi-source research.
 ---
 

@@ -139,7 +139,7 @@ agents:
 
   fleet-router:
     skill: skills/fleet-router/SKILL.md
-    status: active-v1.0
+    status: active-v0.2
     classification: router
     primary_verb: route
     models:

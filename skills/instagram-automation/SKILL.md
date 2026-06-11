@@ -1,5 +1,7 @@
 ---
 name: instagram-automation
+version: "1.0"
+status: active
 description: Automate Instagram posts, stories, comments, media uploads, and insights retrieval. Use when Studio Social needs to publish to Instagram, or when Scout needs to retrieve Instagram insights or engagement data.
 ---
 

@@ -30,7 +30,7 @@ Run on any plan, strategy, SKILL.md draft, or architectural decision. Checks:
 
 **Result:** Structured verdict per job — Pass / Flag per check. Flags include: finding + source rule + recommended fix.
 
-### A3 — Pre-ship external review (Opus 4.8)
+### A3 — Pre-ship external review (Fable 5 for sovereign/investor/legal; Opus 4.8 for all other external)
 Run on every external-facing output before it reaches a human outside the build team. Checks:
 - All A1 and A2 checks
 - Guarantee language audit

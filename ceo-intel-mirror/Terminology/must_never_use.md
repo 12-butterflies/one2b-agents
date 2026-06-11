@@ -11,7 +11,7 @@
 |---|---|
 | RGB | data-linked insurance products (external) / IGI (internal) |
 | Repayment Guarantee Bond | data-linked insurance products (external) / IGI (internal) |
-| Insurance Guarantee Instruments | data-linked insurance products — use the plain English term externally |
+| IGI Insurance | IGI — "IGI Insurance" is redundant and wrong. "IGI" alone is correct. Externally: "data-linked insurance products" |
 | Data Valuation Partners | (omit entirely) |
 | DVP | (omit entirely) |
 | ICME | (omit entirely) |

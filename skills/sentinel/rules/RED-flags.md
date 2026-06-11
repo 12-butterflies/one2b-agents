@@ -38,11 +38,13 @@ These allow routing to proceed but the output must surface to Jason before publi
 
 ## Base case projections (reference values — asterisk all)
 
+Source of truth: `ceo-intel-mirror/Financials/base_case_projections.md`
+
 | Horizon | Figure |
 |---------|--------|
 | Year 1 | $12M* |
-| Year 2 | $53M* |
-| Year 3 | $156M* |
+| Year 3 | $53M* |
+| Year 5 | $156M* |
 
 Any projection outside these figures in an external document triggers a review-required flag.
 

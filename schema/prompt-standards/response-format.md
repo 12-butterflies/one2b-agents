@@ -62,7 +62,10 @@ If an action requires credentials Jason holds and Claude cannot access: state th
 |----------|-------|
 | Classification, routing, pattern matching | `claude-haiku-4-5` |
 | Analysis, generation, SKILL.md writing | `claude-sonnet-4-6` |
-| External-facing investor / sovereign content | `claude-opus-4-8` |
+| External-facing investor / partner content (standard) | `claude-opus-4-8` |
+| Sovereign communications, investor legal documents, novel instruments | `claude-fable-5` |
+
+Sentinel A3 selects between Opus and Fable 5 based on content type. Default to Fable 5 for anything addressed to a government body or containing novel instrument descriptions.
 
 ---
 

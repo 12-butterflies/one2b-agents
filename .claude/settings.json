@@ -30,6 +30,10 @@
     "google-workspace": {
       "command": "node",
       "args": ["/Users/jasonpeterstevens/one2b-agents/mcp/google-workspace/index.js"]
+    },
+    "docuseal": {
+      "command": "node",
+      "args": ["/Users/jasonpeterstevens/one2b-agents/mcp/docuseal/index.js"]
     }
   },
   "model": "claude-sonnet-4-6",

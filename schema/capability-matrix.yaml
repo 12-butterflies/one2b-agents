@@ -625,7 +625,8 @@ mcp_registry:
   be5d318a-fireflies: mcp__be5d318a
   29fc21d5-monday:    mcp__29fc21d5
   Read_and_Write_Apple_Notes: mcp__Read_and_Write_Apple_Notes
-  google-workspace:   mcp/google-workspace/index.js  # Sheets + Docs — pending OAuth credentials
+  google-workspace:   mcp/google-workspace/index.js  # Sheets + Docs — OAuth wired 2026-06-11
+  docuseal:           mcp/docuseal/index.js           # E-signing — API key pending signup at docuseal.com
 
 # ── TOOL REGISTRY ────────────────────────────────────────────────────────────
 # Key: short name used in agents above | Value: status + notes
@@ -667,8 +668,9 @@ tool_registry:
     source: CEO Intelligence Cowork project
 
   docuseal:
-    status: pending-deploy
-    target: sign.one2b.io
+    status: wired-pending-api-key
+    target: https://api.docuseal.com (Cloud) — sign.one2b.io custom domain pending
+    mcp: mcp/docuseal/index.js
 
   docsend:
     status: active

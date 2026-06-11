@@ -1,0 +1,16 @@
+{
+  "name": "docuseal",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "DocuSeal MCP — e-signing for One 2b Document Agent. Covers template upload, submission creation, status polling, signed PDF retrieval.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "One 2b",
+  "license": "ISC",
+  "dependencies": {
+    "@docuseal/api": "^1.0.23",
+    "@modelcontextprotocol/sdk": "^1.29.0"
+  }
+}

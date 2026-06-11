@@ -1,6 +1,20 @@
 # One 2b Session Kickoff Prompt
 # Paste this at the start of every Cowork session. No exceptions.
 # Last updated: 2026-06-11
+#
+# QUICK COPY-PASTE VERSION (for group chat / new session):
+#
+# Read CLAUDE.md and MEMORY.md. Load ACTIVE.md.
+# Rules active this session:
+# - Health mention = read STACK_TEMPLATE.md + _daily_log.md + _state.md BEFORE answering. No exceptions.
+# - Design/asset mention = load brand kit for the relevant trinity identity before outputting anything.
+# - Architecture/agent mention = read ~/one2b-agents/CLAUDE.md and surface the current build state.
+# - Social/content mention = load voice guide for the relevant identity before writing a word.
+# - CEO/strategy mention = load saved/Strategy/Q2_2026_THESIS.md + ACTIVE.md.
+# - Everything executes in hours, not weeks. No phase 2. Start now.
+# - Dual-save everything: local saved/ AND Drive staging folder.
+# - All rules in CLAUDE.md apply to every response. You do not choose which ones apply.
+# State: I am Jason Peter Stevens, CEO One 2b, Lisbon. What do you have for me?
 
 ---
 

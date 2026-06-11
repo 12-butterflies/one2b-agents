@@ -81,6 +81,111 @@ Updated in real time. Never archived — weekly snapshots taken automatically.
 
 ---
 
+## NEW — From Fireflies transcripts June 11 (today)
+
+### Adejare Emmanuel Oluga (adejare@hoysttar.net) — met June 11
+- [ ] Resend investor materials — simplified 1:1 pager and confidential shareholder updates
+- [ ] Introduce Adejare to Giselle (UN Knowledge Innovation Summit) to advance collaboration
+- [ ] Continue progressing $5M debt financing backed by data asset financial guarantees — target weeks not months
+- [ ] Support Nigeria channel partnership and white-label government data management deals
+- [ ] Pursue closing $2M round at $20M valuation — communicate short-term capital needs clearly
+
+### Bernard Tetteh-Dumanya (btdumanya@gmail.com) — met June 11 (with Giselle)
+- [ ] Prepare detailed implementation plan and cost estimate for pilot data valuation projects in Ghana
+- [ ] Engage wider partner network with political and mid-level access in Ghana and other African countries
+- [ ] Facilitate connection with Brittany Kaiser and technology partners to strengthen national digital sovereignty offering
+- [ ] Collaborate with Bernard and Giselle to align and fine-tune Ghana launch strategy
+- [ ] Leverage upcoming summits to build stakeholder alliances
+
+### 1-pager launch kickoff — met June 11 (James, Carl, Aswad, Raphael, Mark, John Slattery)
+- [ ] Provide copywriting content and legal-approved text for LinkedIn campaign
+- [ ] Own structure and design oversight — coordinate with Raphael on execution and metrics automation
+- [ ] Share ICP documentation and target profiles with team
+- [ ] Manage paid LinkedIn campaign execution once assets are ready
+- [ ] Drive and monitor campaign KPIs — target hits and paid PDV views
+- [ ] Follow up with Raphael on deliverables outside meeting times
+- [ ] Join Monday follow-up meeting — confirm timing with Raphael
+
+### Kaltura / Ben English (ben.english@kaltura.com) — met June 11 (with Carl)
+- [ ] Coordinate internal review of data valuation questions — provide refined derivative question lists for different audience types to Ben English by Monday
+- [ ] Provide detailed user persona data, onboarding question answers, and conversation flow to support rapid standalone avatar demo build
+
+### Amelie Desrochers — met June 11
+- [ ] Share concise one-pager and investor snapshot with Amelie
+- [ ] Coordinate further calls — explore fundraising and potential fund creation for Portuguese Golden Visa investors
+- [ ] Provide Amelie with introduction to Jose Reyes Santos (blockchain and AI)
+- [ ] Attend VNTR network investor event in Lisbon — get invite from Amelie
+
+### Greg Tennant (greg.tennant@andexecute.com) — met June 11
+- [ ] Arrange informal meetup with Greg in Lisbon (potentially Saturday)
+- [ ] Continue onboarding partners for scientific and media components of 12 Butterflies
+- [ ] Proceed with innovation hub and regulatory sandbox setup in Portugal — longevity and psychedelic research
+
+---
+
+## NEW — From Fireflies transcripts June 8-11 (not yet in list)
+
+### Avi Loeb (aloeb@cfa.harvard.edu) — Harvard — met June 9
+- [ ] Send detailed summary document on data valuation activities, principles, and platform — initiate advisory involvement
+- [ ] Provide additional info on ecosystem and policy work (UN engagement, blockchain, tokenisation)
+- [ ] Coordinate next call/meeting to advance collaboration
+- [ ] Explore Portuguese observatory funding and interstellar meteor expedition planning (Portugal/Azores)
+- [ ] Explore integrating Avi's research stories into Netflix documentary and Broadway show
+
+### Jonathan Rowden — Twin OS — met June 10
+- [ ] Coordinate his onboarding onto One2b investment platform by end of June
+- [ ] Arrange technical call with Mark and Mark Acosta on personality assessment and platform integration
+- [ ] Evaluate family office tax strategy referral — provide intro if applicable
+
+### Raphael Jolicoeur (corpo@raphaeljolicoeur.com) — met June 10
+- [ ] Provide colour palette ideas and animation concepts
+- [ ] Share references, videos, and websites that inspire desired aesthetic
+- [ ] Collaborate over next week to finalise brand guide, visual assets, and campaign materials for website redesign and LinkedIn push
+
+### Siobhan Brady (spb150@proton.me) — met June 10
+- [ ] Share investor deck, shareholder updates, and data room links
+- [ ] Provide simple explainer PDF on business and insurance vision via WhatsApp
+- [ ] Set up NDA and organise group chat with Siobhan, risk advisors, project finance experts, insurance partners
+- [ ] Keep Siobhan updated on UN policy drafts once NDA and academic approvals resolved
+
+### Florian Fournier — met June 10
+- [ ] Confirm next meeting — Friday at 11am or 2pm UK time
+- [ ] Loop into UN summit programming and policy development on data as an asset (include Giselle)
+- [ ] Create group chat with Florian and Akasha for AI economic simulation collaboration
+- [ ] Provide written updates/blurbs for Florian to share with Tom
+- [ ] Re-engage Risika company contacts — revive data valuation discussions
+- [ ] Finalise channel partnership agreement structure under Florian's company entity
+
+### Zach Pogue (zach.pogue@gmail.com) — met June 9
+- [ ] Organise detailed platform demo and walkthrough including AI concierge and insurance readiness modules
+- [ ] Collaborate to integrate his posture correction dataset — demonstrate end-to-end use case
+- [ ] Share DAF data donation tax strategy info and networking contacts
+
+### William O'Grady (Howden Group) — met June 9
+- [ ] Send follow-up — lead with registered Lloyd's of London broker status and data-linked insurance thesis
+- [ ] Frame around Howden's data-centre insurance practice and DUAL (Lloyd's largest international coverholder)
+- [ ] Arrange face-to-face meeting in London
+
+### Bhavin Patel (Aarav Solutions) — met June 9
+- [ ] Send follow-up — formalise advisory agreement and NDA to enable data room access
+- [ ] Facilitate introduction through Umar to Oracle and banking partners
+- [ ] Share investor snapshot and detailed business model documents
+
+### Matteo Blanchard — met June 8 (Finance & Partnership)
+- [ ] Send follow-up after the Finance & Partnership call
+
+### Siobhan Brady — met June 10 (see above)
+
+### CEO Intel pending decisions (from daily briefs — all outstanding)
+- [ ] IGI propagation — reply "go" to intel@one2b.io (Day 7+, 82 occurrences across 19 files)
+- [ ] F&F close — extend $20M innermost or fold into $80M Pre-Seed (closes end June)
+- [ ] Brittany Kaiser + Isle of Man brief — approve coordinated send (Day 25 — longest on board)
+- [ ] NVIDIA Build (build.nvidia.com) — reply "go" for 5-question + trinity pass
+- [ ] Morning brief email typo — jasonpetersstevens@mac.com → jasonpeterstevens@mac.com (Day 16 silent bounces)
+- [ ] Hall Chadwick — give a decision or context (parked 4 times)
+
+---
+
 ## People follow-ups
 
 ### Aswad Martin (aswad@one2b.io) — PDV Product Lead

@@ -26,21 +26,24 @@ When Jason asks "what's my stack", read this file, fill the 3–4 variable field
 | MOTS-c | (MS10) | 38 IU |
 | AOD-9604 | (5AD) | 10 IU |
 | Semax | (XA10) | 10 IU |
-| 5-Amino-1MQ | (50AM) | 50 IU (0.5ml) — injectable OR oral capsule |
 | Kisspeptin-10 | (KS10) | [dose TBC] — **Wed/Sat only** |
 
 *Combine into fewest syringes possible. State needle count.*
 
 ---
 
-**Post-training**
+**Post-training — SubQ**
 
-| Peptide | SKU | Dose |
-|---|---|---|
-| BPC-157 + TB-500 blend | (BB20) | 4 IU — confirm 4 or 8 IU with Jason |
-| AOD-9604 | (5AD) | 10 IU — this IS the second AOD dose. Same syringe as BB20 if compatible. |
+| Peptide | SKU | Dose | Note |
+|---|---|---|---|
+| BPC-157 + TB-500 blend | (BB20) | 4 IU — confirm 4 or 8 IU with Jason | |
+| AOD-9604 | (5AD) | 10 IU | Second AOD dose. Same syringe as BB20 if compatible. No separate 15:00 shot needed. |
 
-*Note: AOD post-training = the ~15:00 afternoon dose. No separate 15:00 shot needed if taken post-workout.*
+**Post-training — with food**
+
+| Peptide | SKU | Dose | Note |
+|---|---|---|---|
+| 5-Amino-1MQ | (50AM) | 50 IU (0.5ml) | Take WITH post-workout meal — NOT fasted. Daily. |
 
 ---
 
@@ -75,10 +78,15 @@ When Jason asks "what's my stack", read this file, fill the 3–4 variable field
 | SS-31 | (2S10) | 5 IU |
 | CJC-1295 no DAC | (CND2) | 20 IU |
 | Ipamorelin | (IP-old) | 20 IU |
-| 5-Amino-1MQ | (50AM) | 50 IU (0.5ml) — injectable OR oral capsule |
 | Kisspeptin-10 | (KS10) | [dose TBC] — **Wed/Sat only** |
 
 *No MOTS-c, no AOD, no BB20 on non-training days unless Jason requests.*
+
+**With breakfast**
+
+| Peptide | SKU | Dose | Note |
+|---|---|---|---|
+| 5-Amino-1MQ | (50AM) | 50 IU (0.5ml) | Take WITH food — NOT fasted. Daily. |
 
 ---
 

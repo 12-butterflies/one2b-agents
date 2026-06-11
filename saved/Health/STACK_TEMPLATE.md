@@ -1,45 +1,50 @@
 # Jason Daily Stack Template
 
-**IMPORTANT — How to use this file:**
-This is NOT a rules document. It is a lookup + fill template.
-When Jason asks "what's my stack", read this file, fill the 3–4 variable fields, output verbatim. Do NOT generate a stack from memory or rules.
+**HOW TO USE:** Read this file first on every stack question. Fill the variable fields. Run the checklist. Output verbatim. Do NOT generate from memory.
 
 ---
 
-## TRAINING DAY STACK
+## BEFORE ANSWERING — fill these variables:
 
-### Before answering, fill these variables:
-- [ ] Date and day confirmed from `currentDate` memory
-- [ ] Thymalin day: ____ of 10 (check `_daily_log.md` — current course Jun 8–17)
+- [ ] Date and day: _____________ (from `currentDate` memory — state this first)
+- [ ] Training today: YES / NO
+- [ ] Thymalin day: ___ of 10 (current course Jun 8–17. Check `_daily_log.md`.)
 - [ ] Kisspeptin today: YES (Wed/Sat only) / NO
-- [ ] State: maintenance / loading / PRN (check `_state.md`)
+- [ ] State: maintenance / loading / PRN (from `_state.md`)
 
 ---
 
-**Morning — fasted, pre-training**
+## TRAINING DAY
+
+### Morning — fasted, pre-training (combine into minimum syringes)
 
 | Peptide | SKU | Dose |
 |---|---|---|
-| SS-31 | (2S10) | 5 IU |
 | CJC-1295 no DAC | (CND2) | 20 IU |
 | Ipamorelin | (IP-old) | 20 IU |
 | MOTS-c | (MS10) | 38 IU |
 | AOD-9604 | (5AD) | 10 IU |
-| Semax | (XA10) | 10 IU |
-| Kisspeptin-10 | (KS10) | [dose TBC] — **Wed/Sat only** |
+| NAD+ | (NJ500) | 50–100 mg SubQ — 2–3x per week only, not daily |
+| SS-31 | (2S10) | 5 IU — [CONFIRM: morning or evening only? pending Jason] |
 
-*Combine into fewest syringes possible. State needle count.*
+*Semax (XA10) is intranasal — not an injection. Take separately: 10 IU nasal spray.*
+
+**Needle count: aim for 1–2 syringes. Combine compatible peptides. Incompatible = separate syringe.**
 
 ---
 
-**Post-training — SubQ**
+### Post-training — SubQ (same syringe if compatible)
 
-| Peptide | SKU | Dose | Note |
-|---|---|---|---|
-| BPC-157 + TB-500 blend | (BB20) | 4 IU — confirm 4 or 8 IU with Jason | |
-| AOD-9604 | (5AD) | 10 IU | Second AOD dose. Same syringe as BB20 if compatible. No separate 15:00 shot needed. |
+| Peptide | SKU | Dose |
+|---|---|---|
+| BPC-157 + TB-500 blend | (BB20) | **[UNRESOLVED: 4 IU or 8 IU — Jason to confirm]** |
+| AOD-9604 | (5AD) | 10 IU — second AOD dose. Same syringe as BB20. |
 
-**Post-training — with food**
+*This is the second AOD dose for the day. No separate 15:00 shot needed if taken post-workout.*
+
+---
+
+### Post-training — with food (oral or injectable with meal)
 
 | Peptide | SKU | Dose | Note |
 |---|---|---|---|
@@ -47,7 +52,7 @@ When Jason asks "what's my stack", read this file, fill the 3–4 variable field
 
 ---
 
-**Bedtime — one needle, just before sleep (never a clock time)**
+### Bedtime — just before sleep, ONE needle
 
 | Peptide | SKU | Dose |
 |---|---|---|
@@ -57,50 +62,34 @@ When Jason asks "what's my stack", read this file, fill the 3–4 variable field
 | DSIP | (DS5) | 8 IU |
 | Thymalin | (TY10) | 20 IU — **Day ___ of 10** |
 
-**Total: 1 needle.** All in one syringe.
+**Total bedtime: 1 needle. All in one syringe.**
 
 ---
 
-## NON-TRAINING DAY STACK
+## NON-TRAINING DAY
 
-### Before answering, fill these variables:
-- [ ] Date and day confirmed from `currentDate` memory
-- [ ] Thymalin day: ____ of 10
-- [ ] Kisspeptin today: YES (Wed/Sat only) / NO
-- [ ] State: maintenance / loading / PRN
-
----
-
-**Morning — fasted**
+### Morning — fasted (combine into minimum syringes)
 
 | Peptide | SKU | Dose |
 |---|---|---|
-| SS-31 | (2S10) | 5 IU |
 | CJC-1295 no DAC | (CND2) | 20 IU |
 | Ipamorelin | (IP-old) | 20 IU |
-| Kisspeptin-10 | (KS10) | [dose TBC] — **Wed/Sat only** |
+| NAD+ | (NJ500) | 50–100 mg SubQ — 2–3x per week only |
+| Kisspeptin-10 | (KS10) | **[dose pending]** — **Wed/Sat only** |
 
-*No MOTS-c, no AOD, no BB20 on non-training days unless Jason requests.*
-
-**With breakfast**
-
-| Peptide | SKU | Dose | Note |
-|---|---|---|---|
-| 5-Amino-1MQ | (50AM) | 50 IU (0.5ml) | Take WITH food — NOT fasted. Daily. |
+*No MOTS-c, no AOD, no BB20 on non-training days.*
 
 ---
 
-**Semax — PRN, any day**
+### With breakfast
 
-| Peptide | SKU | Dose | Timing |
-|---|---|---|---|
-| Semax | (XA10) | 10 IU intranasal or SubQ | Any time AM. Last dose by 19:30. Redose 300 mcg ~18:30 if needed. |
-
-*Not training-dependent. Jason takes this any day with cognitive demand.*
+| Peptide | SKU | Dose |
+|---|---|---|
+| 5-Amino-1MQ | (50AM) | 50 IU (0.5ml) | Take WITH food. Daily. |
 
 ---
 
-**Bedtime — one needle, just before sleep**
+### Bedtime — just before sleep, ONE needle
 
 | Peptide | SKU | Dose |
 |---|---|---|
@@ -110,31 +99,46 @@ When Jason asks "what's my stack", read this file, fill the 3–4 variable field
 | DSIP | (DS5) | 8 IU |
 | Thymalin | (TY10) | 20 IU — **Day ___ of 10** |
 
-**Total: 1 needle.**
+**Total bedtime: 1 needle.**
 
 ---
 
-## PRN — Proactive surface, do not wait to be asked
+## PRN — proactive surface, do not wait to be asked
 
 | Peptide | SKU | Dose | Trigger |
 |---|---|---|---|
-| Oxytocin Acetate | (OT2) | 10 IU SubQ | Going out / evening plans / social / intimacy. Target 2-3× per week. Surface this proactively. |
-| NAD+ | (NJ500) | 50–100 mg SubQ | 2-3× per week maintenance |
+| Oxytocin Acetate | (OT2) | 10 IU SubQ | Going out / evening / intimacy / social. 2–3x per week. Surface proactively. |
+| Semax | (XA10) | 10 IU intranasal | Any day. Cognitive demand / focus. Last dose by 19:30. |
+| Glutathione | (GTT600) | 400–600 mg oral or IV | Pre-quit window active now. Daily or weekly IV. |
+| Selank | (SK10) | [pending] | Acute anxiety / stress |
 
 ---
 
-## Checklist — run before outputting any stack answer
+## OPEN — needs Jason confirmation before template is final
 
-- [ ] Every line has IU
+| Item | Question |
+|---|---|
+| BB20 dose | 4 IU or 8 IU post-training? |
+| SS-31 (2S10) timing | Morning fasted or evening sleep stack only? |
+| Kisspeptin-10 dose | IU per dose? |
+| GHK-Cu morning | Does it go in morning AND evening, or evening only? |
+| ADE+ | What is this? Not in Pepguard catalog. |
+
+---
+
+## CHECKLIST — run before outputting any stack answer
+
+- [ ] Every peptide line has IU
 - [ ] SKU in brackets — no descriptive text in brackets
 - [ ] AOD shown TWICE on training days (morning + post-training)
 - [ ] CJC + Ipa shown TWICE on training days (morning + bedtime)
-- [ ] 5-Amino-1MQ (50AM) included in morning
-- [ ] Bedtime needle count stated
+- [ ] 5-Amino-1MQ (50AM) in post-training/with-food window
+- [ ] NAD+ included (2–3x per week, not daily)
+- [ ] Bedtime needle count stated: 1 needle
 - [ ] Thymalin day number correct
-- [ ] Kisspeptin included only on Wed/Sat
+- [ ] Kisspeptin only on Wed/Sat
 
 ---
 
 **Last updated:** 2026-06-11
-**Authority:** Jason direct. Any change to a line requires Jason explicit confirmation.
+**Update authority:** Jason direct only.

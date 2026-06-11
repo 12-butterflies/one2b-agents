@@ -4,7 +4,6 @@
 
 REPO="$HOME/one2b-agents"
 ACTIVE="$REPO/saved/Todos/ACTIVE.md"
-PROTOCOL="$REPO/saved/SAVE_PROTOCOL.md"
 DATE=$(date '+%Y-%m-%d')
 DAY=$(date '+%A')
 
@@ -36,4 +35,14 @@ echo "SAVE PROTOCOL: dual-save all content → saved/ local + Drive (see SAVE_PR
 echo "INTEL FOLDER: https://drive.google.com/drive/folders/17oDmGickBJvKcgLdv85XlCzu28k2nyZs"
 echo "STAGING FOLDER: https://drive.google.com/drive/folders/1XyqUtvAHZ66ZT31KsCvRMJ-oGh8FWiC7"
 echo ""
+
+# Non-negotiable rules — injected inline every turn so they cannot be missed
+echo "=== NON-NEGOTIABLE RULES (active this turn) ==="
+echo "LINKS: Every local file path must be an absolute path (/Users/jasonpeterstevens/...), verified to exist, formatted as markdown [label](path). Never send unverified paths."
+echo "LINKS: Every URL must be a markdown link [label](url). Never bare URLs."
+echo "VERIFY: Never assert a fact from memory alone. Verify via tool, file read, or API in the same turn."
+echo "EXECUTE: Never ask Jason to do something Claude can do. Execute first, report the result."
+echo "HEALTH: Any peptide question — state today's date ($DAY $DATE) first, then run four-pass gate before answering."
+echo "STYLE: Brief bullets. Next steps first. No preamble. No narration."
+echo "SAVE: Save Router fires mid-session always. Dual-save: local saved/ AND Drive. Commit to GitHub at session end."
 echo "=== END CONTEXT ==="

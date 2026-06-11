@@ -561,4 +561,10 @@ Updated in real time. Never archived — weekly snapshots taken automatically.
 - [ ] Billing and contract structure resolution
 
 ---
+
+## Research Actions — from Longevity Sweep 2026-W24
+
+- [ ] **FOXO4-DRI senolytic** — Strongest peptide-based senolytic reviewed this week. Mouse data only (human trials not yet published). Flag for next protocol review. Check Pepguard for SKU. Source: [PMC — FOXO4-DRI](https://pmc.ncbi.nlm.nih.gov/articles/PMC11943447/) | Added 2026-06-11
+
+---
 *Snapshot taken weekly. See /Todos/snapshots/ for history.*

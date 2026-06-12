@@ -177,7 +177,7 @@ Updated in real time. Never archived — weekly snapshots taken automatically.
 ### Siobhan Brady — met June 10 (see above)
 
 ### CEO Intel pending decisions (from daily briefs — all outstanding)
-- [ ] IGI propagation — reply "go" to intel@one2b.io
+- [x] IGI propagation — GO given
 - [x] F&F close — DONE (email sent)
 - [x] Brittany Kaiser + Isle of Man brief — DONE (email sent)
 - [x] NVIDIA Build — GO given

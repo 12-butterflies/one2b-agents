@@ -3,6 +3,24 @@
 **Source:** Fireflies transcript scrape — 132 meetings (One 2b workspace)
 **Priority contacts:** Aswad Martin, Carl Weir, Tom McCollum, Eric Olo
 
+---
+
+## URGENT — Added 2026-06-12
+
+- [ ] **Round investors** — complete investor outreach this week
+- [ ] **Finish Airbnb-style want-to-be deck** — priority deliverable
+- [ ] **Get revenue figures** — how much made, how much booked, how much in pipeline (simple, clear numbers)
+- [ ] **Pitch perfect** — work on simple, straightforward statements and stop; no elaboration
+- [ ] **Check with James: is the onboarding link fixed?**
+- [ ] **Reach out to LA Ghana guy** — start Ghana WhatsApp vertical group chat
+- [ ] **Contact Justin** — urgent
+- [ ] **Contact Mikey** — urgent
+- [ ] **Siobhan Brady** — send NDA and supporting documents for her to go into
+- [ ] **Welcome email post-onboarding** — write and finalise
+- [ ] **Get back to Abs** — urgent reply needed
+- [ ] **Respond to Carl** — re July 13 holidays
+- [ ] **Urgent email follow-up for Bhavin Patel** (Aarav Solutions)
+
 This is the single rolling source of truth for everything Jason needs to do.
 Updated in real time. Never archived — weekly snapshots taken automatically.
 
@@ -217,15 +235,6 @@ Updated in real time. Never archived — weekly snapshots taken automatically.
 - [ ] Explore white-label platform options with Eric Olo for client deployment
 - [ ] Advance capital markets rails and tokenisation infrastructure (target early next year)
 
-### Ahana Delwar (ahana782@gmail.com)
-- [ ] Send Ahana detailed documentation on leasing models and data asset monetisation examples
-- [ ] Share information about Donor Advised Funds (DAFs) and related tax strategies
-- [ ] Provide Ahana access to upcoming vertical launches and technology demonstrations
-- [ ] Send comprehensive updated investor packet (variance of error framework, cap table, investor snapshots)
-- [ ] Prepare simplified 5-minute explanatory spiel for Ahana for partner calls
-- [ ] Coordinate handover of partnership tasks around Grant and animation projects to Ahana
-- [ ] Confirm follow-up call with Ahana (next Friday cadence established)
-
 ### Pam Bristow (pam@one2b.io)
 - [ ] Finalise Pam's contract (flagged April 2026 — overdue)
 - [ ] Ensure legal and cap table restructuring communications aligned with investors
@@ -236,14 +245,6 @@ Updated in real time. Never archived — weekly snapshots taken automatically.
 - [ ] Communicate with Pam on UX/UI and colour palette development; schedule regular review sessions
 - [ ] Finali LinkedIn bios update memo and send to Pam
 - [ ] Provide Mailchimp login credentials and coordinate newsletter execution with Pam
-
-### James Farrell (james@one2b.io)
-- [ ] Follow up with Aaron (Maya) on digital escrow progress and coordinate with James
-- [ ] Continue securing funding and manage invoices for James and Praj
-- [ ] Test AI voice concierge tool on platform and check team awareness
-- [ ] Weekly cadence for PDV project updates — maintain from June 8
-- [ ] Clarify strategy on white label partnerships and decide Q2 prioritisation
-- [ ] Collaborate with James to develop clear, hierarchical OKRs on Monday.com
 
 ### Sean Yeo (sean@one2b.io)
 - [ ] Schedule risk management call with Sean and Aswad
@@ -316,11 +317,6 @@ Updated in real time. Never archived — weekly snapshots taken automatically.
 - [ ] Provide free data valuation evaluation to Copernic Space
 - [ ] Introduce Grant to Simon Littlewood (space sector capital markets advisor)
 
-### Aaron Astley (Maya/Aurora)
-- [ ] Follow up on digital escrow progress — target integration by end of June (Filecoin)
-- [ ] Finalise and send adjusted partnership agreement via DocuSign for signature
-- [ ] Provide detailed data valuation and insurance wrap structure scenarios to Aaron and Saurabh
-
 ### Simon Gonzalez-Moreno (Gonz)
 - [ ] Continue developing strategy to incorporate data valuations into credit and political risk insurance
 - [ ] Follow up on equity and debt financing options for life sciences data portfolios (from May 29 meeting)
@@ -343,11 +339,6 @@ Updated in real time. Never archived — weekly snapshots taken automatically.
 - [ ] Finalise and close friends and family capital raise of up to $0.5M
 - [ ] Share data room and investor pitch materials with Andy
 - [ ] Coordinate with Michelle Barry and Andy for investor network expansion
-
-### Sanjeev (Sanjvma)
-- [ ] Sanjeev to own Abu Dhabi Exchange partnership — support as needed
-- [ ] Prepare draft explanatory materials and scripts for data valuation and wrap mechanics for Sanjeev
-- [ ] Share client cheat sheet with Sanj to support M&A pitching
 
 ### Nancy Gao
 - [ ] Follow up with Nancy to arrange Tencent and Alibaba meetings using Carl's documentation
@@ -507,11 +498,6 @@ Updated in real time. Never archived — weekly snapshots taken automatically.
 - [ ] Provide signed contracts list to Pam for press release
 - [ ] Insert exclusivity clause in Film Locker agreement for 6 months (flagged March 2026)
 
-### Maya / Aaron Astley Digital Escrow
-- [ ] Follow up on Filecoin digital escrow — target integration by end of June
-- [ ] Coordinate bridge funding onboarding (friends and family investors)
-- [ ] Finalise MOUs and partnership agreements
-
 ### Sovereign Data Projects
 - Portugal: flagship — active
 - Colombia: expansion next
@@ -557,7 +543,6 @@ Updated in real time. Never archived — weekly snapshots taken automatically.
 - [ ] Send Tom McCollum full investor package (NDA, snapshot, data room, deck) — PRIORITY
 - [ ] Follow up with Alex (via Garth Saunders warm introduction) on investor interest
 - [ ] Continue managing current investor commitments; close bridge funding deals
-- [ ] Coordinate with Ahana for advisory and packaging support on investor materials
 - [ ] Monitor investor interactions; prepare for selective VC rounds (ARK, a16z) — longer term
 - [ ] Obtain Clifford Chance legal opinion on product for market launch
 - [ ] Tiered fundraising: $500K friends and family first → $5M → $20M raise
@@ -568,15 +553,12 @@ Updated in real time. Never archived — weekly snapshots taken automatically.
 
 ## Internal / build
 
-- [ ] Resolve Praj billing and contract structure — handover to Aswad confirmed as direction
 - [ ] Oversee centralised document management system setup (Kyle to standardise branding)
-- [ ] Confirm WhatsApp group functionality with Praj for client onboarding
 - [ ] Create drive and folder structures for local and cloud storage (from June 8 recording setup meeting)
 - [ ] Fix real-time captions appearing on screen during recording
 - [ ] Test AI voice concierge tool on platform
 - [ ] Redesign OKRs with motivational phrasing on Monday.com
 - [ ] Prepare Oracle meeting pitch incorporating platform fee and revenue sharing model (no exclusivity)
-- [ ] Coordinate James Farrell introduction to Stefan Rust for Truflation integration
 - [ ] Confirm platform Filecoin integration for secure data storage (flagged Jan 2026)
 - [x] R-17 sweep failure: RESOLVED — scrape-helper.js files are identical; launchd plist points to ~/.gmail-mcp-intel/ correctly (verified 2026-06-10)
 - [ ] Get website finalised and circulate for final internal review
@@ -620,11 +602,6 @@ Updated in real time. Never archived — weekly snapshots taken automatically.
 - [ ] Risk meeting setup with Sean
 - [ ] Weekly cadence updates on PDV project
 
-### Ahana Delwar owes Jason:
-- [ ] Advisory support on financial packaging and operational strategy
-- [ ] Review of investor and company materials
-- [ ] Confirm follow-up meeting for advisory role
-
 ### Alexander Layendecker owes Jason:
 - [ ] Follow-up email from March 25 meeting
 - [ ] Portugal government proposal submission management
@@ -634,15 +611,6 @@ Updated in real time. Never archived — weekly snapshots taken automatically.
 
 ### Garth Saunders owes Jason:
 - [ ] Warm introduction and investor deck to Alex; follow-up on investor interest
-
-### Aaron Astley owes Jason:
-- [ ] Filecoin digital escrow progress update
-- [ ] Signed adjusted partnership agreement (via DocuSign)
-- [ ] Securitisation workflow roadmap development
-
-### Sanjeev owes Jason:
-- [ ] Abu Dhabi Exchange partnership ownership update
-- [ ] Governance advisory support (signed contract — confirm active)
 
 ### Grant Blaisdell (Copernic Space) owes Jason:
 - [ ] Confirmation of channel partnership terms and data valuation interest
@@ -655,14 +623,6 @@ Updated in real time. Never archived — weekly snapshots taken automatically.
 ### Giselle Alers owes Jason:
 - [ ] Update on UN Digital Public Infrastructure resolution progress
 - [ ] Review and finalise Pam's narrative draft
-
-### James Farrell owes Jason:
-- [ ] OKR redesign inputs for Monday.com
-- [ ] Weekly PDV project update cadence
-
-### Praj owes Jason:
-- [ ] Handover to Aswad — timeline and scope confirmation
-- [ ] Billing and contract structure resolution
 
 ---
 

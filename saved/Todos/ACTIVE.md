@@ -1,5 +1,5 @@
 # Active To-Dos — Jason
-**Last updated:** 2026-06-12
+**Last updated:** 2026-06-12 (update 2)
 **Source:** Fireflies transcript scrape — 132 meetings (One 2b workspace)
 **Priority contacts:** Aswad Martin, Carl Weir, Tom McCollum, Eric Olo
 
@@ -89,6 +89,7 @@ Updated in real time. Never archived — weekly snapshots taken automatically.
 - [x] Address Aswad's payroll payment date adjustment with accountants — addressed 2026-06-12
 - [x] Schedule risk management call involving Sean and Aswad — addressed 2026-06-12
 - [x] Deliver onboarding ideas and documentation related to AI CDO and platform integration to Aswad — addressed 2026-06-12
+- [ ] Deliver AI CDO onboarding documentation — full formal version (re-added 2026-06-12)
 - [x] Share financial model details and data sale partnership information with Aswad — addressed 2026-06-12
 - [x] Introduce Aswad to external build partner Dayton and arrange exploratory call — addressed 2026-06-12
 - [x] Prepare for upcoming calls with carbon registry groups and trading platform stakeholders (loop Aswad in) — addressed 2026-06-12

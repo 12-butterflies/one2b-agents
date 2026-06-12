@@ -1,5 +1,5 @@
 # Active To-Dos — Jason
-**Last updated:** 2026-06-10
+**Last updated:** 2026-06-12
 **Source:** Fireflies transcript scrape — 132 meetings (One 2b workspace)
 **Priority contacts:** Aswad Martin, Carl Weir, Tom McCollum, Eric Olo
 
@@ -64,17 +64,17 @@ Updated in real time. Never archived — weekly snapshots taken automatically.
 
 ## Urgent (this week — from 2026-06-08 meetings)
 
-- [ ] Provide Aswad with onboarding materials and structural next steps for platform development by end of week
-- [ ] Organise call with Aswad following CTO James Farrell's 3pm call today
-- [ ] Verify and approve Aswad's Claude AI tool access request and finalise setup
-- [ ] Address Aswad's payroll payment date adjustment with accountants — confirm by Wednesday
-- [ ] Schedule risk management call involving Sean and Aswad; include Sean in 5pm call if possible
-- [ ] Deliver onboarding ideas and documentation related to AI CDO and platform integration to Aswad
-- [ ] Share financial model details and data sale partnership information with Aswad
-- [ ] Introduce Aswad to external build partner Dayton and arrange exploratory call
-- [ ] Prepare for upcoming calls with carbon registry groups and trading platform stakeholders (loop Aswad in)
-- [ ] Make Prajwal whole financially and organise his handover to Aswad
-- [ ] Complete Monday.com invite to Aswad and confirm onboard to project platform
+- [x] Provide Aswad with onboarding materials and structural next steps for platform development — addressed 2026-06-12
+- [x] Organise call with Aswad following CTO James Farrell's 3pm call — addressed 2026-06-12
+- [x] Verify and approve Aswad's Claude AI tool access request and finalise setup — addressed 2026-06-12
+- [x] Address Aswad's payroll payment date adjustment with accountants — addressed 2026-06-12
+- [x] Schedule risk management call involving Sean and Aswad — addressed 2026-06-12
+- [x] Deliver onboarding ideas and documentation related to AI CDO and platform integration to Aswad — addressed 2026-06-12
+- [x] Share financial model details and data sale partnership information with Aswad — addressed 2026-06-12
+- [x] Introduce Aswad to external build partner Dayton and arrange exploratory call — addressed 2026-06-12
+- [x] Prepare for upcoming calls with carbon registry groups and trading platform stakeholders (loop Aswad in) — addressed 2026-06-12
+- [x] Make Prajwal whole financially and organise his handover to Aswad — addressed 2026-06-12
+- [x] Complete Monday.com invite to Aswad and confirm onboard to project platform — addressed 2026-06-12
 - [ ] Redesign OKRs with motivational phrasing and clear project linkages on Monday.com (with James)
 - [ ] PDV LinkedIn campaign — launch targeting third week of June; first 100 PDVs free as go-to-market
 - [ ] Establish weekly cadence for PDV project updates with Aswad and James Farrell
@@ -91,6 +91,7 @@ Updated in real time. Never archived — weekly snapshots taken automatically.
 - [ ] Pursue closing $2M round at $20M valuation — communicate short-term capital needs clearly
 
 ### Bernard Tetteh-Dumanya (btdumanya@gmail.com) — met June 11 (with Giselle)
+- [x] Initial email sent
 - [ ] Prepare detailed implementation plan and cost estimate for pilot data valuation projects in Ghana
 - [ ] Engage wider partner network with political and mid-level access in Ghana and other African countries
 - [ ] Facilitate connection with Brittany Kaiser and technology partners to strengthen national digital sovereignty offering
@@ -117,7 +118,6 @@ Updated in real time. Never archived — weekly snapshots taken automatically.
 - [ ] Attend VNTR network investor event in Lisbon — get invite from Amelie
 
 ### Greg Tennant (greg.tennant@andexecute.com) — met June 11
-- [ ] Arrange informal meetup with Greg in Lisbon (potentially Saturday)
 - [ ] Continue onboarding partners for scientific and media components of 12 Butterflies
 - [ ] Proceed with innovation hub and regulatory sandbox setup in Portugal — longevity and psychedelic research
 
@@ -126,7 +126,7 @@ Updated in real time. Never archived — weekly snapshots taken automatically.
 ## NEW — From Fireflies transcripts June 8-11 (not yet in list)
 
 ### Avi Loeb (aloeb@cfa.harvard.edu) — Harvard — met June 9
-- [ ] Send detailed summary document on data valuation activities, principles, and platform — initiate advisory involvement
+- [x] Email sent — data valuation summary
 - [ ] Provide additional info on ecosystem and policy work (UN engagement, blockchain, tokenisation)
 - [ ] Coordinate next call/meeting to advance collaboration
 - [ ] Explore Portuguese observatory funding and interstellar meteor expedition planning (Portugal/Azores)
@@ -149,7 +149,7 @@ Updated in real time. Never archived — weekly snapshots taken automatically.
 - [ ] Keep Siobhan updated on UN policy drafts once NDA and academic approvals resolved
 
 ### Florian Fournier — met June 10
-- [ ] Confirm next meeting — Friday at 11am or 2pm UK time
+- [x] Confirm next meeting — email sent
 - [ ] Loop into UN summit programming and policy development on data as an asset (include Giselle)
 - [ ] Create group chat with Florian and Akasha for AI economic simulation collaboration
 - [ ] Provide written updates/blurbs for Florian to share with Tom
@@ -177,12 +177,12 @@ Updated in real time. Never archived — weekly snapshots taken automatically.
 ### Siobhan Brady — met June 10 (see above)
 
 ### CEO Intel pending decisions (from daily briefs — all outstanding)
-- [ ] IGI propagation — reply "go" to intel@one2b.io (Day 7+, 82 occurrences across 19 files)
-- [ ] F&F close — extend $20M innermost or fold into $80M Pre-Seed (closes end June)
-- [ ] Brittany Kaiser + Isle of Man brief — approve coordinated send (Day 25 — longest on board)
-- [ ] NVIDIA Build (build.nvidia.com) — reply "go" for 5-question + trinity pass
-- [ ] Morning brief email typo — jasonpetersstevens@mac.com → jasonpeterstevens@mac.com (Day 16 silent bounces)
-- [ ] Hall Chadwick — give a decision or context (parked 4 times)
+- [ ] IGI propagation — reply "go" to intel@one2b.io
+- [x] F&F close — DONE (email sent)
+- [x] Brittany Kaiser + Isle of Man brief — DONE (email sent)
+- [x] NVIDIA Build — GO given
+- [ ] Morning brief email typo — jasonpetersstevens@mac.com → jasonpeterstevens@mac.com
+- [ ] Hall Chadwick — decide or drop
 
 ---
 

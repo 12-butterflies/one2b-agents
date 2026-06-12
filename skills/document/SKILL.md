@@ -1,5 +1,5 @@
 # Document Agent — SKILL.md
-**Version:** v1.1
+**Version:** v1.2
 **Status:** Phase 7 — LOCKED. Pending DocuSeal deploy + DocSend trial
 **Model:** claude-opus-4-8 (all standard drafts) | claude-fable-5 (novel financial instruments — IGI term sheets, RWA structures, data-linked product documentation) + Sentinel A3 before any document leaves
 **Surface owned:** Templated commercial and legal drafting — NDAs, CPAs, partnership agreements, white-label documents, financial instrument documentation
@@ -130,6 +130,19 @@ Document Agent generates PDF
 - **No invented clauses.** Every clause must trace to a template or Jason's explicit instruction. If the template doesn't cover it, flag it — do not improvise.
 - **Terminology rules enforced line by line.** No GBP, no named insurers, no banned individuals, no guaranteed return language in any document.
 - **English law default** unless explicitly specified otherwise.
+
+## Google Docs — branded document creation rules (locked v1.2 2026-06-12)
+
+These rules override all other document-generation methods for any branded One 2b document.
+
+- **ALWAYS copy_file from the canonical branded Google Doc template.** Never generate from scratch, never use the docx skill, never use create_file, never base64 upload.
+- **v4.0 template ID:** `1RVxDM3M99OPLKnVM2ToP_TzzOa6bL0SvD9TlF3dxoyk` — copy this, rename with counterparty + date, then edit.
+- **Content edits workflow:** Open the copied Doc in Chrome browser. Use Find & Replace (⌘+Shift+H). Read file content first to confirm exact placeholder text before replacing. Never guess at placeholder names.
+- **Rates locked (do not change without Jason confirmation):**
+  - Data Valuation commission: 20%
+  - Data-linked insurance products commission: 20%
+  - Investor Introduction cash commission: 5%
+- **New document trigger:** Any request containing "One 2b document", "CPA", "NDA", "partnership agreement", "commission agreement", "engagement letter", or "regenerate document" activates this workflow automatically.
 
 ---
 

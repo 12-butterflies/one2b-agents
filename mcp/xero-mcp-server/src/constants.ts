@@ -6,10 +6,11 @@ export const REDIRECT_URI = 'http://localhost:8080/callback';
 export const AUTH_CALLBACK_PORT = 8080;
 
 export const SCOPES = [
-  'accounting.transactions.read',
+  'accounting.invoices.read',
+  'accounting.payments.read',
+  'accounting.banktransactions.read',
   'accounting.contacts.read',
-  'accounting.accounts.read',
-  'accounting.bankstatements.read',
+  'accounting.settings.read',
   'offline_access',
   'openid',
   'profile',

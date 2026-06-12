@@ -1,0 +1,37 @@
+{
+  "name": "xero",
+  "description": "Xero accounting MCP — invoices, payments, bank transactions, accounts, contacts (read-only)",
+  "used_by": ["triage", "ceo-daily-brief", "document"],
+  "auth_type": "oauth2",
+  "flow": "authorization_code",
+  "env_vars": {
+    "XERO_CLIENT_ID": "from Xero Developer Portal",
+    "XERO_CLIENT_SECRET": "from Xero Developer Portal",
+    "XERO_TENANT_ID": "set automatically by npm run auth",
+    "XERO_ACCESS_TOKEN": "set automatically by npm run auth",
+    "XERO_REFRESH_TOKEN": "set automatically by npm run auth"
+  },
+  "server_dir": "mcp/xero-mcp-server",
+  "build_command": "npm install && npm run build",
+  "auth_command": "npm run auth",
+  "redirect_uri": "http://localhost:8080/callback",
+  "scopes": [
+    "accounting.transactions.read",
+    "accounting.contacts.read",
+    "accounting.accounts.read",
+    "accounting.bankstatements.read"
+  ],
+  "xero_developer_portal": "https://developer.xero.com/app-manager",
+  "claude_desktop_config": {
+    "command": "node",
+    "args": ["/Users/jasonpeterstevens/one2b-agents/mcp/xero-mcp-server/dist/index.js"]
+  },
+  "status": "BUILT — pending OAuth setup. Add XERO_CLIENT_ID + XERO_CLIENT_SECRET to .env, then run auth_command.",
+  "tools": [
+    "xero_get_invoices",
+    "xero_get_payments",
+    "xero_get_bank_transactions",
+    "xero_get_accounts",
+    "xero_get_contacts"
+  ]
+}

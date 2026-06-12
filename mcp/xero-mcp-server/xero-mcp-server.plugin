@@ -1,0 +1,63 @@
+{
+  "name": "xero-mcp-server",
+  "version": "1.0.0",
+  "description": "Read-only Xero accounting MCP server — invoices, payments, bank transactions, accounts, contacts",
+  "author": "One 2b",
+  "transport": "stdio",
+  "entry": "dist/index.js",
+  "runtime": "node",
+  "node_version": ">=18",
+  "build": {
+    "command": "npm install && npm run build",
+    "working_dir": "."
+  },
+  "auth": {
+    "type": "oauth2",
+    "flow": "authorization_code",
+    "setup_command": "npm run auth",
+    "token_storage": ".env"
+  },
+  "env": {
+    "required": [
+      "XERO_CLIENT_ID",
+      "XERO_CLIENT_SECRET",
+      "XERO_TENANT_ID",
+      "XERO_ACCESS_TOKEN",
+      "XERO_REFRESH_TOKEN"
+    ],
+    "example_file": ".env.example"
+  },
+  "tools": [
+    {
+      "name": "xero_get_invoices",
+      "description": "List Xero invoices with status, amounts, contact name, dates"
+    },
+    {
+      "name": "xero_get_payments",
+      "description": "List Xero payments with amount, date, account, reference"
+    },
+    {
+      "name": "xero_get_bank_transactions",
+      "description": "List Xero bank transactions with amount, date, description, type"
+    },
+    {
+      "name": "xero_get_accounts",
+      "description": "List Xero chart of accounts with type and class"
+    },
+    {
+      "name": "xero_get_contacts",
+      "description": "List Xero contacts (customers/suppliers) with email and outstanding balances"
+    }
+  ],
+  "scopes": [
+    "accounting.transactions.read",
+    "accounting.contacts.read",
+    "accounting.accounts.read",
+    "accounting.bankstatements.read"
+  ],
+  "cowork": {
+    "category": "Finance",
+    "icon": "accounting",
+    "install_instructions": "See README.md — register app in Xero Developer Portal first, then run npm run auth"
+  }
+}

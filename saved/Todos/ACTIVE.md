@@ -9,7 +9,8 @@
 
 - [ ] **Round investors** — complete investor outreach this week
 - [ ] **Finish Airbnb-style want-to-be deck** — priority deliverable
-- [ ] **Get revenue figures** — how much made, how much booked, how much in pipeline (simple, clear numbers)
+- [x] **Get revenue figures** — snapshot compiled 2026-06-12. See REVENUE_SNAPSHOT_2026-06-12.md (local + Drive Data Room Staging). Revenue earned UNVERIFIED — Jason must confirm cash received. Six critical flags identified.
+- [ ] **Confirm revenue figures with Jason** — answer the six flags in REVENUE_SNAPSHOT_2026-06-12.md (cash received, F&F close status, FilmLocker signing, Portugal billing)
 - [ ] **Pitch perfect** — work on simple, straightforward statements and stop; no elaboration
 - [ ] **Check with James: is the onboarding link fixed?**
 - [ ] **Reach out to LA Ghana guy** — start Ghana WhatsApp vertical group chat

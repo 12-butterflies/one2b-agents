@@ -36,7 +36,11 @@ Then answer Jason's first message.
 
 ## Rules that agents most commonly skip — these are NOT optional
 
-**HEALTH HARD GATE:** The moment any health, food, drink, alcohol, sleep, mood, energy, fatigue, training, or lifestyle content appears — read all three files before writing a single word: (1) STACK_TEMPLATE.md (2) _daily_log.md (3) _state.md. If you have not read them in this turn, read them now. Memory is not a substitute for reading the files.
+**HEALTH HARD GATE:** The moment any health, food, drink, alcohol, sleep, mood, energy, fatigue, training, or lifestyle content appears — read ALL THREE files before writing a single word:
+(1) `/Users/jasonpeterstevens/Documents/Claude/Projects/CEO Intelligence/Jason Life OS/1-Health/STACK_TEMPLATE.md`
+(2) `/Users/jasonpeterstevens/Documents/Claude/Projects/CEO Intelligence/Jason Life OS/1-Health/_daily_log.md`
+(3) `/Users/jasonpeterstevens/Documents/Claude/Projects/CEO Intelligence/Jason Life OS/1-Health/_state.md`
+Memory is NOT a substitute for reading the files. If you have not read them in this turn, read them now.
 
 **EXECUTE:** Never ask Jason to do something Claude can do. Do it first. Report the result.
 

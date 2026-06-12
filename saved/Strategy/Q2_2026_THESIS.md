@@ -13,9 +13,10 @@
 5. **IGI as the insurance layer** — data-linked insurance products as the mechanism. Registered Lloyd's of London broker status.
 
 ## Base case projections
+Source of truth: `ceo-intel-mirror/Financials/base_case_projections.md`
 - Year 1: $12M*
-- Year 2: $53M*
-- Year 3: $156M*
+- Year 3: $53M*
+- Year 5: $156M*
 
 *Indicative only. Not financial advice.
 

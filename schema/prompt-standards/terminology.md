@@ -67,9 +67,10 @@ Note: "registered Lloyd's of London broker" refers to **our own status** and is 
 - `Isle of Man` — legislated data as asset class
 
 ### Financial projections (base case — asterisk all)
+Source of truth: `ceo-intel-mirror/Financials/base_case_projections.md`
 - Year 1: `$12M*`
-- Year 2: `$53M*`
-- Year 3: `$156M*`
+- Year 3: `$53M*`
+- Year 5: `$156M*`
 
 ### Yield / return asterisk rule
 Every figure referencing a potential return, yield, or financial outcome must carry `*`.

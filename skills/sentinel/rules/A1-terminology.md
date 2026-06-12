@@ -11,6 +11,7 @@ Any of the following in output triggers an immediate HALT. Surface to Jason with
 ### Product / legal terms
 - `RGB` — use nothing (remove entirely if referring to colour; never as a product name)
 - `Repayment Guarantee Bond` — use `Insurance Guarantee Instruments` or `IGI`
+- `IGI Insurance` — redundant and wrong. Use `IGI` internally, `data-linked insurance products` externally. Never "IGI Insurance".
 - `Data Valuation Partners` — banned entity name
 - `DVP` — acronym for above, also banned
 - `ICME` — banned entity name

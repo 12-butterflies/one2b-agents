@@ -20,6 +20,7 @@
 - [ ] **Get back to Abs** — urgent reply needed
 - [ ] **Respond to Carl** — re July 13 holidays
 - [ ] **Urgent email follow-up for Bhavin Patel** (Aarav Solutions)
+- [ ] **Tom Oxley (Synchron)** — follow him, contact him. Neurotech / brain-computer interface. You flagged via intel@one2b.io 2026-06-11. [Article: Reading the Brain Without Opening the Skull](https://synchron.com)
 
 This is the single rolling source of truth for everything Jason needs to do.
 Updated in real time. Never archived — weekly snapshots taken automatically.

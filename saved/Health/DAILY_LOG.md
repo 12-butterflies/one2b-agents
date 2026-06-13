@@ -5,16 +5,36 @@
 
 ---
 
+## 2026-06-12 (Lisbon) — UPDATED
+
+**Training:** HIIT at home
+**Thymalin course:** Day 5 of 10
+**Epitalon course:** Day 5 of 10
+**Alcohol previous night:** Yes — drinks at housewarming Jun 11. Stack taken last night. Glutathione NOT taken last night — taking this morning fasted pre-HIIT.
+**PRN this morning:** Glutathione (GTT600) 400–600 mg SubQ — taken fasted AM, after-alcohol recovery.
+**Protocol correction:** CJC + Ipa morning dose restored for training days. Jason confirmed feeling great, never dropped it on training days. Claude drifted. Corrected 2026-06-12.
+**Protocol correction 3:** Oxytocin Acetate (OT2) 10 IU SubQ confirmed as SCHEDULED Thu + Fri evening — not PRN only. STACK_TEMPLATE corrected 2026-06-12. Claude missed this from morning stack output.
+**Protocol correction 2:** Semax (XA10) route corrected. Primary route = SubQ injectable 10 IU. Nasal spray = emergency backup only (time pressure before calls etc). Claude had it wrong as "intranasal not injection." Fixed in STACK_TEMPLATE 2026-06-12.
+
+---
+
+## 2026-06-11 (Lisbon) — CORRECTION LOGGED 2026-06-11 LATE SESSION
+**EPITALON COURSE ACTIVE** — Claude told Jason to start on Jun 8 (same session as Thymalin course start). Claude failed to log it at the time. Confirmed from transcript search. Course: Jun 8–17, 10 days, same window as Thymalin. Day 4 tonight (Jun 11). Add to every bedtime stack.
+
 ## 2026-06-11 (Lisbon)
 
 **Location:** Lisbon
-**Training:** YES — gym session AM
+**Training:** YES — gym session AM. HIIT at home planned tomorrow (Fri 12 Jun).
+**Energy:** Super tired all day. 20-min nap before ~17:00 call.
+**Evening:** Friend's housewarming. A couple of drinks.
+**Food:** Minimal all day — chicken bowl ~11:00 AM. Eating something ~23:00 before bed.
+**Alcohol:** Yes — couple of drinks at housewarming.
 **Peptides AM (fasted pre-training):** CJC-1295 (CND2) 20 IU, Ipamorelin (IP-old) 20 IU, MOTS-c (MS10) 38 IU, AOD-9604 (5AD) 10 IU, SS-31 (2S10) 5 IU, Semax (XA10) 10 IU intranasal
-**Post-training:** BPC-157 + TB-500 blend (BB20) [dose TBC] + AOD-9604 (5AD) 10 IU
+**Post-training:** BPC-157 + TB-500 blend (BB20) 8 IU + AOD-9604 (5AD) 10 IU
 **Post-training with food:** 5-Amino-1MQ (50AM) 50 IU
 **Thymalin course:** Day 4 of 10 — bedtime tonight
-**Bedtime (one needle):** CJC-1295 20 IU + Ipamorelin 20 IU + GHK-Cu 20 IU + DSIP 8 IU + Thymalin 20 IU
-**Source:** Jason direct — session 2026-06-11
+**Bedtime (one needle):** CJC-1295 (CND2) 20 IU + Ipamorelin (IP-old) 20 IU + GHK-Cu (CU) 20 IU + DSIP (DS5) 8 IU + Thymalin (TY10) 20 IU — after food, minimum 1 hour post-eating
+**Source:** Jason direct — session 2026-06-11 AM + PM update
 
 ---
 

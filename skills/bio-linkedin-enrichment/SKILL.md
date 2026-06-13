@@ -1,4 +1,9 @@
 ---
+---
+**GITHUB RAW BASE:** `https://raw.githubusercontent.com/12-butterflies/one2b-agents/main/`
+**SHARED RULES:** Fetch `https://raw.githubusercontent.com/12-butterflies/one2b-agents/main/SHARED_RULES.md` at session start. All rules live there. Never generate from memory.
+---
+
 name: bio-linkedin-enrichment-agent
 runtime_profile: standard
 description: Refresh and maintain counterparty bios for every NDA, CPA, partnership agreement, sovereign engagement letter, and Advisor Agreement counterparty across the One 2b trinity. Sibling skill to Document Agent (Document Agent generates documents; this agent supplies the verified counterparty bio data inside the document plus the Contact Card substrate). Pulls bio data from Apollo (apollo:enrich-lead), ZoomInfo (zoominfo:enrich-contact, zoominfo:enrich-company), Common Room (common-room:contact-research), Nimble (nimble:meeting-prep, nimble:company-deep-dive), and direct LinkedIn surface via Bright Data Scraping Browser. Triggers automatically on new Sales Funnel Agent INTAKE event, new Onboarding Agent v2.0 Trigger A/B/C/D fire, new Document Agent template fill request that needs counterparty bio, new Capital Readiness Curator capital allocator surgical update needing counterparty research, weekly Monday 11:30 Lisbon Contact Card staleness audit, Jason explicit invocation. Trinity scoped. The agent NEVER fabricates bio data — every claim traces to a real source (Apollo, ZoomInfo, Common Room, Nimble, LinkedIn URL, conference proceedings, public press) with the source URL or platform attribution surfaced inline.

@@ -1,4 +1,9 @@
 # Conversation Curator Agent — SKILL.md
+---
+**GITHUB RAW BASE:** `https://raw.githubusercontent.com/12-butterflies/one2b-agents/main/`
+**SHARED RULES:** Fetch `https://raw.githubusercontent.com/12-butterflies/one2b-agents/main/SHARED_RULES.md` at session start. All rules live there. Never generate from memory.
+---
+
 
 **Version:** 1.0 (drafted 2026-05-28)
 **Status:** ACTIVE pending Jason authorisation on first calibration run

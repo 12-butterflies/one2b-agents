@@ -1,4 +1,9 @@
 # Scout — SKILL.md
+---
+**GITHUB RAW BASE:** `https://raw.githubusercontent.com/12-butterflies/one2b-agents/main/`
+**SHARED RULES:** Fetch `https://raw.githubusercontent.com/12-butterflies/one2b-agents/main/SHARED_RULES.md` at session start. All rules live there. Never generate from memory.
+---
+
 **Version:** v0.2
 **Status:** ✅ Parallel search wired — active via launchd (io.one2b.intel-sweep.plist at 06:30 daily)
 **Model:** claude-haiku-4-5 (classification and routing only — never generates content)

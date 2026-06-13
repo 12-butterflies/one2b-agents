@@ -1,4 +1,9 @@
 # Studio Motion — SKILL.md
+---
+**GITHUB RAW BASE:** `https://raw.githubusercontent.com/12-butterflies/one2b-agents/main/`
+**SHARED RULES:** Fetch `https://raw.githubusercontent.com/12-butterflies/one2b-agents/main/SHARED_RULES.md` at session start. All rules live there. Never generate from memory.
+---
+
 **Version:** v1.0
 **Status:** ✅ LOCKED — activates after Studio Design gate
 **Model:** claude-sonnet-4-6 (storyboard, brief, direction) | claude-opus-4-8 (sovereign-facing or investor-facing video concepts)

@@ -1,4 +1,9 @@
 # Longevity Research Curator — SKILL.md
+---
+**GITHUB RAW BASE:** `https://raw.githubusercontent.com/12-butterflies/one2b-agents/main/`
+**SHARED RULES:** Fetch `https://raw.githubusercontent.com/12-butterflies/one2b-agents/main/SHARED_RULES.md` at session start. All rules live there. Never generate from memory.
+---
+
 **Version:** 1.1 | **Updated:** 2026-06-11 | **Owner:** Jason Peter Stevens
 **Runs:** Sunday 18:00 Lisbon time (17:00 UTC in June)
 **Output:** /saved/Research/Longevity/YYYY-WNN_longevity_sweep.md + Drive dual-save

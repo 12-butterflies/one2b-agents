@@ -290,7 +290,7 @@
 
 ### Talha Hussain
 - [ ] Draft detailed plan of sales cycle setup and team requirements
-- [ ] Arrange follow-up meetings with Talha, Sanjeev, and data valuation experts
+- [ ] Arrange follow-up meetings with Talha and data valuation experts
 - [ ] Evaluate Talha for sales leadership role
 
 ### Nancy Gao

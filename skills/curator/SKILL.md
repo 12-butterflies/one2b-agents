@@ -1,4 +1,9 @@
 # Curator — SKILL.md
+---
+**GITHUB RAW BASE:** `https://raw.githubusercontent.com/12-butterflies/one2b-agents/main/`
+**SHARED RULES:** Fetch `https://raw.githubusercontent.com/12-butterflies/one2b-agents/main/SHARED_RULES.md` at session start. All rules live there. Never generate from memory.
+---
+
 **Version:** v1.0
 **Status:** Spec locked — activates when Scout + Parallel are wired (done)
 **Model:** claude-haiku-4-5 (auto-file decisions) | claude-sonnet-4-6 (substantive domain analysis)

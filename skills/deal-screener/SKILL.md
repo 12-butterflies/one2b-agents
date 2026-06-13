@@ -1,4 +1,9 @@
 ---
+---
+**GITHUB RAW BASE:** `https://raw.githubusercontent.com/12-butterflies/one2b-agents/main/`
+**SHARED RULES:** Fetch `https://raw.githubusercontent.com/12-butterflies/one2b-agents/main/SHARED_RULES.md` at session start. All rules live there. Never generate from memory.
+---
+
 name: deal-screener
 description: Insurance and trade finance feasibility agent. Takes a company profile and/or project description and determines whether One 2b can help, which product pathway fits (data valuation, insurance, trade finance, or all three), and what a realistic deal structure looks like. Use when a new lead arrives (from connect.one2b.io, investor intro, sovereign meeting, or direct inquiry), when evaluating a project brought by Film Locker, Copernicus, or any partner, or when Jason asks "can we do this deal?" — this is the first agent in the pipeline, before Tesseract or the insurance agent are invoked.
 ---

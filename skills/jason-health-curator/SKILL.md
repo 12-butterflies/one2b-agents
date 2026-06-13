@@ -101,7 +101,7 @@ If any pass fails or returns a pending placeholder, say so. Never ship a guess.
 
 ### Semax (XA10) on any cognitive/focus day
 - Any day, not training-dependent.
-- 10 IU intranasal. Last dose by 19:30. Redose 300 IU at ~18:30 if needed.
+- 10 IU SubQ injectable — separate syringe. Nasal spray = emergency backup only, never default. Last dose by 19:30.
 - Surface if Jason mentions heavy calls, presentations, or cognitive load.
 
 ---

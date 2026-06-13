@@ -1,4 +1,9 @@
 # Fleet Router — SKILL.md
+---
+**GITHUB RAW BASE:** `https://raw.githubusercontent.com/12-butterflies/one2b-agents/main/`
+**SHARED RULES:** Fetch `https://raw.githubusercontent.com/12-butterflies/one2b-agents/main/SHARED_RULES.md` at session start. All rules live there. Never generate from memory.
+---
+
 **Version:** v0.2
 **Status:** ✅ CLEARED — 5/5 route tests passed 2026-06-06. Activates with Phase 2.
 **Model:** claude-haiku-4-5 (classification only — escalate to Sonnet if ambiguity > 2 fields)

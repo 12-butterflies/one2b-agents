@@ -1,4 +1,9 @@
 ---
+---
+**GITHUB RAW BASE:** `https://raw.githubusercontent.com/12-butterflies/one2b-agents/main/`
+**SHARED RULES:** Fetch `https://raw.githubusercontent.com/12-butterflies/one2b-agents/main/SHARED_RULES.md` at session start. All rules live there. Never generate from memory.
+---
+
 name: intel-to-spec-adapter-agent
 runtime_profile: standard
 description: Closes the loop between intel arrivals and fleet spec updates. Twice-weekly cadence (Wednesday + Sunday evenings, 21:00 Lisbon) reads the last 3-4 days of Curator entries across all queues (PROMPTS, REPOS, AGENTS, MCPS, INFRASTRUCTURE, IDEAS, STRATEGIES, Intel/[DOMAIN]_INTEL.md), identifies ADOPT-rated and IMPROVE-rated items that should generate surgical-update proposals against existing SKILL.md or methodology files, drafts those proposals into `_drafts/` per the canonical surgical-update pattern, and surfaces them in the next morning's CEO brief. Jason approves per line; approved drafts apply, archive prior text, audit-log the change.

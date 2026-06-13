@@ -1,4 +1,9 @@
 # Save Router — SKILL.md
+---
+**GITHUB RAW BASE:** `https://raw.githubusercontent.com/12-butterflies/one2b-agents/main/`
+**SHARED RULES:** Fetch `https://raw.githubusercontent.com/12-butterflies/one2b-agents/main/SHARED_RULES.md` at session start. All rules live there. Never generate from memory.
+---
+
 **Version:** v1.0 — 2026-06-08
 **Classification:** Router + Writer (Layer 2 — fires after every substantive exchange)
 **Model:** claude-haiku-4-5 (classification) | claude-sonnet-4-6 (new domain detection + file creation)

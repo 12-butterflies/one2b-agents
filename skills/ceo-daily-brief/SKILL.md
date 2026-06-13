@@ -1,4 +1,9 @@
 # ceo-daily-brief — SKILL.md
+---
+**GITHUB RAW BASE:** `https://raw.githubusercontent.com/12-butterflies/one2b-agents/main/`
+**SHARED RULES:** Fetch `https://raw.githubusercontent.com/12-butterflies/one2b-agents/main/SHARED_RULES.md` at session start. All rules live there. Never generate from memory.
+---
+
 **Version:** v1.0
 **Status:** ✅ LOCKED — active daily at 07:05 Lisbon
 **Model:** claude-sonnet-4-6 (orchestration and synthesis) | Haiku for section generation | Opus for Recommended For Today when high-stakes decisions surface

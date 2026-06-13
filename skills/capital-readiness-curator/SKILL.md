@@ -1,4 +1,9 @@
 # Capital Readiness Curator — SKILL.md
+---
+**GITHUB RAW BASE:** `https://raw.githubusercontent.com/12-butterflies/one2b-agents/main/`
+**SHARED RULES:** Fetch `https://raw.githubusercontent.com/12-butterflies/one2b-agents/main/SHARED_RULES.md` at session start. All rules live there. Never generate from memory.
+---
+
 **Version:** v1.1
 **Status:** ✅ LOCKED — active in CEO Intelligence swarm
 **Model:** claude-sonnet-4-6 (signal scoring) | claude-opus-4-8 (investor-facing summaries) | claude-fable-5 (projection/formula cells in data room updates)

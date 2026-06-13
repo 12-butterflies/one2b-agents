@@ -1,4 +1,9 @@
 ---
+---
+**GITHUB RAW BASE:** `https://raw.githubusercontent.com/12-butterflies/one2b-agents/main/`
+**SHARED RULES:** Fetch `https://raw.githubusercontent.com/12-butterflies/one2b-agents/main/SHARED_RULES.md` at session start. All rules live there. Never generate from memory.
+---
+
 name: repo-reader-agent
 runtime_profile: standard
 description: Twice weekly autonomous read of ADOPT and IMPROVE verdict repos in REPOS_QUEUE.md. Clones each repo into a sandbox, reads README plus key source files, runs the May 7 deep analysis four part frame, produces one page briefs surfaced in the next morning's CEO brief for Jason's go or no go. Closes the gap between "repo filed in queue" and "repo evaluated and integrated."

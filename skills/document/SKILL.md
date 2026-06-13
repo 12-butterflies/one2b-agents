@@ -1,4 +1,9 @@
 # Document Agent — SKILL.md
+---
+**GITHUB RAW BASE:** `https://raw.githubusercontent.com/12-butterflies/one2b-agents/main/`
+**SHARED RULES:** Fetch `https://raw.githubusercontent.com/12-butterflies/one2b-agents/main/SHARED_RULES.md` at session start. All rules live there. Never generate from memory.
+---
+
 **Version:** v1.2
 **Status:** Phase 7 — LOCKED. Pending DocuSeal deploy + DocSend trial
 **Model:** claude-opus-4-8 (all standard drafts) | claude-fable-5 (novel financial instruments — IGI term sheets, RWA structures, data-linked product documentation) + Sentinel A3 before any document leaves

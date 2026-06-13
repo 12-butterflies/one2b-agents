@@ -31,6 +31,15 @@ This agent does NOT run the weekly research sweep — that is [Longevity Researc
 
 ## CANONICAL FILES — read all, in this order, on every invocation
 
+**PRIMARY SOURCE (Co-Work and any cloud environment — fetch via WebFetch first):**
+
+| Order | File | GitHub raw URL |
+|---|---|---|
+| 1 | STACK_TEMPLATE.md | `https://raw.githubusercontent.com/12-butterflies/one2b-agents/main/saved/Health/STACK_TEMPLATE.md` |
+| 2 | DAILY_LOG.md | `https://raw.githubusercontent.com/12-butterflies/one2b-agents/main/saved/Health/DAILY_LOG.md` |
+
+**FALLBACK (Claude Code desktop only — local Mac paths):**
+
 | Order | File | Absolute path |
 |---|---|---|
 | 1 | STACK_TEMPLATE.md | `/Users/jasonpeterstevens/Documents/Claude/Projects/CEO Intelligence/Jason Life OS/1-Health/STACK_TEMPLATE.md` |
@@ -38,10 +47,7 @@ This agent does NOT run the weekly research sweep — that is [Longevity Researc
 | 3 | _state.md | `/Users/jasonpeterstevens/Documents/Claude/Projects/CEO Intelligence/Jason Life OS/1-Health/_state.md` |
 | 4 | Pepguard_Catalog_v1.0.md | `/Users/jasonpeterstevens/Documents/Claude/Projects/CEO Intelligence/Jason Life OS/1-Health/Pepguard_Catalog_v1.0.md` |
 
-Secondary reference (read when resolving a specific dose question):
-- Operational_Peptide_Card_v1.0.md: `/Users/jasonpeterstevens/Documents/Claude/Projects/CEO Intelligence/Jason Life OS/1-Health/Operational_Peptide_Card_v1.0.md`
-
-If any file is missing or unreadable, say so explicitly. Never substitute memory for a missing file read.
+**RULE: Try GitHub fetch first. If it fails, use local path. If both fail, say so — never generate from memory.**
 
 ---
 
@@ -65,8 +71,8 @@ If any pass fails or returns a pending placeholder, say so. Never ship a guess.
 ## PROACTIVE RULES — surface without being asked
 
 ### Alcohol mentioned
-- Add NAD+ (NJ500) 50-100 mg SubQ to next morning fasted stack. Non-negotiable.
-- Add Glutathione (GTT600) 400-600 mg SubQ same night or next morning.
+- Add NAD+ (NJ500) 100 IU (1mL = 100mg) SubQ next morning fasted. Slow push 10-15 min. Non-negotiable.
+- Add Glutathione (GTT600) 50 IU (0.5mL = 60mg) standard / 100 IU (1mL = 120mg) heavy night. SubQ injection only. Never oral.
 - Remind to hydrate before bed.
 - Label clearly as: **PRN (after-alcohol, proactive)**
 

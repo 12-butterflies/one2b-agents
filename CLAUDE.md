@@ -8,7 +8,18 @@
 
 ---
 
-## 0. How to use this file
+## 0. BOOT SEQUENCE — run at the start of every session
+
+1. Fetch `https://raw.githubusercontent.com/12-butterflies/one2b-agents/main/SHARED_RULES.md` — standing rules, routing table, all agent rules. Never cache. Never skip.
+2. Read `saved/Todos/ACTIVE.md` — surface anything urgent.
+3. Read `saved/SAVE_PROTOCOL.md` — know where to save before starting.
+
+In Cowork and any cloud environment: always fetch files via GitHub raw URL. Local paths are Claude Code desktop only.
+Repo base URL: `https://raw.githubusercontent.com/12-butterflies/one2b-agents/main/`
+
+---
+
+## 0.1 How to use this file
 
 Paste this entire file into a new Claude Code session as the first message, then say: *"Read this, mount the Google Drive MCP, fetch the canonical docs listed in Section 8, then propose the first three concrete actions from Section 9. Wait for my approval before writing any code."*
 

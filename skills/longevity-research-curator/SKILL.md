@@ -65,13 +65,13 @@ One entry per finding:
 | Protocol relevance | Which peptide or decision it affects |
 | Action required | YES or NO |
 
-If Action required = YES: append item to /Users/jasonpeterstevens/one2b-agents/saved/Todos/ACTIVE.md
+If Action required = YES: append item to https://raw.githubusercontent.com/12-butterflies/one2b-agents/main/saved/Todos/ACTIVE.md (local fallback: /Users/jasonpeterstevens/one2b-agents/saved/Todos/ACTIVE.md)
 
 ---
 
 ## OUTPUT FILE
 
-Path: `/Users/jasonpeterstevens/one2b-agents/saved/Research/Longevity/YYYY-WNN_longevity_sweep.md`
+Path: `https://raw.githubusercontent.com/12-butterflies/one2b-agents/main/saved/Research/Longevity/ (local fallback: /Users/jasonpeterstevens/one2b-agents/saved/Research/Longevity/)YYYY-WNN_longevity_sweep.md`
 One file per week, ISO week number in filename.
 
 ---
@@ -80,7 +80,7 @@ One file per week, ISO week number in filename.
 
 1. Save locally at the path above.
 2. Upload to Drive Intel folder (folderId: 17oDmGickBJvKcgLdv85XlCzu28k2nyYs) under Research/Longevity/.
-3. If any finding carries Action required: YES — append to /Users/jasonpeterstevens/one2b-agents/saved/Todos/ACTIVE.md.
+3. If any finding carries Action required: YES — append to https://raw.githubusercontent.com/12-butterflies/one2b-agents/main/saved/Todos/ACTIVE.md (local fallback: /Users/jasonpeterstevens/one2b-agents/saved/Todos/ACTIVE.md).
 4. Commit to GitHub at end of every sweep (org: 12-butterflies, repo: one2b-agents, branch: main).
 
 ---

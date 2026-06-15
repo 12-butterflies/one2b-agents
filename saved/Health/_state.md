@@ -1,6 +1,6 @@
 # JASON HEALTH — State File
 
-**Last updated:** 2026-06-11
+**Last updated:** 2026-06-14
 
 ---
 
@@ -15,17 +15,17 @@
 
 ---
 
-## Active focus (2026-06-11)
+## Active focus (2026-06-14)
 
-1. **URGENT — pre-quit-smoking window.** Quit date end June 2026. ~3 weeks remaining. Thymosin alpha-1 ordering next week via Luke and Bex — time-critical.
-2. **Thymosin alpha-1 ordering next week.** Not in Pepguard catalog. Luke and Bex sourcing pathway. Must arrive before quit date.
-3. **Tesamorelin (TSM5) on next Pepguard order.** $226. Will replace CJC-1295 at bedtime when it arrives for visceral fat goal.
-4. **CJC-1295 + Ipamorelin — morning dose DROPPED 2026-06-11.** Bedtime only. Testing phase. Monitoring for adverse effects (sleep quality, GH pulse timing). No confirmed adverse effects yet.
-5. **Testosterone panel booking — later this month.** Date TBC.
-6. NAD+ maintenance dose: 50-100 mg SubQ 2-3× per week.
-7. Thymalin course Day 4 of 10 — course runs Jun 8-17. Do not skip nights.
-8. SS-31 confirmed morning fasted stack only. Removed from evening stack.
-9. GHK-Cu confirmed evening/bedtime only. Removed from morning stack.
+1. **URGENT — ping Luke and Bex Monday Jun 16: Tesamorelin (TSM5) order.** $226 Pepguard. Body composition priority — GH secretagogues causing water retention and scale stagnation. Tesamorelin targets visceral fat specifically. Locked 2026-06-14.
+2. **URGENT — pre-quit-smoking window.** Quit date end June 2026. ~2 weeks remaining. Thymosin alpha-1 sourcing via Luke and Bex — time-critical. Must arrive before quit date.
+3. **Water retention + weight stagnation flagged 2026-06-14.** Primary cause: CJC-1295 no DAC + Ipamorelin GH secretagogue protocol driving sodium and extracellular fluid retention. Scale not a reliable metric right now. Use measurements and photos. Tesamorelin order will address this.
+4. **CJC-1295 no DAC + Ipamorelin — CONFIRMED 2026-06-14: training days morning + bedtime. Non-training days bedtime only.** Prior _state.md entry (Jun 11 "morning dropped") was incorrect. Training day double dose is intentional for anabolic uplift on training sessions.
+5. **GHK-Cu — revised to twice daily 2026-06-14.** Morning 20 IU (added to morning stack) + Bedtime 20 IU. Jason confirmed. Overrides the Jun 11 evening-only decision.
+6. **Testosterone panel booking — later this month.** Date TBC.
+7. NAD+ maintenance dose: 100 IU (1mL = 100mg) SubQ 2-3× per week.
+8. Thymalin course Day 7 of 10 — course runs Jun 8-17. Epitalon same course, Day 7 of 10. Do not skip nights.
+9. SS-31 confirmed morning fasted stack only (training + non-training days).
 10. BB20 (BPC-157 + TB-500 blend) — 8 IU post-training. Resolved.
 
 ---
@@ -52,8 +52,8 @@
 - Walkthrough A scheduling (~20 min)
 - Walkthrough B scheduling (~15 min)
 - Walkthrough C scheduling (~15 min)
-- Luke and Bex Thymosin alpha-1 order — place next week
-- Pepguard order: Tesamorelin (TSM5) $226 — place on next order
+- **URGENT Mon Jun 16: ping Luke and Bex — Tesamorelin (TSM5) $226 + Thymosin alpha-1 (separate sourcing)**
+- Kisspeptin-10 (KS10) IU conversion — pending reconstitution math before first dose
 - Testosterone panel booking — later this month
 - Kisspeptin-10 IU conversion — pending reconstitution math for KS10 vial before dosing
 

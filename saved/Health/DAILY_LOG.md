@@ -5,6 +5,65 @@
 
 ---
 
+## 2026-06-15 (Lisbon) — Monday, heavy training
+
+**Location:** Lisbon
+**Training:** YES — heavy gym session AM
+**Thymalin course:** Day 8 of 10
+**Epitalon course:** Day 8 of 10
+**Kisspeptin:** NO (Monday)
+**Peptides taken AM (fasted pre-training):**
+- Needle 1: CJC-1295 no DAC (CND2) 20 IU + Ipamorelin (IP-old) 20 IU + MOTS-c (MS10) 38 IU + AOD-9604 (5AD) 10 IU + SS-31 (2S10) 5 IU + GHK-Cu (CU) 20 IU
+- Needle 2: Semax (XA10) 10 IU SubQ
+- Needle 3: NAD+ (NJ500) 100 IU slow push (NAD+ day 1 of 3 this week)
+**Post-training (to do):** BPC-157 + TB-500 blend (BB20) 8 IU + AOD-9604 (5AD) 10 IU
+**With post-training meal (to do):** 5-Amino-1MQ (50AM) 50 IU
+**Health notes:** First day of new weekly programme. Weekly plan set with Jason — training Mon/Tue/Thu + one of Fri/Sat soft, rest Wed + one of Fri/Sat.
+**Oral stack:** 5-HTP 50mg + L-Tryptophan 1000mg this evening (Monday is a scheduled oral stack day).
+**Source:** Jason direct — session 2026-06-15 AM
+
+---
+
+## 2026-06-14 (Lisbon) — Sunday, rest day
+
+**Location:** Lisbon
+**Training:** REST — decided not to train. Body asked for a deep break.
+**Thymalin course:** Day 7 of 10
+**Epitalon course:** Day 7 of 10
+**Kisspeptin:** NO (Sunday)
+**Stress and sleep flags:** Ongoing stress from non-stop work. Bad nightmares continuing. Tired period despite wanting to train. Jason correctly read the signal and rested.
+
+**Key health insights locked this session:**
+
+**1. Repair fatigue is normal and expected during peptide courses.**
+When Thymalin, Epitalon, SS-31, MOTS-c, BPC-157 plus TB-500, and GHK-Cu are running simultaneously, the body is executing multiple repair programmes at once. Immune recalibration (Thymalin), telomere and pineal work (Epitalon), mitochondrial membrane repair (SS-31), metabolic recalibration (MOTS-c), and connective tissue repair (BB20 and GHK-Cu) all demand metabolic resources. Fatigue is the body routing energy to internal work — this is the protocol doing its job, not failing. Resting on these days accelerates the repair rather than slowing it. The tiredness is temporary and resolves as the courses complete.
+
+**2. Water retention and scale stagnation explained.**
+Jason flagged: not losing weight, significant water retention. Root cause identified: CJC-1295 no DAC plus Ipamorelin running morning and bedtime on training days = elevated GH output = renal sodium retention = extracellular fluid accumulation. This is standard GH secretagogue behaviour and masks real fat loss on the scale. The fat loss may be occurring while the water masks it entirely. Scale is not a reliable metric during a GH protocol. Use measurements (waist, hips, arms) and photos as primary body composition trackers. Water retention is expected to resolve once Tesamorelin (TSM5) arrives and replaces the pure GH secretagogue at bedtime — Tesamorelin targets visceral fat with less water retention signature.
+
+**3. Appetite suppression from the stack.**
+Multiple compounds in the current protocol can suppress hunger signals: MOTS-c reduces food intake via AMPK metabolic pathway changes (documented in research), the GH secretagogue combination (CJC plus Ipa) elevates circulating fatty acids and IGF-1 which signals "fuel available" to the brain even when the stomach is empty, AOD-9604 has appetite-modulating effects via GH-fragment pathways, Semax can blunt hunger via dopaminergic activity. Jason's instinct was correct — the hunger signal is not reliable while on this stack. Rule locked: eat on a clock every 3-4 hours regardless of whether hunger is present. Protein targets must be hit independently of appetite. The 5-Amino-1MQ post-training meal window is a built-in forcing function; additional meal windows need to be scheduled around it.
+
+**4. Bad nightmares — stress-processing and peptide context.**
+Nightmares are a signal that the brain is processing a significant emotional and cognitive load. Combined with chronic work stress and poor sleep architecture from cortisol elevation, the nervous system is working hard during sleep. DSIP in the bedtime stack is addressing sleep architecture. If nightmares persist: Selank (SK10) in the evening is the PRN tool — reduces nervous system activation before sleep without sedation. Pairs with the bedtime needle without issue.
+
+**5. Training day double CJC plus Ipa confirmed.**
+CJC-1295 no DAC plus Ipamorelin: training days morning AND bedtime. Non-training days bedtime only. Morning dose on training days primes GH output for the session, supports fat mobilisation as fuel, and begins the IGF-1 cascade. Bedtime dose drives overnight GH pulse for repair and growth. The anabolic upside outweighs the water retention trade-off given the muscle-building goal.
+
+**Protocol updates made this session:**
+- GHK-Cu confirmed twice daily: morning 20 IU + bedtime 20 IU (revised from evening only)
+- Tesamorelin (TSM5) flagged URGENT ORDER — ping Luke and Bex Monday June 16
+- Thymalin and Epitalon course ends Wednesday June 17 (Day 10 — last night of both)
+- BB20 locked at 8 IU post-training (resolved from pending)
+- SS-31 confirmed morning fasted stack, daily (training and non-training days)
+- Full weekly eating and peptide programme written and available in session
+- Kisspeptin-10 target dose 200 mcg, IU conversion still pending reconstitution confirmation
+
+**Bedtime (one needle):** CJC-1295 no DAC (CND2) 20 IU + Ipamorelin (IP-old) 20 IU + GHK-Cu (CU) 20 IU + DSIP (DS5) 8 IU + Thymalin (TY10) 20 IU (Day 7) + Epitalon (ET50) 10 IU (Day 7)
+**Source:** Jason direct — session 2026-06-14
+
+---
+
 ## 2026-06-12 (Lisbon) — UPDATED
 
 **Training:** HIIT at home

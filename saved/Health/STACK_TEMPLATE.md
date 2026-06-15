@@ -27,6 +27,7 @@
 | AOD-9604 | (5AD) | 10 IU |
 | NAD+ | (NJ500) | 100 IU (1mL = 100mg) — slow push 10-15 min. 2–3x per week only, not daily |
 | SS-31 | (2S10) | 5 IU |
+| GHK-Cu | (CU) | 20 IU — morning dose (twice daily protocol) |
 | Semax | (XA10) | 10 IU SubQ injectable — separate syringe. Nasal spray = emergency backup only. |
 
 **Needle count: aim for 1–2 syringes. Combine compatible peptides. Incompatible = separate syringe.**
@@ -74,6 +75,7 @@
 | Peptide | SKU | Dose |
 |---|---|---|
 | SS-31 | (2S10) | 5 IU |
+| GHK-Cu | (CU) | 20 IU — morning dose (twice daily protocol) |
 | NAD+ | (NJ500) | 100 IU (1mL = 100mg) — slow push 10-15 min. 2–3x per week only |
 | Kisspeptin-10 | (KS10) | **[dose pending]** — **Wed/Sat only** |
 
@@ -134,11 +136,11 @@
 |---|---|---|
 | BB20 dose | RESOLVED 2026-06-11 | 8 IU post-training. |
 | SS-31 (2S10) timing | RESOLVED 2026-06-11 | Morning fasted stack only. Not evening. |
-| GHK-Cu timing | RESOLVED 2026-06-11 | Evening/bedtime only. Not morning. |
+| GHK-Cu timing | REVISED 2026-06-14 | Twice daily: morning 20 IU + bedtime 20 IU. Jason confirmed. |
 | FOXO4-DRI (F410) cycle | RESOLVED 2026-06-11 | MAX 1-2× per year. 200 mcg/day × 5 days per cycle. Not every 8-12 weeks. Do not run during Thymalin/Thymosin alpha-1 cycles, active infections, or post-quit inflammatory window. |
 | Kisspeptin-10 dose | PENDING | Target 200 mcg on Wed/Sat. IU conversion pending reconstitution math for KS10 vial. Do not dose until IU confirmed. |
 | ADE+ | PENDING | What is this? Not in Pepguard catalog. |
-| Tesamorelin | PENDING ORDER | TSM5, $226 Pepguard. Next order. Will replace CJC at bedtime when arrives. |
+| Tesamorelin | **URGENT ORDER — ping Luke and Bex tomorrow (Mon Jun 16)** | TSM5, $226 Pepguard. Body composition priority. Will replace CJC at bedtime when arrives. Locked 2026-06-14. |
 | Thymosin alpha-1 | ORDERING NEXT WEEK | Via Luke and Bex. Time-sensitive — quit date end June 2026. |
 
 ---

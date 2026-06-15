@@ -1,0 +1,26 @@
+plugins = []
+headers = []
+redirects = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "/Users/jasonpeterstevens/one2b-agents/saved/Projects/flicker-v4"
+publishOrigin = "default"
+base = "/Users/jasonpeterstevens/one2b-agents/saved/Projects/flicker-v4"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]

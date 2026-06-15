@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "flicker-v4",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "-l", "3456", "saved/Projects/flicker-v4"],
+      "port": 3456
+    }
+  ]
+}

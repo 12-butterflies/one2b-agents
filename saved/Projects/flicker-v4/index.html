@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>One 2b · The Explainer · v4.0 · 13 Jun 2026 · Confidential</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400&display=swap');
+:root { --ink: #1B2540; --ink-2: #2A344F; --body: #4A5266; --muted: #8B92A8; --faint: #B7BCCB; --paper: #FFFFFF; --paper-2: #FAFAFC; --paper-3: #F5F6FA; --rule: #E4E6EF; --rule-lt: #EFF1F6; --lav: #EAE4F4; --peri: #D2DCEC; --peach: #F1DDD0; --gold: #C9A961; --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; --mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace; --ease: cubic-bezier(0.16, 1, 0.3, 1); }
+* { box-sizing: border-box; margin: 0; padding: 0; } html { scroll-behavior: smooth; }
+body { background: var(--paper-2); color: var(--body); font-family: var(--sans); font-weight: 300; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+.wrap { max-width: 880px; margin: 0 auto; background: var(--paper); min-height: 100vh; }
+.chrome { padding: 14px 40px; display: flex; justify-content: space-between; font-family: var(--mono); font-size: 10.5px; color: var(--muted); letter-spacing: 0.04em; border-bottom: 1px solid var(--rule-lt); }
+.header { padding: 48px 40px 0; }
+.lockup { display: flex; justify-content: space-between; align-items: center; margin-bottom: 28px; }
+.lockup .logo { font-family: var(--sans); font-weight: 600; font-size: 22px; color: var(--ink); letter-spacing: -0.03em; }
+.lockup .logo span { color: var(--gold); }
+.lockup .classification { font-family: var(--mono); font-size: 13px; color: var(--muted); letter-spacing: 0.04em; text-align: right; }
+.audience-bar { margin: 0 40px; font-family: var(--mono); font-size: 13px; color: var(--muted); letter-spacing: 0.14em; text-transform: uppercase; padding-bottom: 14px; border-bottom: 1px solid var(--rule-lt); }
+.audience-bar strong { color: var(--ink); font-weight: 500; }
+/* Audience tabs */
+.aud-tabs { display: flex; flex-wrap: wrap; gap: 8px; padding: 20px 40px; border-bottom: 1px solid var(--rule-lt); }
+.aud-btn { background: transparent; border: 1px solid var(--rule); color: var(--muted); padding: 8px 18px; border-radius: 999px; font-family: var(--mono); font-size: 11px; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; transition: all 0.2s var(--ease); }
+.aud-btn:hover { color: var(--ink-2); border-color: var(--ink-2); }
+.aud-btn.active { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+/* Voice tabs */
+.voice-tabs { display: flex; flex-wrap: wrap; gap: 0; margin: 0 40px; border-bottom: 1px solid var(--rule); }
+.voice-tabs button { flex: 1 1 auto; min-width: 0; padding: 18px 12px; background: transparent; border: none; font-family: var(--sans); font-size: 13px; font-weight: 500; color: var(--muted); cursor: pointer; border-bottom: 2px solid transparent; transition: all 0.2s var(--ease); letter-spacing: -0.005em; white-space: nowrap; text-align: center; }
+.voice-tabs button.active { color: var(--ink); border-bottom-color: var(--gold); }
+.voice-tabs button:hover:not(.active) { color: var(--ink-2); }
+.voice-tabs button .label { display: block; font-family: var(--mono); font-size: 9.5px; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; opacity: 0.7; }
+.voice-tabs button.active .label { color: var(--gold); opacity: 1; }
+/* Hero */
+.hero { padding: 36px 40px; background: linear-gradient(135deg, var(--lav) 0%, var(--peri) 50%, var(--peach) 100%); border-radius: 24px; margin: 32px 40px 0; }
+.hero .eyebrow { font-family: var(--mono); font-size: 10.5px; color: var(--ink-2); letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 18px; }
+.hero h1 { font-family: var(--sans); font-weight: 300; font-size: clamp(2rem, 5vw, 3rem); line-height: 1.05; letter-spacing: -0.03em; color: var(--ink); margin: 0 0 16px; }
+.hero h1 em { font-style: italic; color: var(--ink); }
+.hero .lede { font-family: var(--sans); font-size: 16px; line-height: 1.55; color: var(--ink-2); max-width: 640px; }
+/* Panels */
+.deck { padding: 24px 40px 48px; }
+.panel-intro { font-family: var(--mono); font-size: 10.5px; color: var(--muted); letter-spacing: 0.14em; text-transform: uppercase; margin: 24px 0 14px; }
+.panel { background: var(--paper); border: 1px solid var(--rule-lt); border-radius: 16px; padding: 28px 32px; margin-bottom: 14px; cursor: pointer; transition: all 0.24s var(--ease); position: relative; }
+.panel:hover { border-color: var(--gold); box-shadow: 0 8px 28px rgba(27,37,64,0.06); transform: translateY(-1px); }
+.panel .num { font-family: var(--mono); font-size: 10.5px; color: var(--muted); letter-spacing: 0.06em; margin-bottom: 14px; }
+.panel .num::before { content: ""; display: inline-block; width: 5px; height: 5px; border-radius: 50%; background: var(--ink); margin-right: 8px; vertical-align: middle; transform: translateY(-1px); }
+.panel .headline { font-family: var(--sans); font-weight: 300; font-size: 26px; line-height: 1.18; letter-spacing: -0.022em; color: var(--ink); margin: 0 0 10px; }
+.panel .body { font-family: var(--sans); font-size: 16px; line-height: 1.55; color: var(--body); margin: 0; }
+.panel .more { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--rule-lt); display: flex; align-items: center; gap: 8px; font-family: var(--mono); font-size: 10.5px; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase; transition: color 0.2s var(--ease); }
+.panel:hover .more { color: var(--gold); }
+.panel .more::before { content: "+"; display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; border: 1px solid var(--rule); border-radius: 50%; font-family: var(--sans); font-size: 14px; font-weight: 400; color: var(--ink); background: var(--paper-3); transition: all 0.2s var(--ease); }
+.panel:hover .more::before { background: var(--gold); border-color: var(--gold); color: var(--paper); }
+/* Footer */
+.footer { padding: 28px 40px 40px; border-top: 1px solid var(--rule); background: var(--paper-2); display: flex; justify-content: space-between; align-items: center; font-family: var(--mono); font-size: 10.5px; color: var(--muted); letter-spacing: 0.04em; }
+.footer a { color: var(--gold); text-decoration: none; }
+/* Modal */
+.modal-backdrop { position: fixed; inset: 0; background: rgba(27,37,64,0.5); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); display: none; align-items: center; justify-content: center; z-index: 100; padding: 24px; opacity: 0; transition: opacity 0.3s var(--ease); }
+.modal-backdrop.open { display: flex; opacity: 1; }
+.modal { background: var(--paper); border-radius: 20px; max-width: 640px; width: 100%; max-height: 86vh; overflow-y: auto; padding: 36px 40px; position: relative; box-shadow: 0 24px 64px rgba(27,37,64,0.18); transform: scale(0.98) translateY(8px); transition: transform 0.3s var(--ease); }
+.modal-backdrop.open .modal { transform: scale(1) translateY(0); }
+.modal .num { font-family: var(--mono); font-size: 10.5px; color: var(--muted); letter-spacing: 0.06em; margin-bottom: 14px; }
+.modal .num::before { content: ""; display: inline-block; width: 5px; height: 5px; border-radius: 50%; background: var(--gold); margin-right: 8px; vertical-align: middle; transform: translateY(-1px); }
+.modal .modal-headline { font-family: var(--sans); font-weight: 300; font-size: 28px; line-height: 1.15; letter-spacing: -0.022em; color: var(--ink); margin: 0 0 10px; }
+.modal .modal-body { font-family: var(--sans); font-size: 16px; line-height: 1.55; color: var(--ink-2); margin: 0 0 24px; padding-bottom: 20px; border-bottom: 1px solid var(--rule-lt); }
+.modal .deeper-label { font-family: var(--mono); font-size: 10.5px; color: var(--gold); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 14px; }
+.modal .deeper { font-family: var(--sans); font-size: 15.5px; line-height: 1.65; color: var(--body); }
+.modal .deeper p { margin: 0 0 12px; padding: 14px 18px; border-radius: 6px; border-left: 3px solid transparent; line-height: 1.6; }
+.modal .deeper p:nth-child(odd) { background: rgba(201,169,97,0.07); border-left-color: var(--gold); }
+.modal .deeper p:nth-child(even) { background: rgba(27,37,64,0.045); border-left-color: var(--ink); }
+.modal .deeper p:last-child { margin-bottom: 0; }
+.modal-close { position: absolute; top: 18px; right: 18px; width: 38px; height: 38px; background: var(--paper-3); border: 1px solid var(--rule); border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-family: var(--sans); font-size: 18px; font-weight: 300; color: var(--ink); transition: all 0.2s var(--ease); }
+.modal-close:hover { background: var(--gold); color: var(--paper); border-color: var(--gold); }
+@media (max-width: 900px) { .voice-tabs { overflow-x: auto; flex-wrap: nowrap; -webkit-overflow-scrolling: touch; scrollbar-width: none; } .voice-tabs::-webkit-scrollbar { display: none; } .voice-tabs button { flex: 0 0 auto; padding: 14px 14px; font-size: 12.5px; } }
+@media (max-width: 700px) { .header { padding: 32px 22px 0; } .lockup .classification { display: none; } .voice-tabs { margin: 0 22px; } .audience-bar { margin: 20px 22px 0; } .aud-tabs { padding: 16px 22px; } .hero { padding: 28px 24px; margin: 24px 22px 0; border-radius: 18px; } .deck { padding: 18px 22px 40px; } .panel { padding: 22px 24px; } .panel .headline { font-size: 22px; } .panel .body { font-size: 15px; } .footer { padding: 22px; flex-direction: column; gap: 10px; align-items: flex-start; } .modal { padding: 30px 24px; max-height: 92vh; } .modal .modal-headline { font-size: 24px; } }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="chrome">
+    <span>The Explainer · Seven audiences · Six voices</span>
+    <span>Confidential · v4.0 · 13 Jun 2026</span>
+  </div>
+
+  <div class="header">
+    <div class="lockup">
+      <div class="logo">One<span>2b</span></div>
+      <div class="classification">A 90-second read · 12 panels, click any for the deeper story</div>
+    </div>
+  </div>
+
+  <!-- Audience selector -->
+  <div class="aud-tabs" id="audTabs">
+    <button class="aud-btn active" data-aud="investors">Investors</button>
+    <button class="aud-btn" data-aud="people">People</button>
+    <button class="aud-btn" data-aud="companies">Companies</button>
+    <button class="aud-btn" data-aud="accounting">Accounting</button>
+    <button class="aud-btn" data-aud="capital">Capital Markets</button>
+    <button class="aud-btn" data-aud="data">Data Leaders</button>
+    <button class="aud-btn" data-aud="sovereigns">Sovereigns</button>
+  </div>
+
+  <!-- Audience label -->
+  <div class="audience-bar" id="audienceLabel">
+    <strong id="audLabelText">FOR INVESTORS</strong>
+  </div>
+
+  <!-- Voice tabs -->
+  <div class="voice-tabs" id="voiceTabs">
+    <button class="active" data-voice="plain"><span class="label">Mode</span>Plain Explainer</button>
+    <button data-voice="fomo"><span class="label">Mode</span>Urgency</button>
+    <button data-voice="visionary"><span class="label">Mode</span>Generational</button>
+    <button data-voice="founder"><span class="label">Mode</span>Founder Voice</button>
+    <button data-voice="practical"><span class="label">Mode</span>Practical</button>
+    <button data-voice="future"><span class="label">Mode</span>2030</button>
+  </div>
+
+  <!-- Hero -->
+  <div class="hero" id="hero">
+    <div class="eyebrow" id="heroEyebrow"></div>
+    <h1 id="heroH1"></h1>
+    <div class="lede" id="heroLede"></div>
+  </div>
+
+  <!-- Panels -->
+  <div class="deck">
+    <div class="panel-intro">Read top to bottom · Click any panel for the deeper story</div>
+    <div id="panels"></div>
+  </div>
+
+  <div class="footer">
+    <span>One 2b · one2b.io · Confidential · Not an offer of securities</span>
+    <a href="https://connect.one2b.io">Join the Network →</a>
+  </div>
+
+</div>
+
+<!-- Modal -->
+<div class="modal-backdrop" id="modalBackdrop" onclick="closeModal(event)">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">&times;</button>
+    <div class="num" id="modalNum"></div>
+    <div class="modal-headline" id="modalHeadline"></div>
+    <div class="modal-body" id="modalBody"></div>
+    <div class="deeper-label">The deeper story</div>
+    <div class="deeper" id="modalDeeper"></div>
+  </div>
+</div>
+
+<script>
+const DATA = {
+  investors: {
+    label: "FOR INVESTORS",
+    hero: {
+      plain: { eyebrow: "For Investors · A 90-second read", h1: "AI just became the world's largest industry. The asset it runs on is the largest asset class on earth.", lede: "And it isn't on anyone's balance sheet. We are the first company to put a defensible number on data and back it with insurance, so the most valuable thing every business owns can finally sit on the balance sheet, be lent against, be insured, and be invested in. Portugal is our flagship sovereign engagement, live in production. A registered Lloyd's of London broker. The current round is small and timed.*" },
+      fomo: { eyebrow: "For Investors · The urgency cut", h1: "Generational shifts open once.", lede: "The first allocators into category-defining infrastructure build generational books. Real estate. Private credit. Carbon. Each early. Each generational. Data is the next one. We are the company. The round is filling.*" },
+      visionary: { eyebrow: "For Investors · The generational frame", h1: "We are inside the largest formation of new asset value in modern memory.", lede: "We are the company building the financial infrastructure that makes it investable. The next ten years of allocator alpha runs on what we are building right now. Six years of quiet build, an entire AI cycle, and the round that funds the scale is open today.*" },
+      founder: { eyebrow: "For Investors · From JPS, in his own words", h1: "I have spent six years building toward one moment.", lede: "The moment when data becomes investable. We are at it now. I am raising a small round to take this to scale. This is the conversation I want to have with you, in the words I would use across a coffee table.*" },
+      practical: { eyebrow: "For Investors · How the business works", h1: "Here is exactly what you would be investing in.", lede: "The architecture. The revenue mechanics. The round structure. Step by step, what the company owns, where revenue flows in, what the next phase unlocks, and what the round funds.*" },
+      future: { eyebrow: "For Investors · A view from 2030", h1: "It's 2030. Data is a standard line on every sovereign balance sheet, every enterprise filing, every allocator's book.", lede: "The infrastructure was built between 2022 and 2027. By this company. What 2030 looks like once data is the recognised asset class, and the early-position economics of being the first allocators in.*" }
+    },
+    panels: [
+      { num: "§ 0a / Opener", headline: "This is the age of AI.", body: "And nobody has built the financial infrastructure for the asset that powers it. Until now.", deep: "Every category-defining asset class has crossed the same three thresholds before becoming investable: a defensible valuation methodology, an insurance or credit wrapper that lets capital deploy without taking principal risk, and regulatory recognition that lets it sit on a balance sheet. Real estate crossed in the 1970s. Private credit crossed in the 2000s. Carbon crossed in the 2010s. Each one paid first-position allocators outsized, persistent, non-correlated returns because they bought before the methodology was named and priced. The asset that AI runs on has not yet crossed those thresholds. We built the methodology, brokered the insurance, and walked sovereigns into the recognition framework." },
+      { num: "§ 0b / Opener", headline: "Data is the biggest asset class of our generation.", body: "We are the company building the infrastructure that makes it investable. You can own a piece of it.", deep: "The global stock of enterprise and sovereign data is enormous in scale, larger than the global stock of public equities, larger than commercial real estate by most credible estimates, and growing faster than any other commodity asset class. None of it sits on a balance sheet. None of it is leveraged. None of it pays yield. The asymmetry between what something is worth in use and what it is recognised as on paper is the largest unresolved capital-markets gap of our time." },
+      { num: "§ 1 / The fix", headline: "We are working towards turning data into a balance sheet asset class.", body: "Independent valuation. Insurance wrap. Sovereign-grade architecture. The company owns both layers.", deep: "The IVSC framework is the global standard auditors and central banks already accept for valuing intangible assets. We applied it to data using three triangulating approaches: cost, market, and income. Three independent routes that converge on a defensible number that audit committees can sign. The insurance posture wraps that defensibility with first-loss capital from major global insurance conglomerates, with premiums starting at 1 to 3 percent annual depending on data class." },
+      { num: "§ 2 / The problem", headline: "Every entity holds the asset. Nobody can mark it.", body: "Pharma, banks, logistics, sovereigns. The structural inefficiency of the decade. We resolve it for all of them.", deep: "Three disciplines have to be senior in the same building for this to work. Data valuation methodology, insurance product structuring, and capital markets distribution. Most attempts at data financialisation have come from one of those three disciplines alone and have hit the boundary of the other two. The reason the gap has persisted is that the three communities rarely overlap and the trust required to assemble senior leadership across all three takes years. The company is the first place where all three sit at the same table." },
+      { num: "§ 3 / The cost", headline: "Trillions in dormant asset value.", body: "Invisible to ratings, invisible to debt markets, invisible to yield. The surface on which category-defining returns form.", deep: "A mid-sized pharma holds an enormous clinical-trial archive that does not appear on its balance sheet, does not improve its credit rating, does not raise lender appetite, and does not flow into any non-correlated yield instrument. The asset compounds quietly inside every entity that holds it. The compounding is captured by nobody because nobody can mark it. Once it can be marked and wrapped, the holder's balance sheet expands, credit improves, lending capacity rises." },
+      { num: "§ 4 / The shift", headline: "The world is catching up to what we built.", body: "China formally recognised data as a tangible asset class in 2024. Isle of Man legislated it after three years of working with us.", deep: "The regulatory chronology is more advanced than most allocators realise. The FASB issued an exposure draft in late 2024 broadening the treatment of internally generated intangibles. The IASB has been running parallel work on data as a recognised intangible since 2023. The MAS and HKMA both have data-as-collateral working groups. Data is between the second and third stages of the arc that happened to intellectual property between 1995 and 2005." },
+      { num: "§ 5 / The product", headline: "Two layers. Both ours. Both audit-defensible.", body: "Tesseract Data Valuation Methodology plus senior underwriting level engagement with Lloyd's syndicates.", deep: "A single engagement runs as follows. Phase one is a four to eight week valuation cycle in which the Tesseract platform ingests the data class and runs the three triangulating methodologies. Phase two is the insurance structuring window in which the appropriate data-linked insurance product is configured against the valuation and the underwriting line is placed. Phase three is the deployment window: the data owner can now lend against the valuation, list the asset on its balance sheet, sell time-bound access without losing ownership, or contribute the asset to a structured instrument." },
+      { num: "§ 6 / Revenue", headline: "Three revenue surfaces. Plus the next one.", body: "Per-valuation fees. Insurance premiums. Platform fees launching Q4 2026. Data leasing rails next.", deep: "Per-engagement data valuation fees in the live pipeline are billed in the high five to six figures depending on scope. Insurance premium economics improve over time because the underwriting risk profile of repeat customers tightens with every renewal cycle. The capital matching platform fee surface scheduled for Q4 2026 takes a clean platform percentage on the matched flow without taking principal risk. The data leasing surface that follows is the largest by addressable size." },
+      { num: "§ 7 / Who pays us", headline: "Companies, sovereigns, and allocators all pay us.", body: "Each pays differently. All three pay recurringly. Multiple compounding revenue lines on one underlying stack.", deep: "Enterprise procurement runs through the CFO and the CDO in tandem, on a six to twelve month cycle. Sovereign procurement runs longer, typically twelve to eighteen months, but the contracts are larger and the renewal posture is sticky because once a sovereign has marked its data, the methodology is embedded in its accounting infrastructure. Allocator behaviour is different again: they show up once a credible product exists with audited valuations and an insurance layer in active syndicate engagement." },
+      { num: "§ 8 / Who we are", headline: "We are the only firm building the entire stack.", body: "Registered Lloyd's of London broker. Senior team across data, insurance, and capital markets. Predominantly self-funded for nearly eight years.", deep: "The senior team has placed real capital before. The Chief Risk Officer has built and bound insurance products that traded billions in notional. The Head of Innovation has carried global product responsibility at a major Lloyd's syndicate. The Co-Chief Data Officers have led IVSC methodology development at the institutional level. The composition is a senior team that chose to assemble in one place because the prize on the other side is large enough to be worth six years of quiet build." },
+      { num: "§ 9 / Sovereign engagements", headline: "Sovereign pilot in production. Portugal is the flagship.", body: "Brazil and Colombia this quarter. Twelve more sovereigns advancing. A national data wallet rollout preparing for 200 million people.", deep: "The flagship sovereign engagement is structured as a multi-year programme inside a dedicated regulatory sandbox arrangement, focused on longevity and reproductive datasets. The next two sovereign valuations land in the same calendar quarter as this round closes. A further twelve sovereign relationships are advancing through scoping, governance MOU, and methodology agreement at varying stages." },
+      { num: "§ 10 / The round", headline: "The current round is small and timed.*", body: "A friends-and-family investor pulled out at the last minute for serious health reasons. The pre-money is preferential. The window will close.", deep: "The round is structured as a small priced equity raise into the operating entity at preferential pre-money. Use of proceeds is concentrated on the next three sovereign valuation cycles, the launch of the capital matching platform, and the build-out of the senior commercial team that opens the Series A surface. The current round is the last point of entry at this pre-money level." }
+    ]
+  },
+  people: {
+    label: "FOR PEOPLE",
+    hero: {
+      plain: { eyebrow: "For People · A 90-second read", h1: "Your data is the most valuable thing you own.", lede: "You earn nothing from it. Yet. A simple flicker through what's changing, and why being early matters." },
+      fomo: { eyebrow: "For People · The urgency cut", h1: "Every quarter your data makes someone money.", lede: "Just never you. This is changing right now, in real countries, with real people. Be one of them." },
+      visionary: { eyebrow: "For People · The generational frame", h1: "We are living through the largest shift in value the world has ever seen.", lede: "And it has no name yet. What is changing, why it matters across generations, and where you fit inside it." },
+      founder: { eyebrow: "For People · From JPS, in his own words", h1: "Almost no one I meet has put a number on their own data.", lede: "I'm spending the rest of my career fixing that. The story of what we built, why it matters to you, told the way I would tell it across a table." },
+      practical: { eyebrow: "For People · How it actually works", h1: "Here is exactly how your data starts paying you.", lede: "Step by step. The mechanics of national data ownership, in plain English, in the order you'll meet them." },
+      future: { eyebrow: "For People · A view from 2030", h1: "It is 2030. Your data wallet pays you every quarter.", lede: "You can't imagine when it didn't. What life looks like once this is normal, and what has to happen between now and then." }
+    },
+    panels: [
+      { num: "§ 0a / Opener", headline: "This is the age of AI.", body: "And no one has put a number on YOUR data.", deep: "AI runs on data. Most of that data came from you, your searches, your purchases, your movements, your medical records, your photos. Companies use it. Governments collect it. You never see a dollar from it. That is what is changing right now." },
+      { num: "§ 0b / Opener", headline: "Data is the biggest asset class of our generation.", body: "And you do not own a share of it yet.", deep: "You generate data every day. Companies turn that data into trillions of dollars of market value. Today you own zero of that. The next thing that has to change, and is starting to change in a few countries, is your right to a share of what your data earns when others use it." },
+      { num: "§ 1 / The fix", headline: "We are working towards turning data into a balance sheet asset class.", body: "Including yours.", deep: "When your data has a real, proven value and insurance behind it, the companies and governments who want to use it can pay you fairly for it. The same valuation work that puts a number on a company's data is what makes paying you for yours possible at national scale." },
+      { num: "§ 2 / The problem", headline: "Most companies sit on data they cannot put a number on.", body: "And they sit on yours too.", deep: "Big companies hold extraordinary data about you, what you bought, where you went, who you spoke to, what you watched. They make money from that data every quarter. You make none from it. The same fix that lets a company put data on its balance sheet lets you start earning from yours." },
+      { num: "§ 3 / The cost", headline: "Without a number, data is invisible to capital.", body: "The most valuable thing YOU own. Pays you nothing today.", deep: "Your data is what AI runs on. It is what social platforms sell to advertisers. It is what health systems monetise. Every quarter your data generates real money, for somebody else. Putting a number on data is the bridge to paying you for your share when others use it." },
+      { num: "§ 4 / The shift", headline: "The rules just changed. Data is an asset now.", body: "The first countries are recognising your data rights.", deep: "The first national data ownership laws are passing, including a comprehensive bill that lets citizens see, control, and earn from the data held about them. The legal framework that says your data is yours is shifting from concept to law. The financial infrastructure to back it up is being built now." },
+      { num: "§ 5 / The product", headline: "We value the data. Then we insure the value.", body: "A real number on the data. Insurance behind it, so what you earn from it actually holds.", deep: "When a company or government wants to use your data, the value of that data has to be defensible, otherwise you cannot be paid fairly for it. Tesseract sets the value. Our data-linked insurance products back it up. So when your data wallet pays you, what is in it is real, audit-grade money." },
+      { num: "§ 6 / What happens next", headline: "Now data moves like money.", body: "Your data starts paying you. Like a savings account, but for your data.", deep: "Picture a savings account where the deposit is your data. You see what governments and companies hold on you. You choose what to share, with whom, and for how much. The aggregated value pays you compounding interest, early national deployments are already showing welfare-class users earning two to three times what they previously received in government support." },
+      { num: "§ 7 / Who this is for", headline: "Companies, governments, and investors.", body: "You. Everyone whose data is held by someone else.", deep: "Citizens of countries rolling out data ownership laws. Account holders inside banks that recognise personal data as an asset. Patients whose medical data feeds research. Drivers, shoppers, social users, anyone whose digital footprint creates value for someone else. The audience is anyone with a phone in their pocket." },
+      { num: "§ 8 / Who we are", headline: "We are the bridge nobody else has built.", body: "We work alongside the teams building national data wallets, we are the valuation and insurance layer behind them.", deep: "You will not download an app from us. Our partners are building the consumer-facing data wallets that plug into your existing national identity, banking, or government services. One 2b is the layer behind them that values the data and insures the value, so when your wallet pays you, what is in it is real money backed by real insurance." },
+      { num: "§ 9 / Live, not theoretical", headline: "A pilot is already live with a sovereign nation.", body: "A national rollout is preparing for 200 million people.", deep: "One country is preparing a national data wallet for 200 million citizens, a data savings account that sits inside the existing social security system. People see what data is held on them, choose what to share, and earn compounding interest on the licensing of anonymised, aggregated data. The valuation and insurance layer behind it is what we provide." },
+      { num: "§ 10 / Timing", headline: "These windows do not stay open.", body: "Being early on owning your own data is rare.", deep: "For decades the default was that companies own your data and you do not. That is changing, slowly in some countries, fast in others. The people in the first national rollouts are the ones who will set the pattern for how everyone else earns from their data. Being early matters here too." }
+    ]
+  },
+  companies: {
+    label: "FOR COMPANIES",
+    hero: {
+      plain: { eyebrow: "For Companies · A 90-second read", h1: "Your data is your most valuable asset.", lede: "Worth zero on your balance sheet. Until now. How we turn the data your business has built into something your bank, your investors, and your buyers can actually price." },
+      fomo: { eyebrow: "For Companies · The urgency cut", h1: "Your competitors haven't valued their data either.", lede: "Whoever moves first owns the playing field. The window for being early on a new asset class doesn't stay open long." },
+      visionary: { eyebrow: "For Companies · The generational frame", h1: "Data is the next great asset class.", lede: "The companies who recognise theirs first redraw the map. What is changing in the relationship between companies and the data they have spent twenty years building." },
+      founder: { eyebrow: "For Companies · From JPS, in his own words", h1: "I have sat across from a lot of CEOs sitting on a fortune in data.", lede: "None of them could give me a number for it. The story of what we built, in the words I would use across a coffee table." },
+      practical: { eyebrow: "For Companies · How it actually works", h1: "Here is exactly how the data your business has built turns into a financeable asset.", lede: "Step by step. The mechanics of valuing, insuring, and recognising data on the balance sheet, in plain order." },
+      future: { eyebrow: "For Companies · A view from 2030", h1: "It's 2030. Your CFO's quarterly report has a line for data.", lede: "With a real number on it. What corporate balance sheets look like in 2030, and what has to happen between now and then." }
+    },
+    panels: [
+      { num: "§ 0a / Opener", headline: "This is the age of AI.", body: "And no one knows what their company's data is worth.", deep: "AI is changing everything, fast. The fuel underneath it all is data, and most companies have years of valuable data sitting in their systems without a price tag on it. No number means no asset. No asset means no leverage with banks, buyers, or investors. That changes when somebody can finally put a defensible number on it." },
+      { num: "§ 0b / Opener", headline: "Data is the biggest asset class of our generation.", body: "And no business has it on the books yet.", deep: "Think about every other major asset class, property, inventory, brand, intellectual property. Each one became valuable on the balance sheet once people knew how to price it and insure it. Data is the next one. Companies that get there early own the playing field." },
+      { num: "§ 1 / The fix", headline: "We are working towards turning data into a balance sheet asset class.", body: "Real number. Real insurance. Real asset on the books.", deep: "Your business has been building data for years. We put a defensible number on it, back it with insurance from major global insurance providers, and put it on your balance sheet, so your bank, your investors, and your buyers all see it as a real asset." },
+      { num: "§ 2 / The problem", headline: "Most companies sit on data they cannot put a number on.", body: "No number, no asset. No asset, no leverage.", deep: "Customer lists, transaction histories, supply chain records, machine data, your company probably has decades of all of it. None of it shows up on the balance sheet. So your bank cannot lend against it, your buyers cannot see it, your investors do not price it in. Billions of dollars of business value, hidden." },
+      { num: "§ 3 / The cost", headline: "Without a number, data is invisible to capital.", body: "The most valuable thing your business owns. Worth nothing on paper.", deep: "When banks look at your business, they see your buildings, your inventory, your receivables. They do not see your data. So you cannot borrow against it. You cannot insure it. You cannot lease access to it at a fair price. All that changes once it has a defensible number." },
+      { num: "§ 4 / The shift", headline: "The rules just changed. Data is an asset now.", body: "The accounting rules finally allow it.", deep: "For the first time, your accountants can put data on your balance sheet as a real asset, audited and defensible. The catch is that someone has to do the valuation work in a way the auditor accepts. That is us." },
+      { num: "§ 5 / The product", headline: "We value the data. Then we insure the value.", body: "A real number your CFO can stand behind. Insurance behind the number, so your bank can trust it.", deep: "Step one: we put a defensible number on your data using methodology your auditor will accept. Step two: we wrap insurance around it, backed by major global insurance providers, so anyone lending against it, buying it, or investing in it knows the number holds. Your data starts behaving like real estate or inventory: a real, financeable asset." },
+      { num: "§ 6 / What happens next", headline: "Now data moves like money.", body: "Lease it. Lend against it. Insure it. Invest in it.", deep: "Once your data has a number and insurance behind it, you can do everything you do with any other business asset. Lease access to it. Borrow against it. Insure the cash flow from it. Bring in investors who want exposure to it. The asset that was invisible yesterday becomes financeable today." },
+      { num: "§ 7 / Who this is for", headline: "Companies, governments, and investors.", body: "Companies that have built up serious data over the years. Governments that hold it nationally. Investors looking for new places for capital.", deep: "If your business has years of customer data, transaction data, product data, supply chain data, that is where we come in. We turn that data into something your bank, your investors, and your buyers can actually price." },
+      { num: "§ 8 / Who we are", headline: "We are the bridge nobody else has built.", body: "A senior team. The first to do both the valuation and the insurance, end-to-end.", deep: "There is no one else doing both sides of this, the valuation work and the insurance wrap. We are a registered Lloyd's of London broker, which means we operate inside the world's strongest insurance market. Senior people, full architecture, real products." },
+      { num: "§ 9 / Live, not theoretical", headline: "A pilot is already live with a sovereign nation.", body: "Running, not waiting. More are joining.", deep: "We have a live project running with a national government. A second country is in execution. Twelve more are in the pipeline. This is not a slide, it is working in the real world right now." },
+      { num: "§ 10 / Timing", headline: "These windows do not stay open.", body: "Being early on a new asset class is rare.", deep: "Real estate becoming an asset class made early adopters rich for decades. Same with private credit. Same with carbon. Data is the next one. The window for being early closes fast as more and more competitors put a number on theirs." }
+    ]
+  },
+  accounting: {
+    label: "FOR ACCOUNTING FIRMS",
+    hero: {
+      plain: { eyebrow: "For Accounting Firms · A 90-second read", h1: "Your clients are asking what their data is worth.", lede: "The methodology to sign off on a number is here. The independent, IVSC-aligned data valuation methodology that sits above your firm's assurance work." },
+      fomo: { eyebrow: "For Accounting Firms · The urgency cut", h1: "Your competitors are about to start signing off on data valuations.", lede: "Only one firm gets to be the methodology partner first. First-mover advantage on a category-defining asset class does not come around often." },
+      visionary: { eyebrow: "For Accounting Firms · The generational frame", h1: "Every major asset class became investable once defensible methodology existed.", lede: "Yours is the firm that ushers data through. What happens to the audit profession when data becomes the largest asset class on every balance sheet." },
+      founder: { eyebrow: "For Accounting Firms · From JPS, in his own words", h1: "I have spent six years building the methodology your firm can finally sign off on.", lede: "Now I am looking for the partner firms ready to use it. Why this partnership matters to me, in the words I would use sitting across from a senior audit partner." },
+      practical: { eyebrow: "For Accounting Firms · How it actually works", h1: "Here is exactly how the methodology partnership works.", lede: "What we provide. What you provide. Where the audit sits. The mechanics of the partnership, step by step, in plain terms." },
+      future: { eyebrow: "For Accounting Firms · A view from 2030", h1: "It's 2030. Every audit opinion has a data line.", lede: "Yours is the firm that wrote the methodology that made it possible. What audit looks like when data is the largest single line on every balance sheet." }
+    },
+    panels: [
+      { num: "§ 0a / Opener", headline: "This is the age of AI.", body: "And no firm has signed off on its value as a balance sheet asset.", deep: "AI runs on data. Yet client data assets sit with no independent, IVSC-aligned valuation methodology behind them. Increasingly, clients are asking what their data is worth, and the honest current answer is that the methodology to sign off on a number has not existed. That gap is where a partner with defensible methodology meets the firm with the assurance practice." },
+      { num: "§ 0b / Opener", headline: "Data is the biggest asset class of our generation.", body: "And no auditor has yet signed off on it at scale.", deep: "The accounting standards framework is moving. IFRS and FASB conversations on data and intangible asset recognition are active. Real estate became an asset class once appraisal methodology existed; carbon became one once verification methodology existed. Data needs an IVSC-aligned, audit-defensible methodology, and that work has now been built." },
+      { num: "§ 1 / The fix", headline: "We are working towards turning data into a balance sheet asset class.", body: "Defensible methodology. Audit-ready workpapers. IVSC-aligned.", deep: "Tesseract is our IVSC-aligned data valuation methodology. Cost, market, and income approaches, the same trio that has valued real estate for a century, applied to data. Each valuation includes a defensible methodology trail, source documentation, and audit-ready workpapers your assurance team can stand behind." },
+      { num: "§ 2 / The problem", headline: "Most companies sit on data they cannot put a number on.", body: "No methodology, no recognition. No recognition, no asset.", deep: "Your clients have built data assets for two decades. None of those assets are on their balance sheets. The barrier is not the data, it is the valuation methodology that an audit committee will accept. We provide the methodology. Your firm provides the audit." },
+      { num: "§ 3 / The cost", headline: "Without a number, data is invisible to capital.", body: "The most valuable thing your client owns. Worth nothing on paper, until methodology exists.", deep: "Unrecognised data assets distort the picture for everyone, lenders, raters, acquirers. Once the asset is recognised at a defensible number, the financial story your client tells is materially more complete. That methodology bridge is where our platform and your firm meet." },
+      { num: "§ 4 / The shift", headline: "The rules just changed. Data is an asset now.", body: "The standards framework is here. The methodology is the bridge.", deep: "IFRS intangible asset guidance and FASB intangible asset standards are now sufficient to support recognition where defensible valuation exists. The remaining gap is independent methodology. That is what Tesseract solves, IVSC-aligned, third-party-defensible, audit-trail-complete." },
+      { num: "§ 5 / The product", headline: "We value the data. Then we insure the value.", body: "Independent methodology. Insurance wrapper. Audit-defensible at every step.", deep: "Step one is the Tesseract valuation, produced independently of your firm, with full IVSC alignment and audit-grade methodology documentation. Step two adds insurance via our data-linked insurance products, brokered through our registered Lloyd's of London status, providing third-party credit support around the value." },
+      { num: "§ 6 / What happens next", headline: "Now data moves like money.", body: "Recognise. Report. Insure. Finance.", deep: "Once the methodology is defensible and the insurance is in place, the recognised data asset becomes the foundation for client financing, M&A advisory positioning, audit and assurance scope expansion, and new advisory revenue streams for your firm." },
+      { num: "§ 7 / Who this is for", headline: "Companies, governments, and investors.", body: "Your enterprise clients, your sovereign clients, your investor clients, all need the methodology.", deep: "Each segment of your client base needs this differently. Enterprises need the balance sheet recognition for financing and M&A. Sovereigns need it for fiscal capacity and ratings. Investors need it to price exposure. One methodology serves all three, applied through your engagement model." },
+      { num: "§ 8 / Who we are", headline: "We are the bridge nobody else has built.", body: "A registered Lloyd's of London broker. A senior team. The methodology built end-to-end.", deep: "One 2b is the first to combine IVSC-aligned data valuation with insurance-backed instrumentation. Methodology developed by senior Chief Data Officers and a senior data strategist. Audit firms partner with us as the methodology layer, your assurance work sits above ours." },
+      { num: "§ 9 / Live, not theoretical", headline: "A pilot is already live with a sovereign nation.", body: "Running, not waiting. More are joining.", deep: "The first sovereign pilot is operational and producing valuations under live audit conditions. A second sovereign engagement is in execution. Twelve additional government engagements are advancing. The methodology is being tested against real-world data assets, not theoretical examples." },
+      { num: "§ 10 / Timing", headline: "These windows do not stay open.", body: "Being the methodology partner from the start is rare.", deep: "The accounting firm that takes a seat at the methodology table from the start helps shape the standards that other firms inherit. First-mover advantage on a category-defining asset class does not come around often." }
+    ]
+  },
+  capital: {
+    label: "FOR CAPITAL MARKETS",
+    hero: {
+      plain: { eyebrow: "For Capital Markets · A 90-second read", h1: "AI capex is the macro trade of the decade.", lede: "Nobody is pricing the underlying. The IVSC-compliant, insurance-wrapped layer of the agentic-data economy. Targeting 5 to 7 percent yields* after insurance costs, non-correlated." },
+      fomo: { eyebrow: "For Capital Markets · The urgency cut", h1: "Real estate took decades. Carbon took years.", lede: "Data is moving in months. First-mover allocators in real estate, private credit, and carbon captured the structural alpha of category formation. Data is the next one." },
+      visionary: { eyebrow: "For Capital Markets · The generational frame", h1: "Real estate. Private credit. Carbon.", lede: "Data is the next one. Allocators who captured the structural alpha of category formation built generational books. The next one is forming now." },
+      founder: { eyebrow: "For Capital Markets · From JPS, in his own words", h1: "I have spent six years building the layer that lets allocators finally underwrite data.", lede: "This is the conversation I want to have. Why I built it this way, what I am seeing in the pipeline, and the conversation I would have with you across a coffee table." },
+      practical: { eyebrow: "For Capital Markets · How the structure works", h1: "Here is the mechanics of the instrument.", lede: "Valuation. Insurance wrap. Yield. Liquidity. Step by step, what the data-linked insurance structure looks like, where the cash flows come from, and how the insurance layer transfers risk." },
+      future: { eyebrow: "For Capital Markets · A view from 2030", h1: "It's 2030. Data is a standard line in every allocator's book.", lede: "The early movers wrote the playbook. What an allocator book looks like in 2030 once the data asset class is mature. And what has to happen between now and then." }
+    },
+    panels: [
+      { num: "§ 0a / Opener", headline: "This is the age of AI.", body: "And no one has priced what their data is worth.", deep: "AI runs on data. Every model, every agent, every inference. Yet the asset underneath sits with no defensible valuation, no insurance wrapper, no investable yield. That gap is where capital allocators with a long horizon find the next non-correlated asset class." },
+      { num: "§ 0b / Opener", headline: "Data is the biggest asset class of our generation.", body: "And it is not on anyone's balance sheet yet.", deep: "Real estate, private credit, carbon, each became an investable asset class once defensible valuation and insurance frameworks existed. Data is the only commodity-scale asset that has not crossed that line. The line is being crossed now." },
+      { num: "§ 1 / The fix", headline: "We are working towards turning data into a balance sheet asset class.", body: "Defensible, insurable, financeable.", deep: "Our Tesseract platform produces the valuation. Our data-linked insurance products wrap it. The result: a data-backed instrument that capital allocators can underwrite against, targeting 5 to 7 percent yields* after insurance costs." },
+      { num: "§ 2 / The problem", headline: "Most companies sit on data they cannot put a number on.", body: "No number, no asset. No asset, no leverage.", deep: "A pharma company has decades of clinical data. A bank has decades of transaction patterns. A logistics group has decades of route economics. All valuable, none on any balance sheet, none available as collateral. That is hundreds of billions in dormant asset value." },
+      { num: "§ 3 / The cost", headline: "Without a number, data is invisible to capital.", body: "The most valuable thing in the company. Worth nothing on paper.", deep: "Invisible asset value means invisible upside for the equity, no collateral for lenders, no yield for investors, no balance-sheet support for ratings. Every quarter the data appreciates and no one captures it. That is the inefficiency we resolve." },
+      { num: "§ 4 / The shift", headline: "The rules just changed. Data is an asset now.", body: "The accounting framework finally exists.", deep: "Recent accounting standards work formally recognises data as an intangible asset eligible for balance-sheet recognition. Combined with an audit-grade valuation framework, this is the bridge from interesting opportunity to deployable capital structure." },
+      { num: "§ 5 / The product", headline: "We value the data. Then we insure the value.", body: "A defensible number. Insurance behind it, so capital can rely.", deep: "Tesseract produces the valuation. Our data-linked insurance products, underwritten by major global insurance conglomerates, brokered through our registered Lloyd's of London status, wrap the value. Premiums sit at 1 to 3 percent annual. The result is an insured data-backed instrument suitable for institutional deployment." },
+      { num: "§ 6 / What happens next", headline: "Now data moves like money.", body: "Direct investment. Secured lending. Insurance products. Yield.", deep: "Once data is valued and insured, every financial primitive becomes available. Direct investment in data-backed yield instruments. Secured lending against data collateral. Insurance products with measurable underlying exposure. Targeting 5 to 7 percent yields* after insurance costs, non-correlated to traditional fixed income." },
+      { num: "§ 7 / Who this is for", headline: "Companies, governments, and investors.", body: "Capital allocators with a long horizon looking for new uncorrelated yield.", deep: "Family offices, insurance balance sheets, pension funds, and sovereign wealth allocators looking for non-correlated, insurance-wrapped yield in a market where every traditional asset class is at or near peak valuation." },
+      { num: "§ 8 / Who we are", headline: "We are the bridge nobody else has built.", body: "A registered Lloyd's of London broker. A senior team. The first of its kind, end-to-end.", deep: "One 2b is the first company to combine IVSC-compliant data valuation with insurance-backed financial instruments at institutional scale. Registered Lloyd's of London broker status. Major global insurance conglomerates behind the products. The architecture is full-stack, the products are live, and the team is senior." },
+      { num: "§ 9 / Live, not theoretical", headline: "A pilot is already live with a sovereign nation.", body: "Running, not waiting. More are joining.", deep: "The first sovereign pilot is operational, producing IVSC-compliant valuations on national data assets. A second sovereign expansion is in execution. Twelve additional sovereign engagements are advancing. Real-world deployment, real valuations, real counterparties." },
+      { num: "§ 10 / Timing", headline: "These windows do not stay open.*", body: "Being early on a new asset class is rare.", deep: "Investors who allocated early into real estate, private credit, carbon, or infrastructure as an asset class captured the structural alpha of category formation. Data is the next category. The window for early access closes once the methodology and insurance frameworks reach critical adoption." }
+    ]
+  },
+  data: {
+    label: "FOR DATA LEADERS",
+    hero: {
+      plain: { eyebrow: "For Data Leaders · A 90-second read", h1: "You own the most valuable thing in the company.", lede: "And you cannot defensibly prove what it is worth. The IVSC-aligned valuation methodology plus insurance wrap that turns your data infrastructure from cost centre to balance-sheet asset. And the next-phase data leasing rails that turn it into yield." },
+      fomo: { eyebrow: "For Data Leaders · The urgency cut", h1: "Your peers in other enterprises are about to put a number on their data.", lede: "The CDOs who move first define the category. First-movers shape the methodology, shape the standards, shape the language of the asset class. The window for that is short." },
+      visionary: { eyebrow: "For Data Leaders · The generational frame", h1: "You have spent twenty years building the data infrastructure.", lede: "You are about to become the person who built the asset class. What happens to the data leadership role when data becomes a balance-sheet asset and a yield-producing class, at the same time." },
+      founder: { eyebrow: "For Data Leaders · From JPS, in his own words", h1: "Every CDO I have met owns the most valuable thing in their company.", lede: "And cannot put a defensible number on it. The conversation I would have with you across a coffee table about why this changes everything." },
+      practical: { eyebrow: "For Data Leaders · How the methodology and the leasing rails work", h1: "Here is exactly how your data lake becomes a recognised asset.", lede: "And then a yield-producing one. The mechanics of IVSC valuation, data-linked insurance, and the next-phase data leasing model, step by step." },
+      future: { eyebrow: "For Data Leaders · A view from 2030", h1: "It's 2030. Your data lake is the biggest line on the balance sheet.", lede: "And the biggest recurring revenue stream. What the CDO role looks like in 2030 once data is both balance-sheet asset and yield-producing class." }
+    },
+    panels: [
+      { num: "§ 0a / Opener", headline: "This is the age of AI.", body: "And no one has valued what their data is worth.", deep: "AI runs on data. Every model, every agent, every inference. Yet the asset underneath sits with no IVSC-compliant valuation, no recognition on the balance sheet, no audit trail. Data leadership today owns the most valuable thing in the company and cannot prove what it is worth." },
+      { num: "§ 0b / Opener", headline: "Data is the biggest asset class of our generation.", body: "And it is not on anyone's balance sheet yet.", deep: "Real estate became an asset class once it had appraisal methodology. Carbon became an asset class once it had verification methodology. Data needs the same: a defensible, IVSC-aligned, audit-grade valuation framework. That framework now exists." },
+      { num: "§ 1 / The fix", headline: "We are working towards turning data into a balance sheet asset class.", body: "Defensible, IVSC-compliant, audit-grade.", deep: "Tesseract is our IVSC-compliant data valuation platform. Cost, market, and income approaches, the same methodology trio that has valued real estate for a century, adapted to data. The valuation is auditable, defensible, and balance-sheet-recognition-ready." },
+      { num: "§ 2 / The problem", headline: "Most companies sit on data they cannot put a number on.", body: "No number, no recognition. No recognition, no asset.", deep: "Enterprises have spent twenty years building data lakes, warehouses, and lakehouses. The infrastructure investment is enormous. The asset visibility is zero. Data leadership owns the value but cannot defend it to the CFO, the audit committee, or the board. That changes with defensible valuation." },
+      { num: "§ 3 / The cost", headline: "Without a number, data is invisible to capital.", body: "The most valuable thing the CDO owns. Worth nothing on paper.", deep: "Without a number, data infrastructure is treated as a cost center. With a number, it becomes a balance-sheet asset that justifies investment, headcount, and strategic priority. Recognition reframes the entire data conversation inside the enterprise." },
+      { num: "§ 4 / The shift", headline: "The rules just changed. Data is an asset now.", body: "The accounting framework finally exists.", deep: "The standards framework now supports defensible data recognition. Companies can value, recognise, and report data on the balance sheet under audit. Data leadership has the regulatory clearance to argue for asset-level treatment. The methodology gap is what Tesseract fills." },
+      { num: "§ 5 / The product", headline: "We value the data. Then we insure the value.", body: "A defensible number. Methodology behind it, audit-grade. Insurance wrapping it.", deep: "Tesseract applies cost, market, and income approaches under IVSC alignment. The valuation is reproducible, auditable, and defensible across major audit firms. Our data-linked insurance products add an insurance wrapper from major global insurance conglomerates, brokered through our registered Lloyd's of London status." },
+      { num: "§ 6 / What happens next", headline: "Now data moves like money.", body: "Lease. License. Insure. Securitise. The next phase unlocks the 90 percent of enterprise data locked in vaults, for the AI generation to train on, without selling a single record.", deep: "Recognised data assets can be leased under enterprise license, used as collateral for working capital, packaged as securitised cash flows, or contributed into joint ventures at known value. The data leader becomes a balance-sheet contributor, not just a cost-centre owner." },
+      { num: "§ 7 / Who this is for", headline: "Companies, governments, and investors.", body: "Data leaders inside enterprises ready to argue for asset-level treatment.", deep: "Chief Data Officers, Chief Information Officers, Heads of Data Strategy. Enterprise leaders who own the data infrastructure today but cannot put a defensible number on it tomorrow. Tesseract is the methodology bridge. Data-linked insurance products are the insurance bridge." },
+      { num: "§ 8 / Who we are", headline: "We are the bridge nobody else has built.", body: "An IVSC-compliant methodology, a senior team, and the first integrated valuation-plus-insurance stack for data.", deep: "Tesseract is the IVSC-compliant valuation engine, built by our Co-Chief Data Officers and Chief Data Strategist. Data-linked insurance products are the insurance layer, brokered through our registered Lloyd's of London status. The team carries data, insurance, and capital markets seniority in one place." },
+      { num: "§ 9 / Live, not theoretical", headline: "A pilot is already live with a sovereign nation.", body: "Running, not waiting. More are joining.", deep: "The pilot validates the methodology against actual national data assets, under real audit conditions, with real downstream capital interest. The methodology travels: what works for the pilot sovereign works for the enterprise CDO too." },
+      { num: "§ 10 / Timing", headline: "These windows do not stay open.", body: "Defining a category from inside is rare.", deep: "The data leaders who help define how data becomes a balance-sheet asset will set the pattern for the next decade of enterprise data strategy. Early enterprise adopters of Tesseract shape the methodology, shape the standards, and shape the language of the category." }
+    ]
+  },
+  sovereigns: {
+    label: "FOR SOVEREIGNS",
+    hero: {
+      plain: { eyebrow: "For Sovereigns · A 90-second read", h1: "Your nation holds the largest unrecognised asset on its books.", lede: "The framework to recognise it is here. The independent, IVSC-aligned methodology and insurance layer that makes sovereign data recognition actionable, without depending on multilateral guarantees and without adding to public debt." },
+      fomo: { eyebrow: "For Sovereigns · The urgency cut", h1: "First-mover sovereigns shape the standards that other nations inherit.", lede: "The window for that is short. Recognition of sovereign data assets is happening now. Whoever moves first writes the methodology the rest of the world adopts." },
+      visionary: { eyebrow: "For Sovereigns · The generational frame", h1: "Nations carry land, infrastructure, and natural resources on their books.", lede: "Data is the largest one that does not yet appear. What sovereign balance sheets look like when data is recognised, and how the first nations to do it shape the digital sovereignty of the decade." },
+      founder: { eyebrow: "For Sovereigns · From JPS, in his own words", h1: "I have spent six years building the architecture that lets nations finally recognise their data.", lede: "This is the conversation I want to have with your ministry. Why this matters at sovereign scale, and how we work together with full respect for sovereignty." },
+      practical: { eyebrow: "For Sovereigns · How the sovereign engagement works", h1: "Here is the engagement model with full sovereignty respected.", lede: "Scoping. Methodology. Insurance. Capital path. Step by step, what a sovereign engagement looks like from first conversation to first valuation to first capital deployment." },
+      future: { eyebrow: "For Sovereigns · A view from 2030", h1: "It's 2030. Data is a standard line on every sovereign balance sheet.", lede: "The first nations to recognise it own the playbook. What sovereign balance sheets and ratings narratives look like in 2030 once data is a recognised national asset." }
+    },
+    panels: [
+      { num: "§ 0a / Opener", headline: "This is the age of AI.", body: "And no nation has put a number on what its data is worth.", deep: "AI runs on data. Every model, every agent, every inference. Yet sovereign data, census, energy, port, fiscal, environmental, sits with no balance-sheet recognition. Nations sit on the asset of the century and cannot mobilise capital against it without adding opaque debt." },
+      { num: "§ 0b / Opener", headline: "Data is the biggest asset class of our generation.", body: "And no government has put it on its sovereign balance sheet yet.", deep: "Sovereign nations carry land, infrastructure, and natural resources on their books. Data is the largest unrecognised national asset. Recognising it on the sovereign balance sheet creates new capacity for capital mobilisation without depending on multilateral guarantees or adding to public debt." },
+      { num: "§ 1 / The fix", headline: "We are working towards turning data into a balance sheet asset class.", body: "Defensible, recognised, capital-ready.", deep: "Tesseract produces an independent, IVSC-aligned valuation of national data assets. Once valued and insured, the asset can sit on the sovereign balance sheet and serve as the basis for capital mobilisation, direct investment, bond enhancement, or credit-line collateral." },
+      { num: "§ 2 / The problem", headline: "Most companies sit on data they cannot put a number on.", body: "No number, no recognition. No recognition, no fiscal capacity.", deep: "Sovereign nations have built census systems, central bank data, energy grid telemetry, port and customs systems, and population health records. Each is a national asset. None are recognised. Capital markets cannot price what is not on the books." },
+      { num: "§ 3 / The cost", headline: "Without a number, data is invisible to capital.", body: "The most valuable thing the nation owns. Worth nothing on the sovereign balance sheet.", deep: "Sovereign rating agencies, sovereign debt markets, and multilateral lenders all price what they can see. Unrecognised data assets do not move the rating, do not lower the borrowing spread, do not strengthen the fiscal posture. Recognition changes that equation." },
+      { num: "§ 4 / The shift", headline: "The rules just changed. Data is an asset now.", body: "The accounting framework for sovereign data is here.", deep: "Public-sector accounting frameworks are evolving to allow recognition of digital and data assets on the sovereign balance sheet. Combined with independent, IVSC-aligned valuation, this opens new fiscal capacity without changing legal structures or adding opaque debt." },
+      { num: "§ 5 / The product", headline: "We value the data. Then we insure the value.", body: "A defensible number. Insurance behind it, so multilateral and private capital can rely.", deep: "Tesseract produces the independent valuation. Our data-linked insurance products wrap the cash flows from data-driven projects with insurance brokered through our registered Lloyd's of London status. Premiums sit at 1 to 3 percent annual. The result: investment-grade-style structures available without depending on multilateral guarantees." },
+      { num: "§ 6 / What happens next", headline: "Now data moves like money.", body: "Recognise. Finance. Insure. Mobilise.", deep: "Once recognised and insured, sovereign data assets can support new lines of capital: data-backed bonds, infrastructure financing collateralised by data flows, joint ventures with private capital where the nation contributes data at recognised value. This is fiscal mobilisation that does not add to public debt." },
+      { num: "§ 7 / Who this is for", headline: "Companies, governments, and investors.", body: "Ministries of finance, sovereign development banks, and central banks ready to recognise data.", deep: "Ministers of finance, sovereign development banks, central bank governors, ministers of digital and data. Sovereign actors ready to put national data on the balance sheet and use it as the basis for new fiscal capacity. Portugal is the flagship innovation hub. Brazil and Colombia land this quarter. More are joining." },
+      { num: "§ 8 / Who we are", headline: "We are the bridge nobody else has built.", body: "A registered Lloyd's of London broker. A senior team. The first sovereign-grade data-finance architecture.", deep: "One 2b operates as a registered Lloyd's of London broker with relationships across major global insurance conglomerates. We work with sovereign and state-owned data holders, ministries of finance, and sovereign development banks. The architecture is built for sovereign-grade capital deployment." },
+      { num: "§ 9 / Live, not theoretical", headline: "A pilot is already live with a sovereign nation.", body: "Running, not waiting. More sovereigns are joining.", deep: "A sovereign pilot is producing live valuations. A sovereign expansion is in execution. Twelve additional government engagements are advancing through scoping, governance, and methodology agreement. Sovereign-to-sovereign learning is now part of the architecture." },
+      { num: "§ 10 / Timing", headline: "These windows do not stay open.", body: "Being a first-mover sovereign in a new fiscal instrument is rare.", deep: "The first sovereign to formally recognise data on its balance sheet sets the methodology that other sovereigns inherit. First-mover advantage is real: better borrowing spreads, stronger ratings narrative, leadership inside multilateral conversations on digital sovereignty." }
+    ]
+  }
+};
+
+let currentAud = 'investors';
+let currentVoice = 'plain';
+
+function render() {
+  const aud = DATA[currentAud];
+  const voice = aud.hero[currentVoice];
+  document.getElementById('audLabelText').textContent = aud.label;
+  document.getElementById('heroEyebrow').textContent = voice.eyebrow;
+  document.getElementById('heroH1').textContent = voice.h1;
+  document.getElementById('heroLede').textContent = voice.lede;
+  const panelsEl = document.getElementById('panels');
+  panelsEl.innerHTML = aud.panels.map((p, i) => `
+    <div class="panel" data-idx="${i}">
+      <div class="num">${p.num}</div>
+      <div class="headline">${p.headline}</div>
+      <div class="body">${p.body}</div>
+      <div class="more">Read the deeper story</div>
+    </div>
+  `).join('');
+  panelsEl.querySelectorAll('.panel').forEach(el => {
+    el.addEventListener('click', () => openModal(parseInt(el.dataset.idx)));
+  });
+}
+
+function openModal(idx) {
+  const p = DATA[currentAud].panels[idx];
+  document.getElementById('modalNum').textContent = p.num;
+  document.getElementById('modalHeadline').textContent = p.headline;
+  document.getElementById('modalBody').textContent = p.body;
+  document.getElementById('modalDeeper').innerHTML = `<p>${p.deep}</p>`;
+  const bd = document.getElementById('modalBackdrop');
+  bd.style.display = 'flex';
+  requestAnimationFrame(() => bd.classList.add('open'));
+}
+
+function closeModal(e) {
+  if (e && e.target !== document.getElementById('modalBackdrop') && !e.target.classList.contains('modal-close')) return;
+  const bd = document.getElementById('modalBackdrop');
+  bd.classList.remove('open');
+  setTimeout(() => { bd.style.display = 'none'; }, 300);
+}
+
+document.getElementById('audTabs').addEventListener('click', e => {
+  const btn = e.target.closest('.aud-btn');
+  if (!btn) return;
+  document.querySelectorAll('.aud-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  currentAud = btn.dataset.aud;
+  render();
+});
+
+document.getElementById('voiceTabs').addEventListener('click', e => {
+  const btn = e.target.closest('button[data-voice]');
+  if (!btn) return;
+  document.querySelectorAll('#voiceTabs button').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  currentVoice = btn.dataset.voice;
+  render();
+});
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal({}); });
+
+render();
+</script>
+</body>
+</html>

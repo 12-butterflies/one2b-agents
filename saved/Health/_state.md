@@ -1,6 +1,6 @@
 # JASON HEALTH — State File
 
-**Last updated:** 2026-06-14
+**Last updated:** 2026-06-18
 
 ---
 
@@ -15,18 +15,27 @@
 
 ---
 
-## Active focus (2026-06-14)
+## Active focus (2026-06-18)
 
-1. **URGENT — ping Luke and Bex Monday Jun 16: Tesamorelin (TSM5) order.** $226 Pepguard. Body composition priority — GH secretagogues causing water retention and scale stagnation. Tesamorelin targets visceral fat specifically. Locked 2026-06-14.
-2. **URGENT — pre-quit-smoking window.** Quit date end June 2026. ~2 weeks remaining. Thymosin alpha-1 sourcing via Luke and Bex — time-critical. Must arrive before quit date.
-3. **Water retention + weight stagnation flagged 2026-06-14.** Primary cause: CJC-1295 no DAC + Ipamorelin GH secretagogue protocol driving sodium and extracellular fluid retention. Scale not a reliable metric right now. Use measurements and photos. Tesamorelin order will address this.
-4. **CJC-1295 no DAC + Ipamorelin — CONFIRMED 2026-06-14: training days morning + bedtime. Non-training days bedtime only.** Prior _state.md entry (Jun 11 "morning dropped") was incorrect. Training day double dose is intentional for anabolic uplift on training sessions.
-5. **GHK-Cu — revised to twice daily 2026-06-14.** Morning 20 IU (added to morning stack) + Bedtime 20 IU. Jason confirmed. Overrides the Jun 11 evening-only decision.
-6. **Testosterone panel booking — later this month.** Date TBC.
-7. NAD+ maintenance dose: 100 IU (1mL = 100mg) SubQ 2-3× per week.
-8. Thymalin course Day 7 of 10 — course runs Jun 8-17. Epitalon same course, Day 7 of 10. Do not skip nights.
+1. **URGENT — confirm order status with Luke and Bex: Tesamorelin (TSM5) $226 Pepguard + Thymosin alpha-1 (separate sourcing).** Tesamorelin: body composition priority, GH secretagogues causing water retention. Thymosin alpha-1: time-critical, quit date end June 2026. Both should have been pinged Jun 16. Confirm arrival timelines.
+2. **URGENT — pre-quit-smoking window.** Quit date end June 2026. ~2 weeks remaining. Thymosin alpha-1 must arrive before quit date.
+3. **Thymalin + Epitalon course COMPLETE.** Course ran Jun 8–17, 10 days. Both removed from bedtime stack. Next Epitalon: ~Jul 28, 2026 (6 weeks). Next Thymalin: ~Dec 2026 (6 months). Tiredness and cloudiness expected to ease over next 2 to 3 days as repair load lifts.
+4. **Water retention — ongoing.** Scale unreliable. Use measurements and photos. Will improve when Tesamorelin arrives.
+5. **CJC-1295 no DAC + Ipamorelin — training days morning + bedtime. Non-training days bedtime only.** Locked 2026-06-14.
+6. **GHK-Cu — twice daily.** Morning 20 IU + Bedtime 20 IU. Locked 2026-06-14.
+7. **Testosterone panel booking — later this month.** Date TBC.
+8. NAD+ maintenance dose: 100 IU SubQ 2-3x per week. Thursday Jun 18 = Day 2 of 3 this week.
 9. SS-31 confirmed morning fasted stack only (training + non-training days).
-10. BB20 (BPC-157 + TB-500 blend) — 8 IU post-training. Resolved.
+10. BB20 (BPC-157 + TB-500 blend) 8 IU post-training. Confirmed.
+
+---
+
+## Completed courses
+
+| Course | Dates | Duration | Notes |
+|---|---|---|---|
+| Thymalin (TY10) | Jun 8–17, 2026 | 10 days | Complete. 20 IU bedtime. Next: ~Dec 2026. |
+| Epitalon (ET50) | Jun 8–17, 2026 | 10 days | Complete. 10 IU bedtime. Next: ~Jul 28, 2026. |
 
 ---
 
@@ -40,10 +49,10 @@
 
 ## Recent context (last 7 days)
 
-- **2026-05-22 PM:** Standing rules locked into CLAUDE.md — peptide dosing in IU, no fabricated metrics, immediate-fix rule, always include opinion on decisions, copy-paste in code blocks, universal clickable links
-- **2026-05-22 PM:** Ipa-dose error caught by Jason (Claude shipped 8 IU; canonical sleep formula is 20 IU). Three-pass verification rule formalised; not yet sufficient on its own.
-- **2026-05-23 AM:** Peptide-error session catalogued 10 error classes and 5 root causes. Two-agent design proposed (Jason Health Curator + Longevity Research Curator).
-- **2026-05-23 PM:** PD-015 RESOLVED with all five yeses. Substrate built. Entry 001 (NAD+ maintenance) and Entry 002 (pre-quit-smoking stack) APPROVED.
+- **2026-06-14:** Water retention flagged (GH secretagogues). Repair fatigue discussed and confirmed normal. Appetite suppression from MOTS-c + GH stack — eat on a clock, not hunger signals. GHK-Cu revised to twice daily. Tesamorelin URGENT order locked.
+- **2026-06-15:** Monday heavy training. New weekly programme set (Mon/Tue/Thu heavy, Wed rest/HIIT, Fri or Sat soft).
+- **2026-06-17:** Thymalin + Epitalon Day 10 FINAL DOSE. Slept ~10 PM. Tiredness/cloudiness pattern identified as cortisol rhythm inversion from chronic stress.
+- **2026-06-18:** Woke 5:49 AM feeling pretty good. Thursday heavy training. Day 1 post-course (Thymalin + Epitalon compounds still active in system from last night — true first post-course morning is Jun 19).
 
 ---
 
@@ -52,10 +61,10 @@
 - Walkthrough A scheduling (~20 min)
 - Walkthrough B scheduling (~15 min)
 - Walkthrough C scheduling (~15 min)
-- **URGENT Mon Jun 16: ping Luke and Bex — Tesamorelin (TSM5) $226 + Thymosin alpha-1 (separate sourcing)**
-- Kisspeptin-10 (KS10) IU conversion — pending reconstitution math before first dose
-- Testosterone panel booking — later this month
+- **Confirm Luke and Bex order status — Tesamorelin (TSM5) + Thymosin alpha-1**
 - Kisspeptin-10 IU conversion — pending reconstitution math for KS10 vial before dosing
+- Testosterone panel booking — later this month
+- Health tracking spreadsheet — does one exist? Jason referenced it Jun 18. Clarify location or create one.
 
 ---
 

@@ -5,6 +5,40 @@
 
 ---
 
+## 2026-06-18 (Lisbon) — Thursday, heavy training, Day 1 post-course
+
+**Location:** Lisbon
+**Time woken:** 5:49 AM
+**Training:** YES — heavy gym session AM
+**Thymalin course:** COMPLETE (course ended Jun 17)
+**Epitalon course:** COMPLETE (course ended Jun 17)
+**Kisspeptin:** NO (Thursday)
+**Feeling on waking:** Pretty good. First morning after final Thymalin + Epitalon dose. Note: compounds still active in system from last night's dose — true first post-course morning is Friday Jun 19.
+**Peptides taken AM (fasted pre-training):**
+- Needle 1: CJC-1295 no DAC (CND2) 20 IU + Ipamorelin (IP-old) 20 IU + MOTS-c (MS10) 38 IU + AOD-9604 (5AD) 10 IU + SS-31 (2S10) 5 IU + GHK-Cu (CU) 20 IU
+- Needle 2: Semax (XA10) 10 IU SubQ
+- Needle 3: NAD+ (NJ500) 100 IU slow push (Day 2 of 3 this week)
+**Post-training (to do):** BPC-157 + TB-500 blend (BB20) 8 IU + AOD-9604 (5AD) 10 IU
+**With post-training meal (to do):** 5-Amino-1MQ (50AM) 50 IU
+**Source:** Jason direct — session 2026-06-18 AM
+
+---
+
+## 2026-06-17 (Lisbon) — Wednesday, Day 10 of 10 (final course night)
+
+**Location:** Lisbon
+**Training:** Unknown (Wednesday = rest/HIIT per weekly plan)
+**Thymalin course:** Day 10 of 10 — FINAL DOSE TAKEN
+**Epitalon course:** Day 10 of 10 — FINAL DOSE TAKEN
+**Energy pattern flagged:** Tired and cloudy throughout the day. Gets more energy in the evenings. Unable to sleep in the afternoon despite fatigue. Identified as cortisol rhythm inversion from chronic stress — elevated cortisol evenings, flat in daytime. DSIP in bedtime stack actively working to correct.
+**Food:** Breakfast ~10 AM: 4 eggs + chicken (handful and a half) + vitamins + cashews/blueberries/dark chocolate snacking. Steak sandwich at restaurant ~7:45 PM.
+**Sleep:** Bedtime ~10:00 PM. Slept well.
+**Bedtime (one needle, taken ~9 PM or later):** CJC-1295 no DAC (CND2) 20 IU + Ipamorelin (IP-old) 20 IU + GHK-Cu (CU) 20 IU + DSIP (DS5) 8 IU + Thymalin (TY10) 20 IU (Day 10 FINAL) + Epitalon (ET50) 10 IU (Day 10 FINAL)
+**Health notes:** Heaviest repair phase of the protocol now complete. Thymalin + Epitalon courses finished. Tiredness and cloudiness expected to ease over the next 2 to 3 days as the repair load lifts. Evening energy pattern should normalize as DSIP continues to regulate cortisol rhythm.
+**Source:** Jason direct — session 2026-06-17 PM
+
+---
+
 ## 2026-06-15 (Lisbon) — Monday, heavy training
 
 **Location:** Lisbon

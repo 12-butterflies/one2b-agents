@@ -8,8 +8,8 @@
 
 - [ ] Date and day: _____________ (from `currentDate` memory — state this first)
 - [ ] Training today: YES / NO
-- [ ] Thymalin day: ___ of 10 (current course Jun 8–17. Check `_daily_log.md`.)
 - [ ] Kisspeptin today: YES (Wed/Sat only) / NO
+- [ ] Thymalin/Epitalon: COURSE COMPLETE Jun 8–17. NOT in stack. Next Epitalon ~Jul 28. Next Thymalin ~Dec 2026.
 - [ ] State: maintenance / loading / PRN (from `_state.md`)
 - [ ] Alcohol last night: YES / NO — if YES, add NAD+ and Glutathione to morning stack. Non-negotiable. Do not wait to be asked.
 
@@ -61,10 +61,10 @@
 | Ipamorelin | (IP-old) | 20 IU |
 | GHK-Cu | (CU) | 20 IU |
 | DSIP | (DS5) | 8 IU |
-| Thymalin | (TY10) | 20 IU — **Day ___ of 10** |
-| Epitalon | (ET50) | 10 IU — **Day ___ of 10 (course Jun 8–17, same as Thymalin)** |
 
 **Total bedtime: 1 needle. All in one syringe.**
+
+*Thymalin (TY10) + Epitalon (ET50) — COURSE COMPLETE Jun 8–17. Not in stack. Next Epitalon: ~Jul 28, 2026. Next Thymalin: ~Dec 2026.*
 
 ---
 
@@ -99,10 +99,10 @@
 | Ipamorelin | (IP-old) | 20 IU |
 | GHK-Cu | (CU) | 20 IU |
 | DSIP | (DS5) | 8 IU |
-| Thymalin | (TY10) | 20 IU — **Day ___ of 10** |
-| Epitalon | (ET50) | 10 IU — **Day ___ of 10 (course Jun 8–17, same as Thymalin)** |
 
 **Total bedtime: 1 needle.**
+
+*Thymalin (TY10) + Epitalon (ET50) — COURSE COMPLETE Jun 8–17. Not in stack. Next Epitalon: ~Jul 28, 2026. Next Thymalin: ~Dec 2026.*
 
 ---
 
@@ -140,8 +140,8 @@
 | FOXO4-DRI (F410) cycle | RESOLVED 2026-06-11 | MAX 1-2× per year. 200 mcg/day × 5 days per cycle. Not every 8-12 weeks. Do not run during Thymalin/Thymosin alpha-1 cycles, active infections, or post-quit inflammatory window. |
 | Kisspeptin-10 dose | PENDING | Target 200 mcg on Wed/Sat. IU conversion pending reconstitution math for KS10 vial. Do not dose until IU confirmed. |
 | ADE+ | PENDING | What is this? Not in Pepguard catalog. |
-| Tesamorelin | **URGENT ORDER — ping Luke and Bex tomorrow (Mon Jun 16)** | TSM5, $226 Pepguard. Body composition priority. Will replace CJC at bedtime when arrives. Locked 2026-06-14. |
-| Thymosin alpha-1 | ORDERING NEXT WEEK | Via Luke and Bex. Time-sensitive — quit date end June 2026. |
+| Tesamorelin | **URGENT — order status unknown as of Jun 18. Confirm with Luke and Bex.** | TSM5, $226 Pepguard. Body composition priority. Will replace CJC at bedtime when arrives. Locked 2026-06-14. |
+| Thymosin alpha-1 | URGENT — quit date end June 2026. Confirm order status with Luke and Bex. | NOT in Pepguard catalog. Sourcing via Luke and Bex separately. Time-critical. |
 
 ---
 
@@ -155,12 +155,12 @@
 - [ ] 5-Amino-1MQ (50AM) in post-training/with-food window
 - [ ] NAD+ included (2–3x per week, not daily)
 - [ ] Bedtime needle count stated: 1 needle
-- [ ] Thymalin day number correct
+- [ ] Thymalin/Epitalon NOT in bedtime stack (course complete Jun 17)
 - [ ] Kisspeptin only on Wed/Sat
 - [ ] Semax = SubQ injectable, separate syringe — NEVER nasal spray in any stack output unless Jason states emergency
 - [ ] Glutathione = SubQ injection only — NEVER oral, NEVER ask Jason what dose his bottle is
 
 ---
 
-**Last updated:** 2026-06-13 — Semax nasal/SubQ contradiction fixed. Glutathione duplicate row removed, injectable-only rule hardened. Checklist items added for both.
+**Last updated:** 2026-06-18 — Thymalin + Epitalon removed from both bedtime sections (course complete Jun 8–17). Next cycle dates noted. Tesamorelin and Thymosin alpha-1 order status updated. Checklist item updated.
 **Update authority:** Jason direct only.

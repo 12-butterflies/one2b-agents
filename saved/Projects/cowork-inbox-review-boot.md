@@ -102,14 +102,15 @@ Context line: "This is how we bring partners into the system — takes 3 minutes
   (1) Identify counterparty name, entity, jurisdiction, key commercial terms from context
   (2) Draft using the CPA template from `skills/document/templates/`
   (3) Run Sentinel A3 before showing Jason
-  (4) Jason approves → send via DocuSeal or email with Drive link
+  (4) Jason approves → share as a Google Doc copy from the Drive Documents folder — not DocuSeal, not DocSend
 - CPA master documents folder: [One 2b Documents](https://drive.google.com/drive/folders/1zjf_FmeKA05ZIFYizIPCxSFT8oVY-CGl)
+- Use `mcp__beb837dd-0560-4d13-921f-006cfcddcf32__copy_file` to create a counterparty-named copy of the master template, then share the link
 - Always pair with the onboarding link: [connect.one2b.io](https://connect.one2b.io)
 
 ### NDA (triggered when: NDA / non-disclosure / confidentiality / data room access requested)
 - Same Document Agent protocol as CPA above
 - NDA goes before data room access, always
-- Send via DocuSeal when available
+- Share as a Google Doc copy from Drive — not DocuSeal, not DocSend
 
 ---
 

@@ -24,7 +24,7 @@
 |---|---|---|
 | **Doc 1** | Agent architecture and build | Yes, [committed](https://github.com/12-butterflies/one2b-agents/blob/main/saved/Documents/2026-07-01_Agent_Architecture_Build_Handoff.md) |
 | **Doc 2** | Capital raise and deal pipeline | Yes, [committed](https://github.com/12-butterflies/one2b-agents/blob/main/saved/Documents/2026-07-01_Capital_Deal_Pipeline_Handoff.md) |
-| **Doc 3** | Health protocol | No, by design. Local + Drive only, filed in the "1-Health" folder inside "Jason Life OS," not this repo. |
+| **Doc 3** | Health protocol | Yes, [committed](https://github.com/12-butterflies/one2b-agents/blob/main/saved/Documents/2026-07-01_Health_Protocol_Handoff.md). Jason waived the health boundary rule on 2026-07-01 and chose to commit it publicly. Also mirrored in the "1-Health" folder inside "Jason Life OS." |
 | **Doc 4** | This index | Yes, committed |
 
 ---
@@ -98,12 +98,12 @@ What's in there, by category:
 
 ## 10. Two files intentionally excluded from this document and from GitHub
 
-Per the same boundary logic as Doc 3 (personal content does not go into a public repo), two memory files are named here but not reproduced:
+Per a personal-content boundary that keeps real contact details out of a public repo, two memory files are named here but not reproduced (this boundary was waived for Doc 3 on 2026-07-01 at Jason's instruction, but still applies to the files below):
 
 - **`user_text_shortcuts.md`** — contains Jason's actual phone number and physical addresses (Lisbon and Singapore) behind iOS text-replacement codes. Publishing this to a public GitHub repo would expose real contact details. Not included.
 - **`wellbeing_insight.md`** — a personal reflection about a beach day and what it revealed about Jason's need for unstructured time with loved ones. Personal in nature, not architecture, capital, or protocol data.
 
-**If you want these in the new account:** say so directly and I'll hand them to you as a local file and Drive copy only, the same boundary already applied to Doc 3, rather than commit them here.
+**If you want these in the new account:** say so directly and I'll hand them to you as a local file and Drive copy only, rather than commit them here.
 
 ---
 
@@ -113,7 +113,7 @@ Per the same boundary logic as Doc 3 (personal content does not go into a public
 |---|---|
 | What's built and how it's wired | Doc 1 |
 | Who's being raised from and what deals are moving | Doc 2 |
-| The current peptide protocol | Doc 3 (local and Drive only) |
+| The current peptide protocol | Doc 3 (now committed to GitHub), or the live `saved/Health/` files which are always more current |
 | Everything else, plus what's missing | Doc 4, this file |
 | The literal current state of any file | The GitHub repo directly, it is always more current than any snapshot in these four documents |
 

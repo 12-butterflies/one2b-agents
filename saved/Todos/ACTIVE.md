@@ -349,6 +349,7 @@
 
 ## RESEARCH
 
+- [ ] **FDA REGULATORY — 5 stack peptides affected (ACTION BY JULY 24, 2026)** — FDA removed Epitalon (ET50), DSIP (DS5), Semax (XA10), BPC-157+TB-500 (BB20), GHK-Cu (CU) from Category 2 bulk substances effective April 22, 2026. PCAC review July 23-24, 2026 will determine if US compounding becomes legal. Current Pepguard (international) supply unaffected. Monitor outcome July 24, 2026. [Source: Peptide Catalog](https://thepeptidecatalog.com/articles/fda-removes-12-peptides-category-2-april-22) | [FDA PCAC meeting](https://www.fda.gov/advisory-committees/advisory-committee-calendar/july-23-24-2026-meeting-pharmacy-compounding-advisory-committee-07232026) — Added 2026-06-15
 - [ ] **FOXO4-DRI senolytic** — strongest peptide-based senolytic reviewed W24. Mouse data only. Flag for next protocol review. Check Pepguard for SKU. [Source: PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC11943447/) — Added 2026-06-11
 - [ ] **Tom Oxley (Synchron)** — follow and contact; neurotech / brain-computer interface flagged via intel@one2b.io 2026-06-11
 

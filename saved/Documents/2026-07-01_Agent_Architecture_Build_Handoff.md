@@ -18,6 +18,16 @@
 
 **If you're pasting this into a brand new Cowork or Claude Code account with no access to this repo:** use the raw GitHub URL above — it is public and needs no login, so a fresh agent can `fetch` it directly on request ("read this file: [url]"). The Drive link works only if that account's Google identity has access to the One 2b Intel Drive folder; the GitHub link works for anyone.
 
+**Caching note (verified 2026-07-01):** `raw.githubusercontent.com` is CDN-cached and can lag up to about 5 minutes behind a fresh push. If a link looks stale right after an update, use the GitHub blob URL (the second row above) or `https://api.github.com/repos/12-butterflies/one2b-agents/contents/[path]` instead — both always reflect the latest commit immediately.
+
+**Repo identity, for absolute clarity:**
+- Owner/org: `12-butterflies`
+- Repo name: `one2b-agents`
+- Default branch: `main`
+- Visibility: public
+- This file's path inside the repo: `saved/Documents/2026-07-01_Agent_Architecture_Build_Handoff.md`
+- Full HTTPS clone URL: `https://github.com/12-butterflies/one2b-agents.git`
+
 ---
 
 ## 1. The two fleet layers

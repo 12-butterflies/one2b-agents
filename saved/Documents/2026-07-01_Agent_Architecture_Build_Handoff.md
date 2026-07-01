@@ -1,7 +1,22 @@
 # One 2b Agent Architecture — Build Handoff (Doc 1 of 4)
 **Compiled:** Wednesday, 2026-07-01
 **Purpose:** Everything built in the `one2b-agents` repo to date, for Jason's personal Cowork / Claude Code account. Architecture and build only, no capital, health, or people detail (those are Docs 2 to 4).
-**Repo:** `~/one2b-agents` on GitHub org `12-butterflies`
+
+---
+
+## 0. Where to find this — exact locations, verified live 2026-07-01
+
+| What | Where | Verified |
+|---|---|---|
+| **GitHub repo (web, browse everything)** | [github.com/12-butterflies/one2b-agents](https://github.com/12-butterflies/one2b-agents) | HTTP 200 |
+| **This file on GitHub (view in browser)** | [github.com/12-butterflies/one2b-agents/blob/main/saved/Documents/2026-07-01_Agent_Architecture_Build_Handoff.md](https://github.com/12-butterflies/one2b-agents/blob/main/saved/Documents/2026-07-01_Agent_Architecture_Build_Handoff.md) | HTTP 200 |
+| **This file, raw markdown (for an agent to `fetch`/`curl` directly, no auth needed)** | [raw.githubusercontent.com/12-butterflies/one2b-agents/main/saved/Documents/2026-07-01_Agent_Architecture_Build_Handoff.md](https://raw.githubusercontent.com/12-butterflies/one2b-agents/main/saved/Documents/2026-07-01_Agent_Architecture_Build_Handoff.md) | HTTP 200 |
+| **Clone the whole repo** | `git clone https://github.com/12-butterflies/one2b-agents.git` | — |
+| **Local file on this Mac (absolute path)** | [/Users/jasonpeterstevens/one2b-agents/saved/Documents/2026-07-01_Agent_Architecture_Build_Handoff.md](/Users/jasonpeterstevens/one2b-agents/saved/Documents/2026-07-01_Agent_Architecture_Build_Handoff.md) | exists, confirmed via `ls` |
+| **Google Drive copy (Doc, viewable/editable)** | [One 2b Intel → Documents → 2026-07-01_Agent_Architecture_Build_Handoff](https://docs.google.com/document/d/1Kl1wfE2nHukLpsSm_CS2EhrsufXuRJYt6s-CtPca2NU/edit) | created, confirmed via API response |
+| **Drive folder this lives in** | [Documents folder, One 2b Intel](https://drive.google.com/drive/folders/1zjf_FmeKA05ZIFYizIPCxSFT8oVY-CGl) | — |
+
+**If you're pasting this into a brand new Cowork or Claude Code account with no access to this repo:** use the raw GitHub URL above — it is public and needs no login, so a fresh agent can `fetch` it directly on request ("read this file: [url]"). The Drive link works only if that account's Google identity has access to the One 2b Intel Drive folder; the GitHub link works for anyone.
 
 ---
 

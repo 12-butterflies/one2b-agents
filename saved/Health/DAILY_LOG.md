@@ -5,22 +5,6 @@
 
 ---
 
-## 2026-07-01 (Lisbon) — Wednesday — LOG REVIEW during handoff, gap Jun 19 to 30
-
-**Location:** Lisbon (assumed, confirm on next check-in)
-**Log status:** No daily entries were captured between 2026-06-19 and 2026-06-30, a 12 day gap. This entry is a gap marker, not Jason reported daily data. Nothing has been reconstructed, to keep the append only log truthful. If Jason wants the real days recorded, they can be logged properly on his say-so.
-**Stack state:** `_state.md` was last updated 2026-06-18 and reads "maintenance." Per the `_state.md` rule to refresh after any gap greater than 7 days, treat the stack as UNCONFIRMED and reconfirm with Jason before answering any dose question.
-**Open time-sensitive items still unconfirmed (carried from 2026-06-18):**
-- Tesamorelin (TSM5) and Thymosin alpha-1 order status with Luke and Bex
-- End of June 2026 quit smoking date outcome
-- Kisspeptin-10 (KS10) IU conversion, still blocking Wed and Sat dosing
-- Testosterone panel booking
-- Oral pill box refill due the week of 2026-07-01
-- Next Epitalon course due roughly 2026-07-28
-**Source:** Handoff session 2026-07-01 — gap marker, not daily-reported data.
-
----
-
 ## 2026-06-18 (Lisbon) — Thursday, heavy training, Day 1 post-course
 
 **Location:** Lisbon

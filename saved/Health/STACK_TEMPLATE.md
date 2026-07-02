@@ -1,14 +1,5 @@
 # Jason Daily Stack Template
 
-## OUTPUT FORMAT LAW — non-negotiable, applies to EVERY stack, dose, or protocol answer
-- **Bullet points ONLY.** Never prose sentences. Never tables. One peptide per bullet.
-- **Peptide name leads, SKU in brackets, IU on every line.** Example: `- CJC-1295 no DAC (CND2) — 20 IU`
-- Group by window (Daytime / Post-training / Bedtime) with the needle count stated.
-- Prose is allowed only for caveats and flags AFTER the bulleted stack, never inside it.
-- If you catch yourself writing a dose in a sentence: stop, delete, re-output as bullets.
-
----
-
 **HOW TO USE:** Read this file first on every stack question. Fill the variable fields. Run the checklist. Output verbatim. Do NOT generate from memory.
 
 ---

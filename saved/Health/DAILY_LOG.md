@@ -5,26 +5,6 @@
 
 ---
 
-## 2026-07-02 (Lisbon) — Thursday — REST day (post 4 training days), early immune flare
-
-**Location:** Lisbon
-**Training:** NO — deliberate rest after 4 straight training days
-**Kisspeptin:** NO — dose still pending IU conversion
-**Thymalin course:** COMPLETE (Jun 8 to 17)
-**Epitalon course:** COMPLETE (Jun 8 to 17). Next ~Jul 28.
-**Alcohol last night:** NO
-**Sleep:** ~7h in bed (23:30 to 07:00), ~20 min awake around 03:00. Quality 5/10.
-**Feeling:** ~6/10 — flat, sleepy, lazy. Mood lifted by capital win yesterday. Lingering sinus / under-the-weather feeling.
-**State:** PRN-acute (early immune / sinus). Rest.
-**Peptides — daytime:** KPV (KP10) 10 IU + BPC-157 standalone (BC5) 8 IU + Glutathione (GTT600) 50 IU + NAC 600 mg oral. 5-Amino-1MQ (50AM) 50 IU with light food.
-**Peptides — evening:** Oxytocin (OT2) 10 IU (Thursday scheduled). Bedtime, 1 needle: CJC-1295 no DAC (CND2) 20 IU + Ipamorelin (IP-old) 20 IU + DSIP (DS5) 8 IU + GHK-Cu (CU) 20 IU.
-**Held:** MOTS-c (MS10), BB20, AOD (5AD) — training triggered, rest day. LL-37 (375) on standby, deploy only if mucus turns green.
-**Food:** eating light, not a full fast.
-**Notes:** Ayahuasca ceremony upcoming — DATE NOT CAPTURED. Serotonergic orals (5-HTP, L-Tryptophan) and Selank must stop before ceremony (MAOI interaction, serotonin-syndrome risk). Needs a date to set the taper and the loading-recovery window.
-**Source:** Jason direct — session 2026-07-02 AM
-
----
-
 ## 2026-06-18 (Lisbon) — Thursday, heavy training, Day 1 post-course
 
 **Location:** Lisbon

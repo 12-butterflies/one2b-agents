@@ -1,12 +1,12 @@
 # JASON HEALTH — State File
 
-**Last updated:** 2026-06-18
+**Last updated:** 2026-07-02
 
 ---
 
 ## Current state
 
-**Peptide state:** maintenance (training-resumed, feeling well — confirmed 2026-05-23 PM)
+**Peptide state:** PRN-acute — early immune / sinus flare (confirmed 2026-07-02 AM). Rest day. Simplified mode (BAC water conservation, ~1 month). Ayahuasca ceremony upcoming, date not yet captured — will shift to loading/recovery around the ceremony window.
 
 **State definitions:**
 - **Maintenance** — feeling well, normal training, normal sleep, no acute issue. Default state.

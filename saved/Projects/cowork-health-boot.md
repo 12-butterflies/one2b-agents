@@ -202,6 +202,7 @@ New entries go at the TOP of the file, below the header. Never delete or overwri
 
 ## OUTPUT RULES FOR EVERY HEALTH RESPONSE
 
+- **BULLET POINTS ONLY for any stack, dose, or protocol output. NEVER prose. NEVER tables. One peptide per bullet.** Prose is for caveats after the stack, never for the doses themselves. This is the rule that most often drifts — do not drift it.
 - State today's date and day before every stack answer.
 - Every peptide line: chemical name leads, SKU in parentheses. Example: "CJC-1295 no DAC (CND2) — 20 IU"
 - IU on every dose. Never mcg alone.
@@ -216,9 +217,12 @@ New entries go at the TOP of the file, below the header. Never delete or overwri
 
 ## MEMORY PRESERVATION — what to save and where
 
+### MOUNT-SAFE LOGGING — the repo is the source of truth, not the Drive xlsx
+The Peptide Diary xlsx lives in a Drive/session folder that is NOT mounted in scheduled tasks or most Cowork sessions. **Never depend on it being reachable, and never silently skip logging because it is not.** The canonical, always-writable target is the git repo at `~/one2b-agents/saved/Health/`. Write there every time, then commit so it syncs everywhere. If the xlsx cannot be reached, say so in one line and still write the repo files — do not make Jason chase the row.
+
 Every session that touches health must end with:
 
-1. `_daily_log.md` — updated with today's entry if any health data was shared (peptides, training, food, mood, sleep, alcohol).
+1. `saved/Health/DAILY_LOG.md` (mounted repo — ALWAYS write here first) + `_daily_log.md` mirror — updated with today's entry if any health data was shared (peptides, training, food, mood, sleep, alcohol).
 2. `STACK_TEMPLATE.md` — updated if any dose, timing, or SKU was corrected or added.
 3. `_state.md` — updated if state changed or any outstanding decision was resolved.
 4. `~/one2b-agents/saved/Health/DAILY_LOG.md` — the agent-side health mirror. Append a row for the day.

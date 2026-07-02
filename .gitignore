@@ -4,3 +4,6 @@ node_modules/
 mcp/*/node_modules/
 saved/People/
 saved/Meetings/
+
+# Personal health data — JASON OS project only, never committed (SAVE_PROTOCOL line 120)
+saved/JASON_OS_PRIVATE/
